@@ -1,0 +1,46 @@
+export default function InvestmentPortfolio() {
+  return (
+    <section className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900">
+      <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white">
+        Our Investment Portfolio:{" "}
+        <br />
+        <span className="bg-[#071C2F] text-white px-3  rounded-md ml-2 ">
+          Promising Spinouts
+        </span>
+      </h2>
+
+      {/* الخط مع المعينتين */}
+      <div className="relative mt-6 mb-12 max-w-3xl mx-auto">
+        <div className="h-1 bg-[#071C2F] w-full relative">
+          <div className="absolute -top-1 -left-1 w-3 h-3 bg-[#071C2F] rotate-45"></div>
+          <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#071C2F] rotate-45"></div>
+        </div>
+      </div>
+
+      {/* البطاقات */}
+     <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-7xl mx-auto ">
+        <div className="bg-[#FDEAD9] border-b-4 border-[#EA8316] rounded-md shadow-md flex items-center justify-center px-10 py-8 w-full ">
+          <img
+            src="/src/assets/AmplifaiHealth.png"
+            alt="Amplifai Health"
+            className="h-24 w-auto mr-6"
+          />
+          <div className="text-[#071C2F] font-bold text-3xl leading-tight">
+            Amplifai <br /> Health
+          </div>
+        </div>
+
+        <div className="bg-[#FDEAD9] border-b-4 border-[#EA8316] rounded-md shadow-md flex items-center justify-center px-10 py-8 w-full ">
+          <img
+            src="/src/assets/AIden.svg"
+            alt="AiDEN"
+            className="h-24 w-auto mr-6"
+          />
+          <div className="text-[#071C2F] font-bold text-3xl leading-tight">
+            AiDEN
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

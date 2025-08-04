@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "about": "About",
+    "careers": "Careers",
+    "history": "History",
+    "services": "Services",
+    "projects": "Projects",
+    "blog": "Blog",
+    "join": "Join Community",
+    "lang": "العربية"
+  },
+
+   "joinCommunity": {
+    "title": "Join the Innovation Community",
+    "name": "Full Name",
+    "email": "Email Address",
+    "message": "Your Message",
+    "submit": "Submit"
+  },
+  "banner": {
+    "heading": "Your Strategic Partner in Building Research and Innovation Ecosystems",
+    "desc": "We connect research to real-world impact. Join us to unlock innovation potential.",
+    "cta": "Let’s Talk Innovation"
+  },
+
+  
+  "numbers": {
+    "items": [
+      {
+        "number": "11",
+        "title": "Scientific Spinouts",
+        "description": "Research ventures transformed from concept to company"
+      },
+      {
+        "number": "10",
+        "title": "Founding Teams",
+        "description": "Cross-functional teams built for science-driven Spinouts"
+      },
+      {
+        "number": "720+",
+        "title": "Program Hours",
+        "description": "Intensive commercialization training and hands-on mentorship"
+      },
+      {
+        "number": "85+",
+        "title": "Advisory Engagements",
+        "description": "Organizations guided through innovation strategy and market alignment"
+      }
+    ]
+  }
+
+  
+
+
+}
