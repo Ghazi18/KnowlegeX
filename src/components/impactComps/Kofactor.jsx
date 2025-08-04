@@ -24,19 +24,22 @@ export default function Kofactor() {
       />
 
       {/* النص */}
-      <div className="p-6 sm:p-10 md:p-12 lg:px-16 lg:py-24">
-        <div className="mx-auto max-w-xl text-center sm:text-start">
+      <div className="p-6 lg:py-14 h-full">
+        <div className="mx-auto max-w-7xl flex flex-col justify-between h-full sm:text-start text-center">
+          {/* العنوان */}
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
             {t("kofactor.title", "Build with the KoFactor Edge")}
           </h2>
 
-          <p className="hidden md:block text-gray-600 md:mt-4 text-sm sm:text-base leading-relaxed">
+          {/* النص الأوسط */}
+          <p className="text-gray-600 text-sm sm:text-2xl md:mt-4 leading-relaxed my-6 flex-grow">
             {t(
               "kofactor.description",
               "KoFactor empowers innovators through tailored programs, hands-on mentorship, and access to cutting-edge tools. Join a new era of innovation-driven growth."
             )}
           </p>
 
+          {/* الزر */}
           <div className="mt-6 md:mt-8">
             <a
               href="#"

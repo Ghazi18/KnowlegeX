@@ -19,9 +19,67 @@
   },
   "banner": {
     "heading": "Your Strategic Partner in Building Research and Innovation Ecosystems",
-    "desc": "We connect research to real-world impact. Join us to unlock innovation potential.",
-    "cta": "Let’s Talk Innovation"
+    "desc": "Knowledgex builds ventures from research, turns industry challenges into academic opportunities, and runs high-impact research projects. We help organizations innovate by developing custom innovation methodologies, building innovation hubs, and operating deep and tough tech accelerators.",
+    "cta": "Discover More"
   },
+
+  "ourWhy": {
+    "title": "Our Why",
+    "subtitle": "From Knowledge to Business",
+    "desc": "Our purpose is to bridge the gap between academic excellence and commercial relevance by building innovation ecosystems that empower research institutions, corporates, and emerging ventures to transform knowledge into market-ready solutions."
+  },
+  
+  "ourTracks": {
+    "title": "Our Tracks",
+    "research.title": "Research Institutions and Universities",
+    "research.enablement.title": "Enablement Track",
+    "research.enablement.items": [
+      "Institutional Innovation Management, includes:",
+      "Innovation Assessment",
+      "Strategy Building",
+      "Commercialization Model",
+      "Strategy Implementation",
+      "Accelerator Cohort Management",
+      "Innovation Talent Capability Development",
+      "Strategic Partnership Development"
+    ],
+    "research.collaboration.title": "Collaboration Track",
+    "research.collaboration.items": [
+      "KoFactor Program: 4-month pre-accelerator program to commercialize knowledge assets",
+      "Innovation & commercialization Awareness Seminars for faculty",
+      "Open Innovation Hub to engage with industry needs"
+    ],
+    "research.advisory.title": "Advisory Track",
+    "research.advisory.items": [
+      "R&D Strategy Development",
+      "Innovation Policy Alignment",
+      "Commercialization Readiness Advisory",
+      "Market Transition & Scale Pathway Planning"
+    ],
+    "corporate.title": "Corporate",
+    "corporate.enablement.title": "Enablement Track",
+    "corporate.enablement.items": [
+      "Corporate Innovation Management",
+      "Strategy Building & Execution",
+      "Innovation Assessment",
+      "Accelerator/incubator Cohort Design & Management",
+      "Strategic Partnership Development"
+    ],
+    "corporate.collaboration.title": "Collaboration Track",
+    "corporate.collaboration.items": [
+      "Our co-development platform accelerates research-to-market pathways.",
+      "Shared resources and facilities.",
+      "Joint innovation development frameworks and methodologies."
+    ],
+    "corporate.advisory.title": "Advisory Track",
+    "corporate.advisory.items": [
+      "Innovation Strategy Development",
+      "R&D Strategy Development",
+      "Market Landscaping & Competitiveness Gap Analysis"
+    ]
+  },
+
+
 
   
   "numbers": {
@@ -47,7 +105,71 @@
         "description": "Organizations guided through innovation strategy and market alignment"
       }
     ]
-  }
+  },
+
+  "partnerships": {
+    "title": "Strategic Partnerships",
+    "subtitle": "Accelerating Innovation Together"
+  },
+
+
+   "impactBanner": {
+    "title": "Innovate with Purpose",
+    "description": "A hands-on program turning scientific ideas into market-ready solutions.",
+    "cta": "Explore the Program"
+  },
+
+   "kofactor": {
+    "title": "What is KoFactor?",
+    "description": "An innovation enablement program that transforms research and scientific ideas into practical, market-ready solutions. It provides a structured journey helping participants develop early-stage concepts into commercially viable products, supported by expert mentors and hands-on workshops. The program focuses on fostering entrepreneurial thinking among researchers and innovators. It offers a collaborative environment connecting academia and industry. It serves as a platform to test and accelerate scientific ideas into scalable and sustainable business models.",
+    "cta": "Explore the Program"
+  },
+
+  "objectives": {
+    "title": "Program Objectives",
+    "downloads": "Transform scientific research into real-world impact",
+    "clients": "Develop early-stage prototypes ready for testing",
+    "sessions": "Design innovative and scalable business models",
+    "users": "Bridge the gap between innovation and commercialization",
+    "files": "Guide ideas toward market-ready products and solutions",
+    "places": "Foster collaboration across research and industry"
+  },
+
+  "projects": {
+    "title": "Ko-Factor Projects",
+    "viewMore": "View More",
+    "readMore": "Read More",
+    "items": [
+      {
+        "title": "Rasid",
+        "description": "A health intelligence system that enables real-time tracking of infection and recovery cases across Saudi Arabia using DNA-based data.",
+        "link": "/Impact/1"
+      },
+      {
+        "title": "MAX",
+        "description": "A Smart Health High-tech advocacy revolutionizing surgical procedures through advanced visualization technologies.",
+        "link": "/Impact/1"
+      },
+      {
+        "title": "Foreseen",
+        "description": "A Saudi-based technology company specializing in AI-driven solutions for e-commerce merchants.",
+        "link": "/Impact/1"
+      },
+      {
+        "title": "Ai Naseem",
+        "description": "A hybrid air conditioning system combining a mechanical vapor compression unit and an indirect evaporative cooling unit to cool and deliver supply air (SA) by separating sensible and latent heat removal",
+        "link": "/Impact/1"
+      }
+    ]
+  },
+
+  "footer": {
+  "connect": "Stay Connected",
+  "subscribe": "Subscribe to our newsletter for latest updates",
+  "cta": "Let's get in touch",
+  "copyright": "Copyright © 2025 Knowledgex. All rights reserved."
+}
+
 
   
 

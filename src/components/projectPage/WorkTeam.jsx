@@ -62,7 +62,7 @@ export default function WorkTeam() {
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
           <div key={index} className="px-3">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center h-full flex flex-col items-center justify-start">
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center min-h-[350px] flex flex-col items-center justify-start">
               <FaUserCircle className="text-6xl text-gray-400 mb-4" />
               <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                 {member.name}

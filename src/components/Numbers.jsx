@@ -5,18 +5,21 @@ export default function Numbers() {
   const items = t("numbers.items", { returnObjects: true });
 
   return (
-    <section className="text-gray-600 body-font" dir={i18n.language === "ar" ? "rtl" : "ltr"}>
-      <div className="container px-4 sm:px-10 md:px-16 py-24 mx-auto">
-        <div className="flex flex-wrap  text-center">
+    <section
+      className="text-gray-600 body-font px-4 sm:px-10 md:px-16"
+      dir={i18n.language === "ar" ? "rtl" : "ltr"}
+    >
+      <div className="py-20 mx-auto max-w-8xl">
+        <div className="flex flex-wrap justify-between gap-0 text-center">
           {items.map((item, idx) => (
-            <div key={idx} className="p-4 sm:w-1/4 w-1/2">
-              <h2 className="title-font font-bold sm:text-4xl text-3xl text-[#EA8316]">
+            <div key={idx} className="w-1/2 sm:w-1/2 md:w-1/4 px-4 mb-8">
+              <h2 className="title-font font-bold text-3xl sm:text-4xl text-[#EA8316]">
                 {item.number}
               </h2>
               <p className="leading-relaxed font-bold text-black mt-4">
                 {item.title}
               </p>
-              <p className="leading-relaxed text-black text-sm w-3/4 mx-auto">
+              <p className="leading-relaxed text-black text-sm mt-2">
                 {item.description}
               </p>
             </div>

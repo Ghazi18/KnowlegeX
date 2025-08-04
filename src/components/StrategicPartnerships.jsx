@@ -1,30 +1,27 @@
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 import kingFaisalUni from "../assets/kingFaisalUni.svg";
 import sultanUni from "../assets/sultanUni.svg";
 import indusrty from "../assets/indusrty.svg";
 
 export default function StrategicPartnerships() {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
   const logos = [
-    {
-      src: kingFaisalUni,
-      alt: "Ministry of Industry and Mineral Resources",
-    },
-    {
-      src: sultanUni,
-      alt: "King Faisal University",
-    },
-    {
-      src: indusrty,
-      alt: "Prince Sultan University",
-    },
-    // أضف المزيد هنا إذا أردت
+    { src: kingFaisalUni, alt: "King Faisal University" },
+    { src: sultanUni, alt: "Prince Sultan University" },
+    { src: indusrty, alt: "Ministry of Industry and Mineral Resources" }
   ];
 
   return (
-    <section className="py-16 px-4 bg-white dark:bg-gray-900">
+    <section
+      className="py-16 px-4 bg-white dark:bg-gray-900"
+      dir={isRTL ? "rtl" : "ltr"}
+    >
       <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-12">
-        Strategic Partnerships:{" "}
-        <span className="text-[#071C2F]">Accelerating Innovation Together</span>
+        {t("partnerships.title")}:{" "}
+        <span className="text-[#071C2F]">{t("partnerships.subtitle")}</span>
       </h2>
 
       <div className="overflow-hidden">
@@ -33,6 +30,7 @@ export default function StrategicPartnerships() {
           speed={40}
           pauseOnHover={true}
           className="flex items-center"
+          direction={isRTL ? "right" : "left"}
         >
           {logos.map((logo, idx) => (
             <div

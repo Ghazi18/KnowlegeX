@@ -35,7 +35,7 @@ export default function OurValue() {
       </h2>
 
       {/* المستطيلات */}
-      <div className="space-y-6 max-w-7xl mx-auto">
+      <div className="space-y-6 max-w-8xl mx-auto">
         {items.map((item, index) => (
           <div
             key={index}

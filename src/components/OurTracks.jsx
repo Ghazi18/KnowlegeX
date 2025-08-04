@@ -1,21 +1,29 @@
+import { useTranslation } from "react-i18next";
+
 export default function OurTracks() {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
   const categories = [
     {
-      title: "Research Institutions and Universities",
+      key: "research",
       icon: "🏛️",
-      tracks: ["Enablement Track", "Collaboration Track", "Advisory Track"],
     },
     {
-      title: "Corporate",
+      key: "corporate",
       icon: "🏢",
-      tracks: ["Enablement Track", "Collaboration Track", "Advisory Track"],
     },
   ];
 
+  const trackKeys = ["enablement", "collaboration", "advisory"];
+
   return (
-    <section className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900">
-      <h2 className="text-2xl sm:text-3xl font-bold text-center sm:mb-8  text-gray-900 dark:text-white">
-        Our Tracks
+    <section
+      className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900"
+      dir={isRTL ? "rtl" : "ltr"}
+    >
+      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+        {t("ourTracks.title")}
       </h2>
 
       <div className="flex flex-col sm:gap-16 max-w-7xl mx-auto">
@@ -24,17 +32,19 @@ export default function OurTracks() {
             key={idx}
             className="grid grid-cols-1 md:grid-cols-4 items-center gap-8"
           >
-            {/* القسم الرئيسي */}
+            {/* البطاقة الرئيسية */}
             <div className="bg-[#071C2F] text-white rounded-lg shadow p-6 flex flex-col items-center border-l-4 border-0 border-[#EA8316] justify-center text-center h-48 w-full min-w-[200px] mt-16">
               <div className="text-4xl mb-2">{cat.icon}</div>
-              <div className="font-semibold text-center">{cat.title}</div>
+              <div className="font-semibold text-center">
+                {t(`ourTracks.${cat.key}.title`)}
+              </div>
             </div>
 
             {/* المسارات */}
-            <div className="md:col-span-3 relative flex flex-col items-center gap-6 h-full w-full">
-              {/* الخط المتصل مع الدوائر - مخفي على الجوال */}
+            <div className="md:col-span-3 relative flex flex-col items-center gap-6 w-full">
+              {/* الدوائر العلوية مع الخط المتصل (لأجهزة سطح المكتب) */}
               <div className="hidden md:flex absolute -top-4 left-0 right-0 items-center justify-between px-4 z-10">
-                {cat.tracks.map((_, i) => (
+                {trackKeys.map((_, i) => (
                   <div key={i} className="relative flex-1 flex justify-center">
                     <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#EA8316] -z-10" />
                     <div className="w-14 h-14 rounded-full bg-[#071C2F] text-white flex items-center justify-center text-base font-bold shadow-md">
@@ -44,16 +54,30 @@ export default function OurTracks() {
                 ))}
               </div>
 
-              {/* الكروت */}
+              {/* البطاقات */}
               <div className="flex flex-col md:flex-row justify-between gap-4 md:mt-16 w-full z-10">
-                {cat.tracks.map((track, i) => (
-                  <div
-                    key={i}
-                    className="bg-[#EA8316] text-white text-center p-6 rounded-lg flex-1 min-w-[200px] h-48 flex items-center justify-center"
-                  >
-                    {track}
-                  </div>
-                ))}
+                {trackKeys.map((track, i) => {
+                  const trackTitle = t(`ourTracks.${cat.key}.${track}.title`);
+                  const items = t(`ourTracks.${cat.key}.${track}.items`, {
+                    returnObjects: true,
+                  });
+
+                  return (
+                    <div
+                      key={i}
+                      className="bg-[#EA8316] text-white rounded-lg p-6 flex-1 min-w-[200px] h-full"
+                    >
+                      <h3 className="font-bold text-lg mb-4 text-center">
+                        {trackTitle}
+                      </h3>
+                      {/* <ul className="text-sm list-disc list-inside leading-relaxed space-y-1">
+                        {items.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                        ))}
+                      </ul> */}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
