@@ -19,10 +19,14 @@ export default function StrategicPartnerships() {
       className="py-16 px-4 bg-white dark:bg-gray-900"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      <h2 className="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white mb-12">
-        {t("partnerships.title")}:{" "}
-        <span className="text-[#071C2F]">{t("partnerships.subtitle")}</span>
-      </h2>
+      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+  {t("partnerships.title")}
+  {i18n.language !== "ar" && (
+    <>
+      : <span className="text-[#071C2F]">{t("partnerships.subtitle")}</span>
+    </>
+  )}
+</h2>
 
       <div className="overflow-hidden">
         <Marquee

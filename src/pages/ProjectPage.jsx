@@ -6,7 +6,7 @@ import WorkTeam from "../components/projectPage/WorkTeam";
 
 export default function ProjectPage() {
   return (
-    <main className="min-h-screen w-full dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden">
+    <main className="min-h-screen max-w-[2000px] dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden">
       <FadeInWrapper>
         <Intro />
       </FadeInWrapper>

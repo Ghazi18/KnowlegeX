@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { FaUserCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -5,6 +6,8 @@ import { useTranslation } from "react-i18next";
 export default function WorkTeam() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
+  const cardRefs = useRef([]);
+  const [maxHeight, setMaxHeight] = useState(0);
 
   const teamMembers = [
     {
@@ -37,14 +40,22 @@ export default function WorkTeam() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 5, // ديسكتوب
     slidesToScroll: 1,
     rtl: isRTL,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
+      { breakpoint: 1024, settings: { slidesToShow: 2 } }, // تابلت
+      { breakpoint: 768, settings: { slidesToShow: 1 } }, // موبايل
     ],
   };
+
+  // حساب أقصى ارتفاع وتطبيقه
+  useEffect(() => {
+    if (cardRefs.current.length > 0) {
+      const heights = cardRefs.current.map((el) => (el ? el.offsetHeight : 0));
+      setMaxHeight(Math.max(...heights));
+    }
+  }, [i18n.language, teamMembers]);
 
   return (
     <section
@@ -62,7 +73,11 @@ export default function WorkTeam() {
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
           <div key={index} className="px-3">
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center min-h-[350px] flex flex-col items-center justify-start">
+            <div
+              ref={(el) => (cardRefs.current[index] = el)}
+              style={{ height: maxHeight ? `${maxHeight}px` : "auto" }}
+              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center flex flex-col items-center justify-start"
+            >
               <FaUserCircle className="text-6xl text-gray-400 mb-4" />
               <h3 className="text-lg font-bold text-gray-900 dark:text-white">
                 {member.name}

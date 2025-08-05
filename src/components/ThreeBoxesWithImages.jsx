@@ -1,32 +1,39 @@
 import kore from "../assets/KORE.png";
 import scienceHub from "../assets/ScienceHub.png";
 import spinsight from "../assets/Spinsight.png";
+import { useTranslation } from "react-i18next";
 
 export default function ThreeBoxesWithImages() {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
   const images = [kore, spinsight, scienceHub];
 
   return (
-    <section className="w-full py-14 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900 text-center">
+    <section
+      className="w-full py-14 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900 text-center"
+      dir={isRTL ? "rtl" : "ltr"}
+    >
       {/* العنوان والوصف */}
       <div className="max-w-3xl mx-auto mb-12">
-        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4">
-          Our Focus Areas
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          {t("focusAreas.title")}
         </h2>
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          These pillars guide our work and reflect our commitment to excellence.
+          {t("focusAreas.desc")}
         </p>
       </div>
 
       {/* المستطيلات بالصور */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
         {images.map((src, index) => (
           <div
             key={index}
-            className="bg-white border border-[#EA8316] rounded-lg p-6 shadow-sm flex items-center justify-center h-24"
+            className="bg-white border border-[#EA8316] rounded-lg p-6 shadow-sm flex items-center justify-center w-full"
           >
             <img
               src={src}
-              alt={`Icon ${index + 1}`}
+              alt={`${t("focusAreas.title")} ${index + 1}`}
               className="h-24 w-h-24 object-contain"
             />
           </div>

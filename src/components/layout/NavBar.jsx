@@ -19,7 +19,7 @@ export default function NavBar() {
       <header className="bg-white shadow">
         <div className="mx-auto flex h-16 max-w-8xl items-center justify-between px-4 sm:px-6 lg:px-16">
           {/* Logo */}
-          <a className="block text-teal-600" href="#">
+          <a className="block text-teal-600" href="/">
             <img src="/src/assets/KXogo.svg" alt="Logo" className="h-12" />
           </a>
 

@@ -15,7 +15,7 @@ export default function Banner() {
 
       {/* المحتوى */}
       <div className="relative z-10 w-full max-w-screen-xl mx-auto min-h-[60vh] flex items-center justify-center py-12 sm:py-24 lg:py-32">
-        <div className="text-center max-w-4xl px-4">
+        <div className="text-center max-w-7xl px-4">
           <h1 className="text-2xl sm:text-3xl font-bold text-white mb-8">
             {t("banner.heading")}
           </h1>

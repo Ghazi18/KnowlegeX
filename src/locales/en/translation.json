@@ -79,8 +79,41 @@
     ]
   },
 
+  "ourMission": "Our Mission",
+  "mission": {
+    "items": [
+      "Promotes knowledge-Based economy.",
+      "Bridges knowledge outcomes and Markets.",
+      "Support Saudi Arabia R&I ecosystem.",
+      "Raise Saudi Arabia global innovation competitiveness."
+    ]
+  },
 
 
+  "ourValues": "Our Values",
+  "values": [
+    "Originality",
+    "Trust",
+    "Learn",
+    "Connect"
+  ],
+
+  "focusAreas": {
+    "title": "Our Focus Areas",
+    "desc": "These pillars guide our work and reflect our commitment to excellence"
+  },
+
+  "gradientSection": {
+    "title": "Our Impact in R&D Ecosystem",
+    "desc": "Knowledgex delivers measurable impact across the research-to-market journey. Our interventions create tangible outcomes for scientists and institutions"
+  },
+
+
+
+  "InvestmentPortfolio":{
+    "title": "Investment Portfolio",
+    "subtitle": "Promising Spinouts"
+  },
   
   "numbers": {
     "items": [

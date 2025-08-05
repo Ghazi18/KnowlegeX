@@ -6,8 +6,15 @@ export default function OurWhy() {
   const isRTL = i18n.language === "ar";
 
   return (
-    <section className="relative bg-[#071C2F] py-12 lg:py-20 dark:bg-gray-900 overflow-hidden">
-      <div className="w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-4 px-4 sm:px-6 lg:px-8 relative z-10">
+    <section
+      className="relative bg-[#071C2F] py-12 lg:py-20 dark:bg-gray-900 overflow-hidden"
+      dir={isRTL ? "rtl" : "ltr"} // ضبط اتجاه القسم بالكامل
+    >
+      <div
+        className={`w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-4 px-4 sm:px-6 lg:px-8 relative z-10 ${
+          isRTL ? "md:flex-row-reverse" : ""
+        }`}
+      >
         {/* Mobile View */}
         <div className="md:hidden flex flex-col items-center gap-6">
           <img src={riyalSvg} alt="Our Why" className="w-64 max-w-full" />
@@ -26,7 +33,11 @@ export default function OurWhy() {
 
         {/* Desktop View */}
         <div className="hidden md:flex flex-col justify-center z-10">
-          <img src={riyalSvg} alt="Our Why" className="mx-auto max-w-sm" />
+          <img
+            src={riyalSvg}
+            alt="Our Why"
+            className={`max-w-sm ${isRTL ? "ml-auto" : "mr-auto"}`}
+          />
           <h2
             className={`text-4xl mt-6 font-semibold text-white text-center ${
               isRTL ? "md:text-right" : "md:text-left"
@@ -34,13 +45,6 @@ export default function OurWhy() {
           >
             {t("ourWhy.subtitle")}
           </h2>
-          {/* <p
-            className={`text-xl mt-2 font-bold text-white text-center ${
-              isRTL ? "md:text-right" : "md:text-left"
-            }`}
-          >
-            {t("ourWhy.title")}
-          </p> */}
         </div>
       </div>
 

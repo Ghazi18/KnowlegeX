@@ -76,7 +76,7 @@ export default function OurJourney() {
 
   return (
     <section className="relative bg-gradient-to-br from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 py-20 px-6 sm:px-12 md:px-20 lg:px-32">
-      <h2 className="text-2xl sm:text-3xl font-bold text-center mb-16 text-gray-900 dark:text-white">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
         {i18n.language === "ar" ? "قصة رحلتنا" : "The Story of Our Journey"}
       </h2>
 

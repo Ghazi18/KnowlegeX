@@ -13,7 +13,7 @@ import ThreeBoxesWithImages from "../components/ThreeBoxesWithImages";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden">
+    <main className="min-h-screen max-w-[2000px] dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden">
       <FadeInWrapper>
         <Banner />
       </FadeInWrapper>
@@ -32,9 +32,9 @@ export default function Home() {
       <FadeInWrapper delay={0.5}>
         <Numbers />
       </FadeInWrapper>
-      {/* <FadeInWrapper delay={0.6}> */}
+      <FadeInWrapper delay={0.6}>
       <OurJourney />
-      {/* </FadeInWrapper> */}
+      </FadeInWrapper>
       <FadeInWrapper delay={0.7}>
         <OurTracks />
       </FadeInWrapper>

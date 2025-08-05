@@ -7,7 +7,7 @@ import ProjectCards from "../components/impactComps/ProjectCrads";
 
 export default function Impact() {
   return (
-    <main className="min-h-screen w-full dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
+    <main className="min-h-screen max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
       <FadeInWrapper>
         <ImpactBanner />
       </FadeInWrapper>
