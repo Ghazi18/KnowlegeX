@@ -32,7 +32,7 @@ export default function Mission() {
   ];
 
   return (
-    <section className="w-full px-4 sm:px-10 md:px-16 py-14 bg-gray-50 dark:bg-gray-900">
+    <section className="w-full px-4 sm:px-10 md:px-16 py-24  dark:bg-gray-900">
       {/* العنوان */}
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-10">
         {t("ourMission")}

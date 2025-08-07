@@ -1,85 +1,38 @@
-import originality from "../assets/Originality.png";
-import trust from "../assets/Trust.png";
-import learn from "../assets/Learn.png";
-import connect from "../assets/Connect.png";
 import { useTranslation } from "react-i18next";
 
 export default function OurValue() {
-  const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
+  const { t } = useTranslation();
 
   const items = [
-    {
-      number: "01",
-      title: t("values.0"),
-      image: originality,
-    },
-    {
-      number: "02",
-      title: t("values.1"),
-      image: trust,
-    },
-    {
-      number: "03",
-      title: t("values.2"),
-      image: learn,
-    },
-    {
-      number: "04",
-      title: t("values.3"),
-      image: connect,
-    },
+    { title: t("values.0") },
+    { title: t("values.1") },
+    { title: t("values.2") },
+    { title: t("values.3") },
   ];
 
   return (
-    <section
-      className="w-full px-4 sm:px-10 md:px-16 py-14 bg-gray-100 dark:bg-gray-900"
-      dir={isRTL ? "rtl" : "ltr"} // ضبط الاتجاه بالكامل
-    >
-      {/* العنوان */}
-      <h2
-        className={`text-3xl sm:text-4xl font-bold mb-10 ${
-          isRTL ? "text-right" : "text-left"
-        } text-gray-900 dark:text-white`}
-      >
+    <section className="w-full px-4 sm:px-10 md:px-16 py-24  dark:bg-gray-900">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-gray-900 dark:text-white">
         {t("ourValues")}
       </h2>
 
-      {/* المستطيلات */}
-      <div className="space-y-6 max-w-8xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center">
         {items.map((item, index) => (
           <div
             key={index}
-            className={`relative w-full h-36 rounded-lg overflow-hidden shadow-lg ${
-              isRTL ? "flex-row-reverse" : ""
-            }`}
+            className="relative w-[200px] h-[250px] mx-auto rounded-[14px] overflow-hidden flex items-center justify-center shadow-[20px_20px_60px_#bebebe,_-20px_-20px_60px_#ffffff]"
           >
-            {/* صورة الخلفية */}
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-full object-cover"
-            />
+            {/* خلفية زجاجية */}
+            <div className="absolute top-[5px] left-[5px] w-[190px] h-[240px] bg-white/95 backdrop-blur-2xl rounded-[10px] outline outline-2 outline-white z-20" />
 
-            {/* التدرج الأزرق */}
-            <div
-              className={`absolute inset-0 ${
-                isRTL
-                  ? "bg-gradient-to-l from-[#071C2F]/80 to-transparent"
-                  : "bg-gradient-to-r from-[#071C2F]/80 to-transparent"
-              } z-10`}
-            />
+            {/* البلوب البرتقالي */}
+            <div className="absolute top-1/2 left-1/2 w-[150px] h-[150px] rounded-full bg-[#EA8316] opacity-100 blur-[12px] z-10 animate-blob" />
 
             {/* المحتوى */}
-            <div className="absolute inset-0 flex items-center px-6 z-20">
-              <div
-                className={`text-white flex flex-row gap-x-4 ${
-                  isRTL ? "flex-row-reverse text-right" : "text-left"
-                }`}
-              >
-                <div className="text-xl font-bold">{item.number}</div>
-                <div className="text-2xl font-semibold">{item.title}</div>
-              </div>
+            <div className="relative z-30 text-center px-4">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                {item.title}
+              </h3>
             </div>
           </div>
         ))}

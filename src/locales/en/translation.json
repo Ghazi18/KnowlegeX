@@ -6,7 +6,8 @@
     "services": "Services",
     "projects": "Projects",
     "blog": "Blog",
-    "join": "Join Community",
+    "join": " KX Academy",
+    "impact": "Impact",
     "lang": "العربية"
   },
 
@@ -28,6 +29,70 @@
     "subtitle": "From Knowledge to Business",
     "desc": "Our purpose is to bridge the gap between academic excellence and commercial relevance by building innovation ecosystems that empower research institutions, corporates, and emerging ventures to transform knowledge into market-ready solutions."
   },
+
+  "ourJourney": {
+    "title": "The Story of Our Journey",
+    "items": [
+      {
+        "title": "Salla Research & Innovation Center",
+        "description": "The journey began with the founding of Salla Center for Research & Innovation to connect research with real-world applications.",
+        "date": "Start",
+        "color": "bg-blue-600",
+        "logo": "/src/assets/KXogo.svg"
+      },
+      {
+        "title": "The Spark – 2021",
+        "description": "Knowledgex was founded as a spinout to build an innovation-first organization.",
+        "date": "2021",
+        "color": "bg-indigo-600",
+        "logo": "/src/assets/KXogo.svg"
+      },
+      {
+        "title": "The Birth of Knowledgex – 2023",
+        "description": "Launched Spinx & KORE",
+        "date": "2023",
+        "color": "bg-purple-600",
+        "logo": "/src/assets/KXogo.svg"
+      },
+      {
+        "title": "Spinx",
+        "description": "Analytics platform for identifying market opportunities and commercialization potential.",
+        "date": "",
+        "color": "bg-amber-600",
+        "logo": "/src/assets/KXogo.svg"
+      },
+      {
+        "title": "KORE",
+        "description": "Science-based assessment tool to evaluate founder fit and team readiness for innovation.",
+        "date": "",
+        "color": "bg-green-600",
+        "logo":"/src/assets/KXogo.svg"
+      },
+      {
+        "title": "Riciety",
+        "description": "A comprehensive platform that fosters investment in research and innovation.",
+        "date": "",
+        "color": "bg-rose-600",
+        "logo": "/src/assets/KXogo.svg"
+      },
+      {
+        "title": "Research in Action – 2022",
+        "description": "Three pioneering research projects launched, planting the seeds of innovation.",
+        "date": "2022",
+        "color": "bg-teal-600",
+        "logo": "/src/assets/KXogo.svg"
+      },
+      {
+        "title": "KoFactor Launch – 2024",
+        "description": "Launched KoFactor, a 4-month pre-accelerator that transforms research and IP into market-ready ventures.",
+        "date": "2024",
+        "color": "bg-red-600",
+        "logo": "/src/assets/KXogo.svg"
+      }
+    ]
+  },
+
+
   
   "ourTracks": {
     "title": "Our Tracks",
@@ -164,44 +229,60 @@
     "clients": "Develop early-stage prototypes ready for testing",
     "sessions": "Design innovative and scalable business models",
     "users": "Bridge the gap between innovation and commercialization",
-    "files": "Guide ideas toward market-ready products and solutions",
-    "places": "Foster collaboration across research and industry"
+    "files": "Guide ideas toward market-ready products and solutions"
   },
 
-  "projects": {
-    "title": "Ko-Factor Projects",
-    "viewMore": "View More",
-    "readMore": "Read More",
-    "items": [
-      {
-        "title": "Rasid",
-        "description": "A health intelligence system that enables real-time tracking of infection and recovery cases across Saudi Arabia using DNA-based data.",
-        "link": "/Impact/1"
-      },
-      {
-        "title": "MAX",
-        "description": "A Smart Health High-tech advocacy revolutionizing surgical procedures through advanced visualization technologies.",
-        "link": "/Impact/1"
-      },
-      {
-        "title": "Foreseen",
-        "description": "A Saudi-based technology company specializing in AI-driven solutions for e-commerce merchants.",
-        "link": "/Impact/1"
-      },
-      {
-        "title": "Ai Naseem",
-        "description": "A hybrid air conditioning system combining a mechanical vapor compression unit and an indirect evaporative cooling unit to cool and deliver supply air (SA) by separating sensible and latent heat removal",
-        "link": "/Impact/1"
-      }
-    ]
-  },
+ 
 
   "footer": {
   "connect": "Stay Connected",
   "subscribe": "Subscribe to our newsletter for latest updates",
   "cta": "Let's get in touch",
   "copyright": "Copyright © 2025 Knowledgex. All rights reserved."
+},
+
+"timeline": {
+  "title": "Journey Timeline",
+  "step1": "Program Launch",
+  "step2": "Bootcamps",
+  "step3": "Mentorship & Challenges",
+  "step4": "Project Development",
+  "step5": "Final Showcase"
+},
+
+"projects": {
+  "title": "KoFactor Projects",
+  "readMore": "Read More",
+  "rasid": {
+    "title": "Rasid",
+    "description": "A health intelligence system that enables real-time tracking of infection and recovery cases across Saudi Arabia using DNA-based data."
+  },
+  "max": {
+    "title": "MAX",
+    "description": "A Smart Health High-tech advocacy revolutionizing surgical procedures through advanced visualization technologies."
+  },
+  "foreseen": {
+    "title": "Foreseen",
+    "description": "A Saudi-based technology company specializing in AI-driven solutions for e-commerce merchants."
+  },
+  "intro": {
+    "1": {
+      "title": "Rasid – KoFactor Journey",
+      "description": "Rasid began in March 2025 as a collaboration between..."
+    },
+    "2": {
+      "title": "MAX – Transforming Surgery",
+      "description": "MAX is an advanced medical visualization solution revolutionizing how surgeries are conducted in hospitals..."
+    },
+    "3": {
+      "title": "Foreseen – AI in E-Commerce",
+      "description": "Foreseen builds smart predictive tools to help online merchants optimize inventory, marketing, and growth..."
+    }
+  }
 }
+
+
+
 
 
   

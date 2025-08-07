@@ -19,14 +19,11 @@ function App() {
       <Page>
         <Routes>
           <Route index path="/" element={<Home />} />
-          {/* <Route path="/kofactor" element={<Kofactor />} /> */}
           <Route path="/Impact">
             <Route index element={<Impact />} />
             <Route path="/Impact/:id" element={<ProjectPage />} />
           </Route>
-          {/* <Route path="/blog/:id" element={<OneBlog />} /> */}
-          {/* <Route path="/Impact" element={<Impact />} /> */}
-          {/* <Route path="/ContactUs" element={<ContactUs />} /> */}
+          
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

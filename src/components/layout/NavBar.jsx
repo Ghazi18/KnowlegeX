@@ -44,7 +44,7 @@ export default function NavBar() {
               {t("navbar.blog")}
             </a>
             <a className="text-black hover:text-gray-500/75" href="/Impact">
-              Impact
+              {t("navbar.impact")}
             </a>
           </nav>
 
