@@ -1,11 +1,10 @@
 {
   "navbar": {
-    "about": "About",
-    "careers": "Careers",
-    "history": "History",
-    "services": "Services",
-    "projects": "Projects",
-    "blog": "Blog",
+    "home": "Home",
+    "why": "Why KnowledgeX",
+    "journey": "Journey",
+    "programs": "Programs",
+    "products": "Products",
     "join": " KX Academy",
     "impact": "Impact",
     "lang": "العربية"
@@ -235,10 +234,10 @@
  
 
   "footer": {
-  "connect": "Stay Connected",
-  "subscribe": "Subscribe to our newsletter for latest updates",
+  "connect": "Work with us",
+  "subscribe": "So, if you are industry innovator or a corporate innovation leader passionate about R&I projects.",
   "cta": "Let's get in touch",
-  "copyright": "Copyright © 2025 Knowledgex. All rights reserved."
+  "copyright": "Copyright © 2025 Knowledgex All rights reserved."
 },
 
 "timeline": {

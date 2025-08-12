@@ -17,7 +17,8 @@ export default function NavBar() {
   return (
     <>
       <header className="bg-white shadow">
-        <div className="mx-auto flex h-16 max-w-8xl items-center justify-between px-4 sm:px-6 lg:px-16">
+
+        <div dir={i18n.language === "ar" ? "rtl" : "ltr"} className="mx-auto max-w-[2000px]  flex h-16  items-center justify-between px-4 sm:px-6 lg:px-16 overflow-x-hidden">
           {/* Logo */}
           <a className="block text-teal-600" href="/">
             <img src="/src/assets/KXogo.svg" alt="Logo" className="h-12" />
@@ -25,24 +26,22 @@ export default function NavBar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-12 text-sm font-medium">
-            <a className="text-black hover:text-gray-500/75" href="#">
-              {t("navbar.about")}
+            <a className="text-black hover:text-gray-500/75" href="/">
+              {t("navbar.home")}
             </a>
-            <a className="text-black hover:text-gray-500/75" href="#">
-              {t("navbar.careers")}
+            <a className="text-black hover:text-gray-500/75" href="#why">
+              {t("navbar.why")}
             </a>
-            <a className="text-black hover:text-gray-500/75" href="#">
-              {t("navbar.history")}
+            <a className="text-black hover:text-gray-500/75" href="#journey">
+              {t("navbar.journey")}
             </a>
-            <a className="text-black hover:text-gray-500/75" href="#">
-              {t("navbar.services")}
+            <a className="text-black hover:text-gray-500/75" href="#programs">
+              {t("navbar.programs")}
             </a>
-            <a className="text-black hover:text-gray-500/75" href="#">
-              {t("navbar.projects")}
+            <a className="text-black hover:text-gray-500/75" href="#products">
+              {t("navbar.products")}
             </a>
-            <a className="text-black hover:text-gray-500/75" href="#">
-              {t("navbar.blog")}
-            </a>
+           
             <a className="text-black hover:text-gray-500/75" href="/Impact">
               {t("navbar.impact")}
             </a>
@@ -116,7 +115,7 @@ export default function NavBar() {
                   setIsModalOpen(true);
                   setIsMenuOpen(false);
                 }}
-                className="mt-auto bg-[#EA8316] text-white px-5 py-2.5 text-sm rounded-md"
+                className="mt-auto bg-[#EA8316] hover:bg-orange-400 transition text-white px-5 py-2.5 text-sm rounded-md"
               >
                 {t("navbar.join")}
               </button>

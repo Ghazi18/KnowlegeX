@@ -6,7 +6,7 @@ export default function ImpactBanner() {
 
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat min-h-[60vh] flex items-center mb-4"
+      className="relative bg-cover bg-center bg-no-repeat min-h-[60vh] flex items-center mb-4 overflow-hidden"
       style={{
         backgroundImage: "url('src/assets/heroKF.png')",
       }}
@@ -34,7 +34,7 @@ export default function ImpactBanner() {
           <div className="mt-6">
             <a
               href="#"
-              className="inline-block rounded bg-[#EA8316] px-6 py-3 text-sm font-medium text-white shadow-md hover:bg-orange-500 transition"
+              className="inline-block rounded bg-[#EA8316] px-6 py-3 text-sm font-medium text-white shadow-md hover:bg-orange-400 transition"
             >
               {t("impactBanner.cta", "Get Started")}
             </a>

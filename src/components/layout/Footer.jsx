@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#071C2F] text-white" dir={isRTL ? "rtl" : "ltr"}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-10 md:px-16">
+      <div className="w-full mx-auto px-4 sm:px-10 md:px-16">
         {/* القسم الأول */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 py-8">
           <div className="flex items-center gap-4">
@@ -27,9 +27,13 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <button className="bg-[#EA8316] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition">
-            {t("footer.cta")}
-          </button>
+          <a
+  href="mailto:Info@knowledgex.sa"
+  className="bg-[#EA8316] text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition inline-block"
+>
+  {t("footer.cta")}
+</a>
+
         </div>
 
         <hr className="border-gray-500 border-opacity-20" />
@@ -42,10 +46,11 @@ export default function Footer() {
               <FaEnvelope className="text-lg" />
               <span>knowledgex@gmail.com</span>
             </div>
-            <div className="flex items-center gap-2">
-              <FaPhone className="text-lg" />
-              <span>+966 550859798</span>
-            </div>
+           <div className="flex items-center gap-2">
+  <FaPhone className="text-lg" />
+  <span dir="ltr" >+966 550859798</span>
+</div>
+
           </div>
         </div>
 

@@ -19,7 +19,7 @@ export default function OurTracks() {
 
   return (
     <section
-      className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900"
+      className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900 overflow-hidden"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
@@ -55,7 +55,7 @@ export default function OurTracks() {
               </div>
 
               {/* البطاقات */}
-              <div className="flex flex-col md:flex-row justify-between gap-4 md:mt-16 w-full z-10">
+              <div className="flex flex-col md:flex-row justify-between gap-4 md:mt-16 w-full z-10  ">
                 {trackKeys.map((track, i) => {
                   const trackTitle = t(`ourTracks.${cat.key}.${track}.title`);
                   const items = t(`ourTracks.${cat.key}.${track}.items`, {
@@ -65,16 +65,12 @@ export default function OurTracks() {
                   return (
                     <div
                       key={i}
-                      className="bg-[#EA8316] text-white rounded-lg p-6 flex-1 min-w-[200px] h-full"
+                      className="bg-[#EA8316] text-white rounded-lg p-6 flex-1 min-w-[200px] h-48  "
                     >
-                      <h3 className="font-bold text-lg mb-4 text-center">
+                      <h3 className="font-bold text-lg mb-4 text-center ">
                         {trackTitle}
                       </h3>
-                      {/* <ul className="text-sm list-disc list-inside leading-relaxed space-y-1">
-                        {items.map((item, idx) => (
-                          <li key={idx}>{item}</li>
-                        ))}
-                      </ul> */}
+                   
                     </div>
                   );
                 })}

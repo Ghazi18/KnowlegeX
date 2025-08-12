@@ -7,11 +7,12 @@ export default function OurWhy() {
 
   return (
     <section
-      className="relative bg-[#071C2F] py-12 lg:py-20 dark:bg-gray-900 overflow-hidden"
-      dir={isRTL ? "rtl" : "ltr"} // ضبط اتجاه القسم بالكامل
+      className="relative py-12 lg:py-20  overflow-hidden"
+      id="why"
+      dir={isRTL ? "ltr" : "rtl"} // ضبط اتجاه القسم بالكامل
     >
       <div
-        className={`w-full max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-4 px-4 sm:px-6 lg:px-8 relative z-10 ${
+        className={`w-full  mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-72 px-4 sm:px-6 lg:px-8 relative z-10 ${
           isRTL ? "md:flex-row-reverse" : ""
         }`}
       >
@@ -32,14 +33,14 @@ export default function OurWhy() {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden md:flex flex-col justify-center z-10">
+        <div className="hidden md:flex flex-col justify-center w z-10">
           <img
             src={riyalSvg}
             alt="Our Why"
             className={`max-w-sm ${isRTL ? "ml-auto" : "mr-auto"}`}
           />
           <h2
-            className={`text-4xl mt-6 font-semibold text-white text-center ${
+            className={`text-4xl mt-6 font-semibold text-gray-900 text-center  ${
               isRTL ? "md:text-right" : "md:text-left"
             }`}
           >
@@ -51,8 +52,8 @@ export default function OurWhy() {
       {/* White Side Card (Desktop Only) */}
       <div
         className={`hidden md:block absolute top-10 ${
-          isRTL ? "left-0 rounded-r-2xl" : "right-0 rounded-l-2xl"
-        } h-4/5 w-[40vw] bg-white dark:bg-gray-800 p-10 shadow-lg z-0 flex flex-col justify-center`}
+          isRTL ? "right-0 rounded-l-2xl text-right" : "left-0 rounded-r-2xl  text-left"
+        } h-4/5 w-[40vw] max-w-[50vw] bg-white dark:bg-gray-800 p-10 shadow-lg z-0 flex flex-col justify-center`}
       >
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
           {t("ourWhy.title")}

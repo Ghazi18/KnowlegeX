@@ -8,28 +8,29 @@ export default function OurJourney({ milestones, customTitle }) {
 
   return (
 <section
-  className="relative py-20 px-6 sm:px-12 md:px-20 lg:px-32"
-  style={{
-    background: "#000000",
-    "--gap": "5em",
-    "--line": "1px",
-    "--color": "rgba(255, 255, 255, 0.2)",
-    backgroundImage: `
-      linear-gradient(
-        -90deg,
-        transparent calc(var(--gap) - var(--line)),
-        var(--color) calc(var(--gap) - var(--line) + 1px),
-        var(--color) var(--gap)
-      ),
-      linear-gradient(
-        0deg,
-        transparent calc(var(--gap) - var(--line)),
-        var(--color) calc(var(--gap) - var(--line) + 1px),
-        var(--color) var(--gap)
-      )
-    `,
-    backgroundSize: "var(--gap) var(--gap)",
-  }}
+id="journey"
+  className="relative py-20 px-6 sm:px-12 md:px-20 lg:px-32 bg-[#071C2F] overflow-hidden"
+  // style={{
+  //   background: "#000000",
+  //   "--gap": "5em",
+  //   "--line": "1px",
+  //   "--color": "rgba(255, 255, 255, 0.2)",
+  //   backgroundImage: `
+  //     linear-gradient(
+  //       -90deg,
+  //       transparent calc(var(--gap) - var(--line)),
+  //       var(--color) calc(var(--gap) - var(--line) + 1px),
+  //       var(--color) var(--gap)
+  //     ),
+  //     linear-gradient(
+  //       0deg,
+  //       transparent calc(var(--gap) - var(--line)),
+  //       var(--color) calc(var(--gap) - var(--line) + 1px),
+  //       var(--color) var(--gap)
+  //     )
+  //   `,
+  //   backgroundSize: "var(--gap) var(--gap)",
+  // }}
 >
 
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-white ">

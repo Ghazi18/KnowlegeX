@@ -6,7 +6,7 @@ export default function InvestmentPortfolio() {
     const isRTL = i18n.language === "ar";
   
   return (
-    <section className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900">
+    <section className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900 overflow-hidden">
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white">
         {t("InvestmentPortfolio.title")}
         <br />

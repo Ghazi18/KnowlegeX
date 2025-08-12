@@ -41,7 +41,7 @@ export default function ProjectCards() {
         </h2>
         <a
           href="#"
-          className="text-sm font-medium text-black shadow-md hover:bg-orange-500 transition px-5 py-2 rounded"
+          className="text-sm font-medium text-black shadow-md hover:bg-orange-400 hover:text-white transition px-5 py-2 rounded"
         >
           {t("projects.viewMore")}
         </a>
@@ -71,7 +71,7 @@ export default function ProjectCards() {
                 {project.description}
               </p>
 
-              <span className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-white bg-[#EA8316] p-2 rounded-md hover:bg-orange-500 transition">
+              <span className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-white bg-[#EA8316] p-2 rounded-md hover:bg-orange-400  transition">
                 {t("projects.readMore")}
                 <span
                   aria-hidden="true"

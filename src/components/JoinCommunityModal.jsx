@@ -7,7 +7,7 @@ export default function JoinCommunityModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4 overflow-hidden">
       <div
         dir={isRTL ? "rtl" : "ltr"}
         className="bg-white dark:bg-gray-900 rounded-xl shadow-lg w-full max-w-lg p-6 relative"
@@ -44,7 +44,7 @@ export default function JoinCommunityModal({ isOpen, onClose }) {
           ></textarea>
           <button
             type="submit"
-            className="w-full bg-[#EA8316] text-white py-2 rounded-md hover:bg-orange-500 transition"
+            className="w-full bg-[#EA8316] text-white py-2 rounded-md hover:bg-orange-400 transition"
           >
             {t("joinCommunity.submit")}
           </button>

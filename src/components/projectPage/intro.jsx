@@ -7,7 +7,7 @@ export default function Intro({ title, description, image }) {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="relative py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden px-4 sm:px-10 md:px-16"
+      className="relative py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden px-4 sm:px-10 md:px-16 overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-full h-[70%] bg-[#071C2F] z-0" />
 

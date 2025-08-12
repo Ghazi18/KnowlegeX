@@ -7,7 +7,7 @@ export default function Banner() {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="relative bg-gray-100 bg-cover bg-center dark:bg-gray-900 px-4 sm:px-10 md:px-16"
+      className="relative bg-gray-100 bg-cover bg-center dark:bg-gray-900 px-4 sm:px-10 md:px-16 overflow-hidden"
       style={{ backgroundImage: "url('/src/assets/bgBanner.png')" }}
     >
       {/* طبقة تغطية شفافة */}
@@ -27,7 +27,7 @@ export default function Banner() {
           <div className="mt-6 flex justify-center gap-4">
             <a
               href="#"
-              className="inline-block rounded border border-[#EA8316] bg-[#EA8316] px-6 py-3 font-medium text-white hover:bg-orange-600 transition"
+              className="inline-block rounded border border-[#EA8316] bg-[#EA8316] px-6 py-3 font-medium text-white hover:bg-orange-400 transition"
             >
               {t("banner.cta")}
             </a>

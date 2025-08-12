@@ -31,8 +31,8 @@ export default function StrategicPartnerships() {
       <div className="overflow-hidden">
         <Marquee
           gradient={false}
-          speed={40}
-          pauseOnHover={true}
+          speed={60}
+          pauseOnHover={false}
           className="flex items-center"
           direction={isRTL ? "right" : "left"}
         >

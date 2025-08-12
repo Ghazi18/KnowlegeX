@@ -21,7 +21,7 @@ export default function ProgressCircles() {
 
   return (
     <section
-      className="py-16 bg-white dark:bg-gray-900 px-4 sm:px-10 md:px-16"
+      className="py-16 bg-white dark:bg-gray-900 px-4 sm:px-10 md:px-16 overflow-hidden"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <div className="max-w-8xl mx-auto">

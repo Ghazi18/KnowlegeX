@@ -56,7 +56,7 @@ console.log("🔍 milestones:", milestones);
   if (!project) return <div className="text-center py-20">المشروع غير موجود</div>;
 
   return (
-    <main className="min-h-screen max-w-[2000px] dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden">
+    <main className="min-h-screen max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
       <FadeInWrapper>
         <Intro {...project} />
       </FadeInWrapper>

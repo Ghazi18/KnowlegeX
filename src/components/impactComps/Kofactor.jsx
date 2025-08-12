@@ -43,7 +43,7 @@ export default function Kofactor() {
           <div className="mt-6 md:mt-8">
             <a
               href="#"
-              className="inline-block rounded bg-[#EA8316] px-8 py-3 text-sm font-medium text-white transition hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="inline-block rounded bg-[#EA8316] px-8 py-3 text-sm font-medium text-white transition hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
             >
               {t("kofactor.cta", "Get Started Today")}
             </a>
