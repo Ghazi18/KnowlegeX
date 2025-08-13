@@ -7,11 +7,11 @@ export default function GradientSection() {
 
   const desc = t("gradientSection.desc");
   const words = typeof desc === "string" ? desc.split(" ") : [];
-  const hasSecondWord = words.length >= 2;
+  const hasTargetWord = words.length >= 2;
 
   return (
     <section
-      className="w-full mt-24 py-16 bg-gradient-to-r bg-[#071C2F] text-white text-center px-4 overflow-hidden"
+      className="w-full mt-24 py-16 bg-gradient-to-r from-[#071C2F] to-[#165995] text-white text-center px-4 overflow-hidden"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <div className="max-w-3xl mx-auto">
@@ -20,11 +20,12 @@ export default function GradientSection() {
         </h2>
 
         <p className="text-lg sm:text-xl leading-relaxed">
-          {hasSecondWord ? (
-            // إعادة تركيب الجملة مع التأثير على الكلمة الثانية فقط
+          {hasTargetWord ? (
             <>
               {words.map((w, i) => {
-                const isTarget = i === 1; // الكلمة الثانية
+                // العربية: الكلمة الثانية، الإنجليزية: الكلمة الأولى
+                const isTarget = isRTL ? i === 1 : i === 0;
+
                 if (isTarget) {
                   return (
                     <span key={i} className="relative inline-block">
@@ -44,12 +45,11 @@ export default function GradientSection() {
                           strokeWidth="3"
                         />
                       </svg>
-                      {/* مسافة بعد الكلمة */}
-                      {" .."}
+                      {" "}
                     </span>
                   );
                 }
-                // بقية الكلمات عادية
+
                 return (
                   <span key={i}>
                     {w}

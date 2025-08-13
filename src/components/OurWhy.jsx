@@ -7,7 +7,7 @@ export default function OurWhy() {
 
   return (
     <section
-      className="relative py-12 lg:py-20  overflow-hidden"
+      className="relative py-12 lg:py-20  overflow-hidden bg-gradient-to-r from-[#071C2F] to-[#165995]"
       id="why"
       dir={isRTL ? "ltr" : "rtl"} // ضبط اتجاه القسم بالكامل
     >
@@ -40,7 +40,7 @@ export default function OurWhy() {
             className={`max-w-sm ${isRTL ? "ml-auto" : "mr-auto"}`}
           />
           <h2
-            className={`text-4xl mt-6 font-semibold text-gray-900 text-center  ${
+            className={`text-4xl mt-6 font-semibold text-white  text-center  ${
               isRTL ? "md:text-right" : "md:text-left"
             }`}
           >

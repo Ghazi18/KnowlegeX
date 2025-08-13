@@ -1,83 +1,91 @@
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 
+// نفس تنسيق Steps تمامًا، لكن متوافق مع وضعك الحالي:
+// - مصدر البيانات: milestones (بدلاً من steps)
+// - ألوان داكنة وخلفية #071C2F ونص أبيض
+// - الدائرة الرمادية تحتوي صورة أصغر (logo)
+// - الشارة تعرض التاريخ أو t("step") بدل item.id
+// - يدعم RTL/LTR ويستخدم نفس الهيكل/الكلاسات من Steps
 
-export default function OurJourney({ milestones, customTitle }) {
-  const { i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
+export default function OurJourney({ milestones = [], customTitle }) {
+  const { i18n, t } = useTranslation();
+  const isArabic = i18n.language === "ar";
+  const direction = isArabic ? "rtl" : "ltr";
 
   return (
-<section
-id="journey"
-  className="relative py-20 px-6 sm:px-12 md:px-20 lg:px-32 bg-[#071C2F] overflow-hidden"
-  // style={{
-  //   background: "#000000",
-  //   "--gap": "5em",
-  //   "--line": "1px",
-  //   "--color": "rgba(255, 255, 255, 0.2)",
-  //   backgroundImage: `
-  //     linear-gradient(
-  //       -90deg,
-  //       transparent calc(var(--gap) - var(--line)),
-  //       var(--color) calc(var(--gap) - var(--line) + 1px),
-  //       var(--color) var(--gap)
-  //     ),
-  //     linear-gradient(
-  //       0deg,
-  //       transparent calc(var(--gap) - var(--line)),
-  //       var(--color) calc(var(--gap) - var(--line) + 1px),
-  //       var(--color) var(--gap)
-  //     )
-  //   `,
-  //   backgroundSize: "var(--gap) var(--gap)",
-  // }}
->
-
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-white ">
+    <section
+      dir={direction}
+      id="journey"
+      className={`body-font mb-10  ${isArabic ? "font-plex-arabic" : ""} relative py-20 px-6 sm:px-12 md:px-20 lg:px-32  overflow-hidden`}
+    >
+      {/* العنوان والوصف بنفس تنسيق Steps لكن بألوان مناسبة للخلفية الداكنة */}
+      <div className="flex flex-col text-center w-full mb-10">
+          <h1 className="sm:text-4xl text-3xl font-bold title-font text-black ">
         {customTitle || (i18n.language === "ar" ? "قصة رحلتنا" : "The Story of Our Journey")}
-      </h2>
+          </h1>
+          {/* <p className="lg:w-2/3 max-w-xl mx-auto leading-relaxed text-base text-gray-200 px-2">
+            {t("steps_apply_description")}
+          </p> */}
+      </div>
 
-      <div className="relative max-w-5xl mx-auto">
-        <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-300 dark:bg-gray-600 transform -translate-x-1/2 z-0"></div>
-
-        <div className="flex flex-col gap-32 z-10 relative">
-          {milestones.map((item, idx) => (
-            <div
-              key={idx}
-              className="relative flex flex-col items-center justify-center w-full"
-            >
-              <div className="absolute left-1/2 transform -translate-x-1/2 -top-4 z-20">
-                <div className={`w-8 h-8 rounded-full border-4 ${item.color} border-solid bg-white dark:bg-gray-900`} />
+      {/* الجسم بنفس هيكل Steps */}
+      <div className="container px-5 mx-auto flex flex-col">
+        {milestones.map((item, index) => (
+            <div key={index} className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+              {/* عمود مركزي يحتضن الخط */}
+              <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
+                <div className="h-full w-1 bg-gray-200/40 pointer-events-none"></div>
               </div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="w-full md:w-2/3 lg:w-1/2 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center"
+              {/* شارة التاريخ بدل رقم الخطوة (مع نفس فكرة العنصر في Steps) */}
+              <div
+                style={{ background: "#EA8316" }}
+                className="flex-shrink-0 h-8 px-4 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center text-white relative z-10 title-font font-medium text-sm whitespace-nowrap"
               >
-                <div className="flex flex-col gap-2 items-center">
-                  <span className={`text-sm font-bold ${item.color} text-white px-3 py-1 rounded-full`}>
-                    {item.date}
-                  </span>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
-                    {item.description}
-                  </p>
-                  {item.logo && (
-                    <img
-                      src={item.logo}
-                      alt="logo"
-                      className="w-16 h-16 mt-4 object-contain"
-                    />
+                {item?.date || t("step")}
+              </div>
+
+              {/* صف المحتوى بنفس محاذاة Steps مع مراعاة RTL */}
+              <div
+                className={`flex-grow flex sm:items-center items-start flex-col sm:flex-row ${
+                  isArabic ? "md:pr-8 pr-6" : "md:pl-8 pl-6"
+                }`}
+              >
+                {/* الدائرة الرمادية مع صورة أصغر بداخلها */}
+                <div
+                  className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-full inline-flex items-center justify-center overflow-hidden"
+                  style={{ color: "#801800" }}
+                >
+                  {item?.logo ? (
+                    <img src={item.logo} alt="logo" className="w-16 h-16 object-contain" />
+                  ) : (
+                    // احتياطيًا لو مافي أيقونة/صورة
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      className="w-12 h-12"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d={item?.icon || "M12 5v14M5 12h14"}></path>
+                    </svg>
                   )}
                 </div>
-              </motion.div>
+
+                {/* النصوص */}
+                <div className={`flex-grow ${isArabic ? "sm:pr-6" : "sm:pl-6"} mt-6 sm:mt-0`}>
+                  <h2 className="font-medium title-font text-black mb-1 text-xl">
+                    {item?.titleKey ? t(item.titleKey) : item?.title}
+                  </h2>
+                  <p className="leading-relaxed text-gray-600">
+                    {item?.descriptionKey ? t(item.descriptionKey) : item?.description}
+                  </p>
+                </div>
+              </div>
             </div>
-          ))}
-        </div>
+        ))}
       </div>
     </section>
   );

@@ -7,8 +7,8 @@ export default function Banner() {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="relative bg-gray-100 bg-cover bg-center dark:bg-gray-900 px-4 sm:px-10 md:px-16 overflow-hidden"
-      style={{ backgroundImage: "url('/src/assets/bgBanner.png')" }}
+      className="relative bg-gradient-to-r from-[#071C2F] to-[#165995] dark:bg-gray-900 px-4 sm:px-10 md:px-16 overflow-hidden"
+      // style={{ backgroundImage: "url('/src/assets/bgBanner.png')" }}
     >
       {/* طبقة تغطية شفافة */}
       <div className="absolute inset-0 bg-black/30 dark:bg-black/50 z-0" />
