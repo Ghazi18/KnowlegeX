@@ -1,43 +1,69 @@
 import { useTranslation } from "react-i18next";
 
-// نفس تنسيق Steps تمامًا، لكن متوافق مع وضعك الحالي:
-// - مصدر البيانات: milestones (بدلاً من steps)
-// - ألوان داكنة وخلفية #071C2F ونص أبيض
-// - الدائرة الرمادية تحتوي صورة أصغر (logo)
-// - الشارة تعرض التاريخ أو t("step") بدل item.id
-// - يدعم RTL/LTR ويستخدم نفس الهيكل/الكلاسات من Steps
-
-export default function OurJourney({ milestones = [], customTitle }) {
+export default function OurJourney({
+  milestones = [],
+  customTitle,
+  sideImage: sideImageProp,
+  sideImageAlt: sideImageAltProp,
+}) {
   const { i18n, t } = useTranslation();
   const isArabic = i18n.language === "ar";
   const direction = isArabic ? "rtl" : "ltr";
+
+  // قراءة الداتا من الترجمة (مع fallback لـ props)
+  const journey = t("ourJourney", { returnObjects: true }) || {};
+  const items =
+    (Array.isArray(milestones) && milestones.length ? milestones : journey.items) || [];
+
+  // رابط الصورة الجانبية:
+  const fallbackTestImage =
+    "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png";
+  const sideImage = sideImageProp || journey.sideImage || fallbackTestImage;
+  const sideImageAlt =
+    sideImageAltProp || journey.sideImageAlt || (isArabic ? "صورة الرحلة" : "Journey image");
 
   return (
     <section
       dir={direction}
       id="journey"
-      className={`body-font mb-10  ${isArabic ? "font-plex-arabic" : ""} relative py-20 px-6 sm:px-12 md:px-20 lg:px-32  overflow-hidden`}
+      className={`body-font mb-10 ${isArabic ? "font-plex-arabic" : ""} relative py-20 px-4 sm:px-10 md:px-16 overflow-hidden`}
     >
-      {/* العنوان والوصف بنفس تنسيق Steps لكن بألوان مناسبة للخلفية الداكنة */}
+      {/* العنوان */}
       <div className="flex flex-col text-center w-full mb-10">
-          <h1 className="sm:text-4xl text-3xl font-bold title-font text-black ">
-        {customTitle || (i18n.language === "ar" ? "قصة رحلتنا" : "The Story of Our Journey")}
-          </h1>
-          {/* <p className="lg:w-2/3 max-w-xl mx-auto leading-relaxed text-base text-gray-200 px-2">
-            {t("steps_apply_description")}
-          </p> */}
+        <h1 className="sm:text-4xl text-3xl font-bold title-font text-black">
+          {customTitle ||
+            journey.title ||
+            (isArabic ? "قصة رحلتنا" : "The Story of Our Journey")}
+        </h1>
       </div>
 
-      {/* الجسم بنفس هيكل Steps */}
-      <div className="container px-5 mx-auto flex flex-col">
-        {milestones.map((item, index) => (
-            <div key={index} className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+      {/* عمودان: الشكل + الصورة */}
+      <div
+        className={`w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch
+        lg:flex ${isArabic ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+      >
+        {/* عمود الصورة */}
+        <div className={`${isArabic ? "lg:order-1" : "lg:order-2"} relative rounded-2xl overflow-hidden w-full lg:w-1/2`}>
+          <img
+            src={sideImage}
+            alt={sideImageAlt}
+            className="w-full h-full min-h-[300px] object-cover"
+          />
+        </div>
+
+        {/* عمود التايملاين (نفس تنسيق Steps) */}
+        <div className={`${isArabic ? "lg:order-2" : "lg:order-1"} container mx-auto flex flex-col w-full lg:w-1/2`}>
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="flex relative pt-10 pb-20 sm:items-center w-full mx-auto"
+            >
               {/* عمود مركزي يحتضن الخط */}
-              <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
+              <div className="h-full w-6 absolute inset-5 flex items-center justify-center">
                 <div className="h-full w-1 bg-gray-200/40 pointer-events-none"></div>
               </div>
 
-              {/* شارة التاريخ بدل رقم الخطوة (مع نفس فكرة العنصر في Steps) */}
+              {/* شارة التاريخ */}
               <div
                 style={{ background: "#EA8316" }}
                 className="flex-shrink-0 h-8 px-4 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center text-white relative z-10 title-font font-medium text-sm whitespace-nowrap"
@@ -45,7 +71,7 @@ export default function OurJourney({ milestones = [], customTitle }) {
                 {item?.date || t("step")}
               </div>
 
-              {/* صف المحتوى بنفس محاذاة Steps مع مراعاة RTL */}
+              {/* المحتوى مع مراعاة RTL/LTR */}
               <div
                 className={`flex-grow flex sm:items-center items-start flex-col sm:flex-row ${
                   isArabic ? "md:pr-8 pr-6" : "md:pl-8 pl-6"
@@ -57,9 +83,12 @@ export default function OurJourney({ milestones = [], customTitle }) {
                   style={{ color: "#801800" }}
                 >
                   {item?.logo ? (
-                    <img src={item.logo} alt="logo" className="w-16 h-16 object-contain" />
-                  ) : (
-                    // احتياطيًا لو مافي أيقونة/صورة
+                    <img
+                      src={item.logo}
+                      alt="logo"
+                      className="w-16 h-16 object-contain"
+                    />
+                  ) : item?.icon ? (
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -69,13 +98,15 @@ export default function OurJourney({ milestones = [], customTitle }) {
                       className="w-12 h-12"
                       viewBox="0 0 24 24"
                     >
-                      <path d={item?.icon || "M12 5v14M5 12h14"}></path>
+                      <path d={item.icon}></path>
                     </svg>
-                  )}
+                  ) : null}
                 </div>
 
                 {/* النصوص */}
-                <div className={`flex-grow ${isArabic ? "sm:pr-6" : "sm:pl-6"} mt-6 sm:mt-0`}>
+                <div
+                  className={`flex-grow ${isArabic ? "sm:pr-6" : "sm:pl-6"} mt-6 sm:mt-0`}
+                >
                   <h2 className="font-medium title-font text-black mb-1 text-xl">
                     {item?.titleKey ? t(item.titleKey) : item?.title}
                   </h2>
@@ -85,7 +116,8 @@ export default function OurJourney({ milestones = [], customTitle }) {
                 </div>
               </div>
             </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

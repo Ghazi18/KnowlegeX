@@ -31,6 +31,7 @@
 
   "ourJourney": {
     "title": "The Story of Our Journey",
+    "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
     "items": [
       {
         "title": "Salla Research & Innovation Center",
@@ -249,42 +250,108 @@
   "step5": "Final Showcase"
 },
 
-"projects": {
-  "title": "KoFactor Projects",
-  "readMore": "Read More",
-  "rasid": {
-    "title": "Rasid",
-    "description": "A health intelligence system that enables real-time tracking of infection and recovery cases across Saudi Arabia using DNA-based data."
-  },
-  "max": {
-    "title": "MAX",
-    "description": "A Smart Health High-tech advocacy revolutionizing surgical procedures through advanced visualization technologies."
-  },
-  "foreseen": {
-    "title": "Foreseen",
-    "description": "A Saudi-based technology company specializing in AI-driven solutions for e-commerce merchants."
-  },
-  "intro": {
-    "1": {
-      "title": "Rasid – KoFactor Journey",
-      "description": "Rasid began in March 2025 as a collaboration between..."
+  "projects": {
+    "title": "KoFactor Projects",
+    "readMore": "Read More",
+    "rasid": {
+      "title": "Rasid",
+      "description": "A health intelligence system that enables real-time tracking of infection and recovery cases across Saudi Arabia using DNA-based data."
     },
-    "2": {
-      "title": "MAX – Transforming Surgery",
-      "description": "MAX is an advanced medical visualization solution revolutionizing how surgeries are conducted in hospitals..."
+    "max": {
+      "title": "MAX",
+      "description": "A Smart Health High-tech advocacy revolutionizing surgical procedures through advanced visualization technologies."
     },
-    "3": {
-      "title": "Foreseen – AI in E-Commerce",
-      "description": "Foreseen builds smart predictive tools to help online merchants optimize inventory, marketing, and growth..."
+    "foreseen": {
+      "title": "Foreseen",
+      "description": "A Saudi-based technology company specializing in AI-driven solutions for e-commerce merchants."
+    },
+
+    "intro": {
+      "1": {
+        "title": "Rasid – KoFactor Journey",
+        "description": "Rasid began in March 2025 as a collaboration between..."
+      },
+      "2": {
+        "title": "MAX – Transforming Surgery",
+        "description": "MAX is an advanced medical visualization solution revolutionizing how surgeries are conducted in hospitals..."
+      },
+      "3": {
+        "title": "Foreseen – AI in E-Commerce",
+        "description": "Foreseen builds smart predictive tools to help online merchants optimize inventory, marketing, and growth..."
+      }
+    },
+
+    "journey": {
+      "1": {
+        "title": "Rasid Journey",
+        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImageAlt": "Rasid journey image",
+        "items": [
+          {
+            "title": "Formed Dual Team",
+            "description": "Formed a dual team (research & technical); began brainstorming the core problem and possible solutions.",
+            "date": "March 2025",
+            "color": "bg-blue-600",
+            "logo": "/src/assets/KXogo.svg"
+          },
+          {
+            "title": "Joined KoFactor",
+            "description": "Joined KoFactor and started requirement extraction, competitor analysis, and user journey mapping.",
+            "date": "April 2025",
+            "color": "bg-indigo-600",
+            "logo": "/src/assets/KXogo.svg"
+          },
+          {
+            "title": "Early UI/UX",
+            "description": "Designed early UI/UX based on Saudi platform standards; explored MVP strategies.",
+            "date": "May 2025",
+            "color": "bg-purple-600",
+            "logo": "/src/assets/KXogo.svg"
+          },
+          {
+            "title": "MVP Build",
+            "description": "Built the MVP backend using FastAPI and MongoDB; frontend in HTML/CSS/JS.",
+            "date": "June 2025",
+            "color": "bg-amber-600",
+            "logo": "/src/assets/KXogo.svg"
+          },
+          {
+            "title": "User Testing",
+            "description": "Conducted user testing, integrated disease heatmap and real-time case tracking; received mentorship feedback.",
+            "date": "July 2025",
+            "color": "bg-teal-600",
+            "logo": "/src/assets/KXogo.svg"
+          },
+          {
+            "title": "Go-to-Market Prep",
+            "description": "Preparing for partnerships and refining go-to-market strategy for a national launch.",
+            "date": "August 2025",
+            "color": "bg-red-600",
+            "logo": "/src/assets/KXogo.svg"
+          }
+        ]
+      },
+      "2": {
+        "title": "MAX Journey (Placeholder)",
+        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImageAlt": "MAX journey image",
+        "items": [
+          { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/src/assets/KXogo.svg" },
+          { "title": "Prototype", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-amber-600", "logo": "/src/assets/KXogo.svg" },
+          { "title": "Pilot", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-teal-600", "logo": "/src/assets/KXogo.svg" }
+        ]
+      },
+      "3": {
+        "title": "Foreseen Journey (Placeholder)",
+        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImageAlt": "Foreseen journey image",
+        "items": [
+          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/src/assets/KXogo.svg" },
+          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/src/assets/KXogo.svg" },
+          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/src/assets/KXogo.svg" }
+        ]
+      }
     }
   }
 }
 
-
-
-
-
-  
-
-
-}

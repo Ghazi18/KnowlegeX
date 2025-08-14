@@ -8,7 +8,6 @@ import OurJourney from "../components/OurJourney";
 import OurTracks from "../components/OurTracks";
 import OurValue from "../components/OurValues";
 import OurWhy from "../components/OurWhy";
-import ParticleRing from "../components/ParticleRing";
 import StrategicPartnerships from "../components/StrategicPartnerships";
 import ThreeBoxesWithImages from "../components/ThreeBoxesWithImages";
 import { useTranslation } from "react-i18next";

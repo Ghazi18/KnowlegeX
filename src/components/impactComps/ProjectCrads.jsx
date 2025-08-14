@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom"; // 👈 ضروري
+import { Link } from "react-router-dom";
 
 export default function ProjectCards() {
   const { t, i18n } = useTranslation();
@@ -11,14 +11,14 @@ export default function ProjectCards() {
       title: t("projects.rasid.title"),
       description: t("projects.rasid.description"),
       link: "/impact/1",
-      image: "src/assets/whatKF.png", // أو مسار الصورة في assets
+      image: "src/assets/whatKF.png",
     },
     {
       id: 2,
       title: t("projects.max.title"),
       description: t("projects.max.description"),
       link: "/impact/2",
-      image: "src/assets/whatKF.png",
+      image: "src/assets/forseen.jpg",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export default function ProjectCards() {
     },
   ];
 
-   return (
+  return (
     <section
       className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900"
       dir={isRTL ? "rtl" : "ltr"}
@@ -49,20 +49,21 @@ export default function ProjectCards() {
 
       {/* البطاقات */}
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-8xl mx-auto">
-        {projectData.map((project, index) => (
+        {projectData.map((project) => (
           <Link
-            key={index}
+            key={project.id}
             to={`/impact/${project.id}`}
-            className="overflow-hidden rounded-lg border border-gray-100 bg-white dark:bg-gray-800 shadow hover:shadow-lg transition"
+            className="relative overflow-hidden rounded-lg border border-gray-100 bg-white dark:bg-gray-800 shadow hover:shadow-lg transition min-h-[480px] md:min-h-[500px]"
           >
             <img
               alt={project.title}
               src={project.image}
-              className="h-56 w-full object-cover"
+              className="h-64 sm:h-72 w-full object-cover"
               loading="lazy"
             />
 
-            <div className="p-4 sm:p-6">
+            {/* محتوى البطاقة + مساحة سفلية للزر */}
+            <div className="p-4 sm:p-6 ">
               <h3 className="text-lg font-medium text-gray-900 dark:text-white">
                 {project.title}
               </h3>
@@ -70,17 +71,13 @@ export default function ProjectCards() {
               <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-600 dark:text-gray-300">
                 {project.description}
               </p>
-
-              <span className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-white bg-[#EA8316] p-2 rounded-md hover:bg-orange-400  transition">
-                {t("projects.readMore")}
-                <span
-                  aria-hidden="true"
-                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                >
-                  &rarr;
-                </span>
-              </span>
             </div>
+
+            {/* زر قراءة المزيد ثابت أسفل يسار */}
+            <span className="group absolute bottom-4 left-4 inline-flex items-center gap-1 text-sm font-medium text-white bg-[#EA8316] px-3 py-2 rounded-md hover:bg-orange-400 transition">
+              {t("projects.readMore")}
+              <span aria-hidden="true" className="block">→</span>
+            </span>
           </Link>
         ))}
       </div>
