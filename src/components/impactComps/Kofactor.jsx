@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import kfPng from "../../assets/whatKF.png";
 
 export default function Kofactor() {
   const { t, i18n } = useTranslation();
@@ -12,7 +13,7 @@ export default function Kofactor() {
       {/* الصورة */}
       <img
         alt="Kofactor visual"
-        src="/src/assets/whatKF.png"
+        src={kfPng}
         className={`h-full w-full object-cover 
           ${isRTL ? "sm:order-last " : "sm:order-first "} 
           sm:h-[calc(100%_-_2rem)] sm:self-end 

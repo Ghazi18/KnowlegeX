@@ -12,20 +12,9 @@ import StrategicPartnerships from "../components/StrategicPartnerships";
 import ThreeBoxesWithImages from "../components/ThreeBoxesWithImages";
 import { useTranslation } from "react-i18next";
 
-
 export default function Home() {
-
-   const { t } = useTranslation();
+  const { t } = useTranslation();
   const milestones = t("ourJourney.items", { returnObjects: true });
-
-  
- if (!Array.isArray(milestones)) {
-  console.error("⚠️ البيانات غير متوفرة: ourJourney.items");
-  return null; // أو عرض رسالة للمستخدم
-}
-
-console.log("🔍 milestones:", milestones);
-
 
   return (
     <main className="min-h-screen max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
@@ -51,7 +40,7 @@ console.log("🔍 milestones:", milestones);
         <Numbers />
       </FadeInWrapper>
       <FadeInWrapper delay={0.6}>
-      <OurJourney milestones={milestones} />
+        <OurJourney milestones={milestones} />
       </FadeInWrapper>
       <FadeInWrapper delay={0.7}>
         <OurTracks />
@@ -65,7 +54,6 @@ console.log("🔍 milestones:", milestones);
       <FadeInWrapper delay={1.0}>
         <StrategicPartnerships />
       </FadeInWrapper>
-       
     </main>
   );
 }

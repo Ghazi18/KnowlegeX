@@ -8,6 +8,8 @@ import WorkTeam from "../components/projectPage/WorkTeam";
 
 import rasidImg from "../assets/whatKF.png";
 import forseen from "../assets/forseen.jpg";
+import max from "../assets/max.jpg";
+
 
 import { useEffect } from "react";
 
@@ -38,12 +40,12 @@ export default function ProjectPage() {
       description: t(`projects.intro.${id}.description`),
     },
     2: {
-      image: forseen,
+      image: max,
       title: t(`projects.intro.${id}.title`),
       description: t(`projects.intro.${id}.description`),
     },
     3: {
-      image: rasidImg,
+      image: forseen,
       title: t(`projects.intro.${id}.title`),
       description: t(`projects.intro.${id}.description`),
     },

@@ -1,6 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
+import pj1 from "../../assets/whatKF.png";
+import pj2 from "../../assets/max.jpg";
+import pj3 from "../../assets/forseen.jpg";
+
 export default function ProjectCards() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
@@ -11,21 +15,21 @@ export default function ProjectCards() {
       title: t("projects.rasid.title"),
       description: t("projects.rasid.description"),
       link: "/impact/1",
-      image: "src/assets/whatKF.png",
+      image: pj1,
     },
     {
       id: 2,
       title: t("projects.max.title"),
       description: t("projects.max.description"),
       link: "/impact/2",
-      image: "src/assets/forseen.jpg",
+      image: pj2,
     },
     {
       id: 3,
       title: t("projects.foreseen.title"),
       description: t("projects.foreseen.description"),
       link: "/impact/3",
-      image: "src/assets/whatKF.png",
+      image: pj3,
     },
   ];
 
@@ -43,7 +47,7 @@ export default function ProjectCards() {
           href="#"
           className="text-sm font-medium text-black shadow-md hover:bg-orange-400 hover:text-white transition px-5 py-2 rounded"
         >
-          {t("projects.viewMore")}
+          {t("projects.readMore")}
         </a>
       </div>
 
@@ -76,7 +80,9 @@ export default function ProjectCards() {
             {/* زر قراءة المزيد ثابت أسفل يسار */}
             <span className="group absolute bottom-4 left-4 inline-flex items-center gap-1 text-sm font-medium text-white bg-[#EA8316] px-3 py-2 rounded-md hover:bg-orange-400 transition">
               {t("projects.readMore")}
-              <span aria-hidden="true" className="block">→</span>
+              <span aria-hidden="true" className="block">
+                →
+              </span>
             </span>
           </Link>
         ))}
