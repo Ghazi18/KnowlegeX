@@ -85,27 +85,27 @@ export default function NavBar() {
 
               <nav className="flex flex-col gap-4 text-base font-medium">
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.about")}
+                  {t("navbar.home")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.careers")}
+                  {t("navbar.why")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.history")}
+                  {t("navbar.journey")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.services")}
+                  {t("navbar.programs")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.projects")}
+                  {t("navbar.products")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.blog")}
+                  {t("navbar.impact")}
                 </a>
                 <hr className="opacity-30" />
               </nav>
