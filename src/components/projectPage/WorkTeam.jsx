@@ -85,7 +85,11 @@ export default function WorkTeam() {
               <p className="text-sm text-orange-600 font-medium mt-1">
                 {member.position}
               </p>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mt-3">
+              <p
+                className={`text-sm text-gray-600 dark:text-gray-300 mt-3 ${
+                  isRTL ? "text-left" : "text-right"
+                }`}
+              >
                 {member.description}
               </p>
             </div>

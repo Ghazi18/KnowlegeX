@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import amplifaiHealth from "../assets/AmplifaiHealth.png";
+import aIden from "../assets/AIden.svg";
 
 
 export default function InvestmentPortfolio() {
@@ -27,7 +29,7 @@ export default function InvestmentPortfolio() {
      <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full mx-auto ">
         <div className="bg-[#FDEAD9] border-b-4 border-[#EA8316] rounded-md shadow-md flex items-center justify-center px-10 py-8 w-full ">
           <img
-            src="/src/assets/AmplifaiHealth.png"
+            src={amplifaiHealth}
             alt="Amplifai Health"
             className="h-24 w-auto mr-6"
           />
@@ -38,7 +40,7 @@ export default function InvestmentPortfolio() {
 
         <div className="bg-[#FDEAD9] border-b-4 border-[#EA8316] rounded-md shadow-md flex items-center justify-center px-10 py-8 w-full ">
           <img
-            src="/src/assets/AIden.svg"
+            src={aIden}
             alt="AiDEN"
             className="h-24 w-auto mr-6"
           />

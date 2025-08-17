@@ -34,7 +34,7 @@ export default function ThreeBoxesWithImages() {
             <img
               src={src}
               alt={`${t("focusAreas.title")} ${index + 1}`}
-              className="h-24 w-h-24 object-contain"
+              className="h-20 w-h-20 object-contain"
             />
           </div>
         ))}

@@ -38,56 +38,56 @@
         "description": "The journey began with the founding of Salla Center for Research & Innovation to connect research with real-world applications.",
         "date": "Start",
         "color": "bg-blue-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "The Spark – 2021",
         "description": "Knowledgex was founded as a spinout to build an innovation-first organization.",
         "date": "2021",
         "color": "bg-indigo-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "The Birth of Knowledgex – 2023",
         "description": "Launched Spinx & KORE",
         "date": "2023",
         "color": "bg-purple-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "Spinx",
         "description": "Analytics platform for identifying market opportunities and commercialization potential.",
         "date": "",
         "color": "bg-amber-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "KORE",
         "description": "Science-based assessment tool to evaluate founder fit and team readiness for innovation.",
         "date": "",
         "color": "bg-green-600",
-        "logo":"/src/assets/KXogo.svg"
+        "logo":"/KXogo.svg"
       },
       {
         "title": "Riciety",
         "description": "A comprehensive platform that fosters investment in research and innovation.",
         "date": "",
         "color": "bg-rose-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "Research in Action – 2022",
         "description": "Three pioneering research projects launched, planting the seeds of innovation.",
         "date": "2022",
         "color": "bg-teal-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "KoFactor Launch – 2024",
         "description": "Launched KoFactor, a 4-month pre-accelerator that transforms research and IP into market-ready ventures.",
         "date": "2024",
         "color": "bg-red-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       }
     ]
   },
@@ -292,42 +292,42 @@
             "description": "Formed a dual team (research & technical); began brainstorming the core problem and possible solutions.",
             "date": "March 2025",
             "color": "bg-blue-600",
-            "logo": "/src/assets/KXogo.svg"
+            "logo": "/KXogo.svg"
           },
           {
             "title": "Joined KoFactor",
             "description": "Joined KoFactor and started requirement extraction, competitor analysis, and user journey mapping.",
             "date": "April 2025",
             "color": "bg-indigo-600",
-            "logo": "/src/assets/KXogo.svg"
+            "logo": "/KXogo.svg"
           },
           {
             "title": "Early UI/UX",
             "description": "Designed early UI/UX based on Saudi platform standards; explored MVP strategies.",
             "date": "May 2025",
             "color": "bg-purple-600",
-            "logo": "/src/assets/KXogo.svg"
+            "logo": "/KXogo.svg"
           },
           {
             "title": "MVP Build",
             "description": "Built the MVP backend using FastAPI and MongoDB; frontend in HTML/CSS/JS.",
             "date": "June 2025",
             "color": "bg-amber-600",
-            "logo": "/src/assets/KXogo.svg"
+            "logo": "/KXogo.svg"
           },
           {
             "title": "User Testing",
             "description": "Conducted user testing, integrated disease heatmap and real-time case tracking; received mentorship feedback.",
             "date": "July 2025",
             "color": "bg-teal-600",
-            "logo": "/src/assets/KXogo.svg"
+            "logo": "/KXogo.svg"
           },
           {
             "title": "Go-to-Market Prep",
             "description": "Preparing for partnerships and refining go-to-market strategy for a national launch.",
             "date": "August 2025",
             "color": "bg-red-600",
-            "logo": "/src/assets/KXogo.svg"
+            "logo": "/KXogo.svg"
           }
         ]
       },
@@ -336,9 +336,9 @@
         "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
         "sideImageAlt": "MAX journey image",
         "items": [
-          { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "Prototype", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-amber-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "Pilot", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-teal-600", "logo": "/src/assets/KXogo.svg" }
+          { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/KXogo.svg" },
+          { "title": "Prototype", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-amber-600", "logo": "/KXogo.svg" },
+          { "title": "Pilot", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-teal-600", "logo": "/KXogo.svg" }
         ]
       },
       "3": {
@@ -346,9 +346,9 @@
         "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
         "sideImageAlt": "Foreseen journey image",
         "items": [
-          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/src/assets/KXogo.svg" }
+          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.svg" },
+          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/KXogo.svg" },
+          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/KXogo.svg" }
         ]
       }
     }

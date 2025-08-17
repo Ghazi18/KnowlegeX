@@ -1,4 +1,7 @@
+
+
 {
+  
   "navbar": {
     "home": "الرئيسية",
     "why": "لماذا KnowledgeX",
@@ -39,56 +42,56 @@
         "description": "انطلقت رحلتنا بتأسيس مركز \"سلة\" لربط الأبحاث بالتطبيقات الواقعية.",
         "date": "البداية",
         "color": "bg-blue-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "الشرارة – 2021",
         "description": "تأسست Knowledgex كجهة منبثقة من مركز أبحاث، بهوية تضع الابتكار أولاً.",
         "date": "2021",
         "color": "bg-indigo-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "ولادة Knowledgex – 2023",
         "description": "إطلاق أدوات نولج اكس Spinx وKORE و Riciety",
         "date": "2023",
         "color": "bg-purple-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "Spinx",
         "description": "منصة تحليلية لاكتشاف الفرص السوقية وتقييم قابلية التسويق.",
         "date": "",
         "color": "bg-amber-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "KORE",
         "description": "أداة تقييم علمية لمدى ملاءمة المؤسسين واستعداد الفرق الريادية.",
         "date": "",
         "color": "bg-green-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "Riciety",
         "description": "منصة استثمارية شاملة تعزز من تمويل البحث والابتكار.",
         "date": "",
         "color": "bg-rose-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "أبحاث في الميدان – 2022",
         "description": "ثلاثة مشاريع بحثية ريادية أُطلقت لزراعة بذور الابتكار.",
         "date": "2022",
         "color": "bg-teal-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       },
       {
         "title": "إطلاق KoFactor – 2024",
         "description": "إطلاق برنامج كوفاكتور، مسرّعة تمهيدية لأربعة أشهر لتحويل الأبحاث وبراءات الاختراع إلى مشاريع قابلة للتسويق.",
         "date": "2024",
         "color": "bg-red-600",
-        "logo": "/src/assets/KXogo.svg"
+        "logo": "/KXogo.svg"
       }
     ]
   },
@@ -235,7 +238,7 @@
  
   "footer": {
   "connect": " اعمل معنا  ",
-  "subscribe": "لذا، إذا كنت من مبتكري الصناعة أو أحد قادة الابتكار المؤسسي المهتمين بمشاريع البحث والابتكار.",
+  "subscribe": " إذا كنت من مبتكري الصناعة أو أحد قادة الابتكار المؤسسي المهتمين بمشاريع البحث والابتكار.",
   "cta": "تواصل معنا",
   "copyright": "حقوق النشر © 2025 KNOWLEDGEX جميع الحقوق محفوظة."
 },
@@ -286,12 +289,12 @@
         "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
         "sideImageAlt": "صورة رحلة راصد",
         "items": [
-          { "title": "تشكيل فريق مزدوج", "description": "تشكيل فريقين (بحثي وتقني) والبدء بعصف ذهني للمشكلة الأساسية والحلول الممكنة.", "date": "مارس 2025", "color": "bg-blue-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "الانضمام إلى KoFactor", "description": "بدء استخراج المتطلبات، تحليل المنافسين، ورسم رحلة المستخدم.", "date": "أبريل 2025", "color": "bg-indigo-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "تصميم أولي لواجهة المستخدم", "description": "تصميم UI/UX مبكر وفق معايير المنصات السعودية واستكشاف استراتيجيات الـ MVP.", "date": "مايو 2025", "color": "bg-purple-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "بناء النسخة الأولية", "description": "بناء Backend باستخدام FastAPI وMongoDB، وFrontend بـ HTML/CSS/JS.", "date": "يونيو 2025", "color": "bg-amber-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "اختبارات المستخدم", "description": "تنفيذ اختبارات المستخدم، ودمج خريطة حرارية للأمراض وتتبع الحالات لحظيًا، مع تلقي توجيهات من المرشدين.", "date": "يوليو 2025", "color": "bg-teal-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "الاستعداد للإطلاق", "description": "التحضير للشراكات وصقل استراتيجية دخول السوق لإطلاقٍ وطني.", "date": "أغسطس 2025", "color": "bg-red-600", "logo": "/src/assets/KXogo.svg" }
+          { "title": "تشكيل فريق مزدوج", "description": "تشكيل فريقين (بحثي وتقني) والبدء بعصف ذهني للمشكلة الأساسية والحلول الممكنة.", "date": "مارس 2025", "color": "bg-blue-600", "logo": "/KXogo.svg" },
+          { "title": "الانضمام إلى KoFactor", "description": "بدء استخراج المتطلبات، تحليل المنافسين، ورسم رحلة المستخدم.", "date": "أبريل 2025", "color": "bg-indigo-600", "logo": "/KXogo.svg" },
+          { "title": "تصميم أولي لواجهة المستخدم", "description": "تصميم UI/UX مبكر وفق معايير المنصات السعودية واستكشاف استراتيجيات الـ MVP.", "date": "مايو 2025", "color": "bg-purple-600", "logo": "/KXogo.svg" },
+          { "title": "بناء النسخة الأولية", "description": "بناء Backend باستخدام FastAPI وMongoDB، وFrontend بـ HTML/CSS/JS.", "date": "يونيو 2025", "color": "bg-amber-600", "logo": "/KXogo.svg" },
+          { "title": "اختبارات المستخدم", "description": "تنفيذ اختبارات المستخدم، ودمج خريطة حرارية للأمراض وتتبع الحالات لحظيًا، مع تلقي توجيهات من المرشدين.", "date": "يوليو 2025", "color": "bg-teal-600", "logo": "/KXogo.svg" },
+          { "title": "الاستعداد للإطلاق", "description": "التحضير للشراكات وصقل استراتيجية دخول السوق لإطلاقٍ وطني.", "date": "أغسطس 2025", "color": "bg-red-600", "logo": "/KXogo.svg" }
         ]
       },
       "2": {
@@ -299,9 +302,9 @@
         "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
         "sideImageAlt": "صورة رحلة ماكس",
         "items": [
-          { "title": "الاستكشاف", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-purple-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "النموذج الأوّلي", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-amber-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "التجربة الميدانية", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-teal-600", "logo": "/src/assets/KXogo.svg" }
+          { "title": "الاستكشاف", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-purple-600", "logo": "/KXogo.svg" },
+          { "title": "النموذج الأوّلي", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-amber-600", "logo": "/KXogo.svg" },
+          { "title": "التجربة الميدانية", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-teal-600", "logo": "/KXogo.svg" }
         ]
       },
       "3": {
@@ -309,9 +312,9 @@
         "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
         "sideImageAlt": "صورة رحلة فورسين",
         "items": [
-          { "title": "التأسيس", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-blue-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "المنتج الأولي", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-rose-600", "logo": "/src/assets/KXogo.svg" },
-          { "title": "التوسّع", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-green-600", "logo": "/src/assets/KXogo.svg" }
+          { "title": "التأسيس", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-blue-600", "logo": "/KXogo.svg" },
+          { "title": "المنتج الأولي", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-rose-600", "logo": "/KXogo.svg" },
+          { "title": "التوسّع", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-green-600", "logo": "/KXogo.svg" }
         ]
       }
     }
