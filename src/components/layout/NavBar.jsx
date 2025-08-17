@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import JoinCommunityModal from "../JoinCommunityModal";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from "/KXogo.svg";
 
 export default function NavBar() {
   const { t, i18n } = useTranslation();
@@ -17,11 +17,13 @@ export default function NavBar() {
   return (
     <>
       <header className="bg-white shadow">
-
-        <div dir={i18n.language === "ar" ? "rtl" : "ltr"} className="mx-auto max-w-[2000px]  flex h-16  items-center justify-between px-4 sm:px-6 lg:px-16 overflow-x-hidden">
+        <div
+          dir={i18n.language === "ar" ? "rtl" : "ltr"}
+          className="mx-auto max-w-[2000px]  flex h-16  items-center justify-between px-4 sm:px-6 lg:px-16 overflow-x-hidden"
+        >
           {/* Logo */}
           <a className="block text-teal-600" href="/">
-            <img src="/src/assets/KXogo.svg" alt="Logo" className="h-12" />
+            <img src={logo} alt="Logo" className="h-12" />
           </a>
 
           {/* Desktop Navigation */}
@@ -41,7 +43,7 @@ export default function NavBar() {
             <a className="text-black hover:text-gray-500/75" href="#products">
               {t("navbar.products")}
             </a>
-           
+
             <a className="text-black hover:text-gray-500/75" href="/Impact">
               {t("navbar.impact")}
             </a>
@@ -74,7 +76,7 @@ export default function NavBar() {
           <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-start md:hidden">
             <div className="w-3/4 sm:w-1/2 bg-white h-full p-6 flex flex-col gap-6 shadow-lg">
               <div className="flex justify-between items-center mb-4">
-                <img src="/src/assets/KXogo.svg" alt="Logo" className="h-10" />
+                <img src="/KXogo.svg" alt="Logo" className="h-10" />
                 <button
                   onClick={() => setIsMenuOpen(false)}
                   className="text-2xl text-gray-600"
@@ -85,27 +87,27 @@ export default function NavBar() {
 
               <nav className="flex flex-col gap-4 text-base font-medium">
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.about")}
+                  {t("navbar.home")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.careers")}
+                  {t("navbar.why")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.history")}
+                  {t("navbar.journey")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.services")}
+                  {t("navbar.programs")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.projects")}
+                  {t("navbar.products")}
                 </a>
                 <hr className="opacity-30" />
                 <a href="#" onClick={() => setIsMenuOpen(false)}>
-                  {t("navbar.blog")}
+                  {t("navbar.impact")}
                 </a>
                 <hr className="opacity-30" />
               </nav>
@@ -125,10 +127,6 @@ export default function NavBar() {
       </header>
 
       {/* Join Community Modal */}
-      <JoinCommunityModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </>
   );
 }

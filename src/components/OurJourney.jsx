@@ -17,10 +17,10 @@ export default function OurJourney({
 
   // رابط الصورة الجانبية:
   const fallbackTestImage =
-    "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png";
+    "";
   const sideImage = sideImageProp || journey.sideImage || fallbackTestImage;
   const sideImageAlt =
-    sideImageAltProp || journey.sideImageAlt || (isArabic ? "صورة الرحلة" : "Journey image");
+    sideImageAltProp || journey.sideImageAlt ;
 
   return (
     <section
@@ -43,7 +43,7 @@ export default function OurJourney({
         lg:flex ${isArabic ? "lg:flex-row-reverse" : "lg:flex-row"}`}
       >
         {/* عمود الصورة */}
-        <div className={`${isArabic ? "lg:order-1" : "lg:order-2"} relative rounded-2xl overflow-hidden w-full lg:w-1/2`}>
+        <div className={`${isArabic ? "lg:order-1" : "lg:order-2"} relative rounded-2xl bg-gray-200 overflow-hidden w-full lg:w-1/2`}>
           <img
             src={sideImage}
             alt={sideImageAlt}
