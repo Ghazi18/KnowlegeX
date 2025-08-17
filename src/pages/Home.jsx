@@ -21,9 +21,9 @@ export default function Home() {
       <FadeInWrapper>
         <Banner />
       </FadeInWrapper>
-      <FadeInWrapper delay={0.1}>
+      {/* <FadeInWrapper delay={0.1}>
         <Misson />
-      </FadeInWrapper>
+      </FadeInWrapper> */}
       <FadeInWrapper delay={0.2}>
         <OurValue />
       </FadeInWrapper>
