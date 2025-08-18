@@ -2,7 +2,7 @@ import Banner from "../components/Banner";
 import FadeInWrapper from "../components/FadeInWrapper";
 import GradientSection from "../components/GradientSection";
 import InvestmentPortfolio from "../components/InvestmentPortfolio";
-// import Misson from "../components/Mission";
+import Misson from "../components/Mission";
 import Numbers from "../components/Numbers";
 import OurJourney from "../components/OurJourney";
 import OurTracks from "../components/OurTracks";
