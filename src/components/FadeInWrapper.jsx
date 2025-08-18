@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 export default function FadeInWrapper({ children, delay = 0.1 }) {
   return (
     <motion.div
-initial={{ opacity: 0, y: 10 }}
+      initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.2 }} // خليه خفيف عشان ما يتداخل مع اللمس
+      transition={{ duration: 0.5, ease: "easeOut", delay }}
+      style={{ willChange: "transform, opacity", transform: "translateZ(0)" }}
     >
       {children}
     </motion.div>

@@ -27,9 +27,7 @@ export default function Home() {
       <FadeInWrapper delay={0.2}>
         <OurValue />
       </FadeInWrapper>
-      {/* <FadeInWrapper delay={0.2}>
-        <ParticleRing />
-      </FadeInWrapper> */}
+      
       <FadeInWrapper delay={0.3}>
         <OurWhy />
       </FadeInWrapper>
