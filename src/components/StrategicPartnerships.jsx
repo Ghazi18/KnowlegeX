@@ -55,7 +55,7 @@ export default function StrategicPartnerships() {
         .marquee-wrapper {
           --marquee-gap: 1.25rem;       /* المسافة بين الشعارات */
           --logo-h: 2.75rem;            /* ارتفاع الشعارات للموبايل ~44px */
-          --speed: 22s;                 /* سرعة أبطأ على الجوال */
+          --speed: 24s;                 /* سرعة أبطأ على الجوال */
           width: 100%;
           overflow: hidden;
           position: relative;
