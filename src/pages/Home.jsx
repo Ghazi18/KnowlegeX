@@ -17,7 +17,7 @@ export default function Home() {
   const milestones = t("ourJourney.items", { returnObjects: true });
 
   return (
-    <main className="min-h-screen max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
+    <main className="min-h-[100svh] max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
       <FadeInWrapper>
         <Banner />
       </FadeInWrapper>

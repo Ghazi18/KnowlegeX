@@ -9,8 +9,10 @@ html, body, #root {
   overflow-y: auto;
   overflow-x: clip; /* بدال hidden لتجنّب مشاكل تموضع */
   position: static;
-  -webkit-overflow-scrolling: touch; /* للـ iOS */
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* iOS */
+  overscroll-behavior-y: auto;
+  touch-action: pan-y; /* اسمح بالسحب رأسيًا */
 
 /* ⚠️ الموبايل يتجاهل المؤشر المخصص غالبًا، واحيانًا يسبب مشاكل في بعض المتصفحات */
 

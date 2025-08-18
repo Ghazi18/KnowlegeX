@@ -106,7 +106,7 @@ export default function NavBar() {
                   {t("navbar.products")}
                 </a>
                 <hr className="opacity-30" />
-                <a href="#Impact" onClick={() => setIsMenuOpen(false)}>
+                <a href="/Impact" onClick={() => setIsMenuOpen(false)}>
                   {t("navbar.impact")}
                 </a>
                 <hr className="opacity-30" />
