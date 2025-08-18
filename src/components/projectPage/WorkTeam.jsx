@@ -14,47 +14,56 @@ export default function WorkTeam() {
       name: "John Doe",
       position: "Lead Developer",
       description:
-        "Responsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teams.",
+        "Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams.",
     },
     {
       name: "Sarah Ahmed",
       position: "UI/UX Designer",
       description:
-        "Designs intuitive user experiences and clean interfaces.Responsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teams",
+        "Designs intuitive user experiences and clean interfaces. Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams",
     },
     {
       name: "Ali Hassan",
       position: "Project Manager",
       description:
-        "Ensures timely delivery and coordination across teamsResponsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teamsResponsible for leading the frontend and backend teams.",
+        "Ensures timely delivery and coordination across teams Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams.",
     },
     {
       name: "Fatima Noor",
       position: "QA Engineer",
       description:
-        "Guarantees quality through rigorous testing processesResponsible for leading the frontend and backend teams.",
+        "Guarantees quality through rigorous testing processes Responsible for leading the frontend and backend teams.",
     },
   ];
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 5, // ديسكتوب
     slidesToScroll: 1,
     rtl: isRTL,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } }, // تابلت
-      { breakpoint: 768, settings: { slidesToShow: 1 } }, // موبايل
+      { breakpoint: 1280, settings: { slidesToShow: 3 } },
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
     ],
   };
 
-  // حساب أقصى ارتفاع وتطبيقه
-  useEffect(() => {
+  // حساب أقصى ارتفاع
+  const calculateHeights = () => {
     if (cardRefs.current.length > 0) {
       const heights = cardRefs.current.map((el) => (el ? el.offsetHeight : 0));
       setMaxHeight(Math.max(...heights));
     }
+  };
+
+  useEffect(() => {
+    calculateHeights();
+
+    // إعادة الحساب عند تغيير حجم الشاشة
+    window.addEventListener("resize", calculateHeights);
+    return () => window.removeEventListener("resize", calculateHeights);
   }, [i18n.language, teamMembers]);
 
   return (
@@ -87,7 +96,7 @@ export default function WorkTeam() {
               </p>
               <p
                 className={`text-sm text-gray-600 dark:text-gray-300 mt-3 ${
-                  isRTL ? "text-left" : "text-right"
+                  isRTL ? "text-right" : "text-left"
                 }`}
               >
                 {member.description}

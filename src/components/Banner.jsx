@@ -19,9 +19,10 @@ export default function Banner() {
             {t("banner.heading")}
           </h1>
 
-          <p className="mt-4 text-base sm:text-lg text-gray-200 leading-relaxed">
-            {t("banner.desc")}
-          </p>
+         <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+  {t("banner.desc")}
+</p>
+
 
           <div className="mt-6 flex justify-center gap-4">
             <a

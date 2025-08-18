@@ -1,5 +1,5 @@
 import Banner from "../components/Banner";
-// import FadeInWrapper from "../components/FadeInWrapper";
+import FadeInWrapper from "../components/FadeInWrapper";
 import GradientSection from "../components/GradientSection";
 import InvestmentPortfolio from "../components/InvestmentPortfolio";
 import Misson from "../components/Mission";
@@ -18,40 +18,40 @@ export default function Home() {
 
   return (
     <main className="min-h-[100svh] max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
-      {/* <FadeInWrapper> */}
+      <FadeInWrapper>
         <Banner />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.1}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.1}>
         <Misson />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.2}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.2}>
         <OurValue />
-      {/* </FadeInWrapper> */}
+      </FadeInWrapper>
       
-      {/* <FadeInWrapper delay={0.3}> */}
+      <FadeInWrapper delay={0.3}>
         <OurWhy />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.4}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.4}>
         <GradientSection />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.5}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.5}>
         <Numbers />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.6}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.6}>
         <OurJourney milestones={milestones} />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.7}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.7}>
         <OurTracks />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.8}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.8}>
         <ThreeBoxesWithImages />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={0.9}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.9}>
         <InvestmentPortfolio />
-      {/* </FadeInWrapper> */}
-      {/* <FadeInWrapper delay={1.0}> */}
+      </FadeInWrapper>
+      <FadeInWrapper delay={1.0}>
         <StrategicPartnerships />
-      {/* </FadeInWrapper> */}
+      </FadeInWrapper>
     </main>
   );
 }
