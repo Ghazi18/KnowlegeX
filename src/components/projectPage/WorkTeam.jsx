@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { FaUserCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -6,65 +5,41 @@ import { useTranslation } from "react-i18next";
 export default function WorkTeam() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-  const cardRefs = useRef([]);
-  const [maxHeight, setMaxHeight] = useState(0);
 
   const teamMembers = [
-    {
-      name: "John Doe",
-      position: "Lead Developer",
-      description:
-        "Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams.",
-    },
-    {
-      name: "Sarah Ahmed",
-      position: "UI/UX Designer",
-      description:
-        "Designs intuitive user experiences and clean interfaces. Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams",
-    },
-    {
-      name: "Ali Hassan",
-      position: "Project Manager",
-      description:
-        "Ensures timely delivery and coordination across teams Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams.",
-    },
-    {
-      name: "Fatima Noor",
-      position: "QA Engineer",
-      description:
-        "Guarantees quality through rigorous testing processes Responsible for leading the frontend and backend teams.",
-    },
+    { name: "John Doe",    position: "Lead Developer",   description: "Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams." },
+    { name: "Sarah Ahmed", position: "UI/UX Designer",   description: "Designs intuitive user experiences and clean interfaces. Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams" },
+    { name: "Ali Hassan",  position: "Project Manager",  description: "Ensures timely delivery and coordination across teams Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams." },
+    { name: "Fatima Noor", position: "QA Engineer",      description: "Guarantees quality through rigorous testing processes Responsible for leading the frontend and backend teams." },
   ];
 
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
-    speed: 400,
-    slidesToShow: 5, // ديسكتوب
+    speed: 450,
+    slidesToShow: 5,             // Desktop
     slidesToScroll: 1,
+    swipeToSlide: true,
+    cssEase: "ease-out",
     rtl: isRTL,
+    // نحافظ على ارتفاع موحّد؛ لذا لا نحتاج adaptiveHeight
     responsive: [
+      // Laptop/Tablet
       { breakpoint: 1280, settings: { slidesToShow: 3 } },
       { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
+      // Mobile
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,           // لمحة من البطاقة التالية
+          centerPadding: "18px",      // غنّجها حسب تصميمك (16–24px)
+          dots: true,
+        },
+      },
     ],
   };
-
-  // حساب أقصى ارتفاع
-  const calculateHeights = () => {
-    if (cardRefs.current.length > 0) {
-      const heights = cardRefs.current.map((el) => (el ? el.offsetHeight : 0));
-      setMaxHeight(Math.max(...heights));
-    }
-  };
-
-  useEffect(() => {
-    calculateHeights();
-
-    // إعادة الحساب عند تغيير حجم الشاشة
-    window.addEventListener("resize", calculateHeights);
-    return () => window.removeEventListener("resize", calculateHeights);
-  }, [i18n.language, teamMembers]);
 
   return (
     <section
@@ -72,7 +47,7 @@ export default function WorkTeam() {
       className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900"
     >
       <h2
-        className={`text-3xl sm:text-4xl font-bold mb-10 text-gray-800 dark:text-white ${
+        className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-gray-800 dark:text-white ${
           isRTL ? "text-right" : "text-left"
         }`}
       >
@@ -81,30 +56,51 @@ export default function WorkTeam() {
 
       <Slider {...settings}>
         {teamMembers.map((member, index) => (
-          <div key={index} className="px-3">
+          <div key={index} className="px-2 sm:px-3 h-full">
             <div
-              ref={(el) => (cardRefs.current[index] = el)}
-              style={{ height: maxHeight ? `${maxHeight}px` : "auto" }}
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center flex flex-col items-center justify-start"
+              className={`
+                bg-white dark:bg-gray-800 rounded-lg shadow-md
+                p-5 sm:p-6
+                flex flex-col items-center
+                h-[280px] sm:h-[300px] md:h-[340px] lg:h-[360px]  /* ارتفاع موحّد عبر المقاسات */
+              `}
             >
-              <FaUserCircle className="text-6xl text-gray-400 mb-4" />
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+              <FaUserCircle className="text-5xl sm:text-6xl text-gray-400 mb-3 sm:mb-4 shrink-0" />
+
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white text-center">
                 {member.name}
               </h3>
-              <p className="text-sm text-orange-600 font-medium mt-1">
+
+              <p className="text-xs sm:text-sm text-orange-600 font-medium mt-1 text-center">
                 {member.position}
               </p>
+
+              {/* الوصف: محاذاة حسب اللغة + قصّ السطور */}
               <p
-                className={`text-sm text-gray-600 dark:text-gray-300 mt-3 ${
-                  isRTL ? "text-right" : "text-left"
-                }`}
+                className={`
+                  text-xs sm:text-sm text-gray-600 dark:text-gray-300 mt-3
+                  ${isRTL ? "text-right" : "text-left"}
+                  line-clamp-4 md:line-clamp-5
+                `}
               >
                 {member.description}
               </p>
+
+              {/* مساحة مرنة لضبط تموضع المحتوى داخل ارتفاع ثابت */}
+              <div className="mt-auto" />
             </div>
           </div>
         ))}
       </Slider>
+
+      {/* يصلّح تمدّد عناصر slick حتى تلتزم بالارتفاع */}
+      <style>{`
+        .slick-slide > div { height: 100%; }
+        .slick-dots li button:before { font-size: 10px; }
+        @media (min-width: 768px) {
+          .slick-dots li button:before { font-size: 12px; }
+        }
+      `}</style>
     </section>
   );
 }

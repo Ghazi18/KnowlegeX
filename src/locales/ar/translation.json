@@ -4,7 +4,7 @@
   
   "navbar": {
     "home": "الرئيسية",
-    "why": "لماذا KnowledgeX",
+    "why": "KnowledgeX لماذا ",
     "journey": "الرحلة",
     "programs": "البرامج",
     "products": "المنتجات",
@@ -286,7 +286,7 @@
     "journey": {
       "1": {
         "title": "رحلة راصد",
-        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImage": "/iSteps-02.jpg",
         "sideImageAlt": "صورة رحلة راصد",
         "items": [
           { "title": "تشكيل فريق مزدوج", "description": "تشكيل فريقين (بحثي وتقني) والبدء بعصف ذهني للمشكلة الأساسية والحلول الممكنة.", "date": "مارس 2025", "color": "bg-blue-600", "logo": "/KXogo.svg" },
@@ -299,7 +299,7 @@
       },
       "2": {
         "title": "رحلة ماكس (تجريبية)",
-        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImage": "/iSteps-02.jpg",
         "sideImageAlt": "صورة رحلة ماكس",
         "items": [
           { "title": "الاستكشاف", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-purple-600", "logo": "/KXogo.svg" },
@@ -309,7 +309,7 @@
       },
       "3": {
         "title": "رحلة فورسين (تجريبية)",
-        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImage": "/iSteps-02.jpg",
         "sideImageAlt": "صورة رحلة فورسين",
         "items": [
           { "title": "التأسيس", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-blue-600", "logo": "/KXogo.svg" },

@@ -15,6 +15,8 @@ export default function NavBar() {
     // لا تغيّر document.dir هنا؛ صار مضبوط في DirProvider
   };
 
+  
+
   return (
     <>
       <header className="bg-white shadow">

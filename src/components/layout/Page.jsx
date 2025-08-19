@@ -8,32 +8,11 @@ export default function Page({ children }) {
     document.body.classList.remove("overflow-hidden", "fixed");
   }, []);
   return (
-    <div
-      className="
-        flex flex-col
-        min-h-[100svh]      
-        overflow-x-clip     
-        bg-white text-gray-900
-        font-imb
-        relative
-      "
-    >
-      {/* Navbar */}
-      <Navbar />
+    <div className="flex flex-col min-h-[100svh] w-full overflow-x-clip">
+  <Navbar/>
+  <main className="flex-1 min-h-0 w-full overflow-visible">{children}</main>
+  <Footer/>
+</div>
 
-      {/* Main Content */}
-      <main
-        className="
-          flex-1            /* بدل flex-grow: مساحة التمرير الرئيسية */
-          min-h-0           /* مهم داخل flex لمنع قفل سكّرة داخلي */
-          w-full
-        "
-      >
-        {children}
-      </main>
-
-      {/* Footer */}
-      <Footer />
-    </div>
   );
 }

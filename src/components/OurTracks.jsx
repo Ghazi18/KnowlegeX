@@ -19,7 +19,7 @@ export default function OurTracks() {
 
   return (
     <section
-      className="py-16 px-4 sm:px-10 md:px-16 bg-white dark:bg-gray-900 overflow-hidden"
+      className="py-16 px-4 sm:px-10 md:px-16 bg-[#FFF8F1] dark:bg-gray-900 overflow-hidden"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">

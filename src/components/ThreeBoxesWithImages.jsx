@@ -11,7 +11,7 @@ export default function ThreeBoxesWithImages() {
 
   return (
     <section
-      className="w-full py-14 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900 text-center"
+      className="w-full py-14 px-4 sm:px-10 md:px-16 bg-[#FFF8F1] dark:bg-gray-900 text-center"
       dir={isRTL ? "rtl" : "ltr"}
     >
       {/* العنوان والوصف */}
