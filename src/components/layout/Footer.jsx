@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="bg-[#071C2F] text-white" dir={isRTL ? "rtl" : "ltr"}>
       <div className="w-full mx-auto px-4 sm:px-10 md:px-16">
         {/* القسم الأول */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6 py-8">
+        {/* <div className="flex flex-col md:flex-row justify-between items-center gap-6 py-8">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-full bg-white text-[#071C2F] flex items-center justify-center text-xl">
               <FaEnvelope />
@@ -33,7 +33,7 @@ export default function Footer() {
           >
             {t("footer.cta")}
           </a>
-        </div>
+        </div> */}
 
         <hr className="border-gray-500 border-opacity-20" />
 
