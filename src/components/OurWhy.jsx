@@ -50,21 +50,27 @@ export default function OurWhy() {
       </div>
 
       {/* White Side Card (Desktop Only) */}
-      <div
-        className={`hidden md:block absolute top-10 ${
-          isRTL ? "right-0 rounded-l-2xl text-right" : "left-0 rounded-r-2xl  text-left"
-        } h-4/5 w-[40vw] max-w-[50vw] bg-white dark:bg-gray-800 p-10 shadow-lg z-0 flex flex-col justify-center`}
-      >
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-          {t("ourWhy.title")}
-        </h1>
-        <h2 className="mt-2 text-xl font-semibold text-[#EA8316]">
-          {t("ourWhy.subtitle")}
-        </h2>
-        <p className="mt-4 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-          {t("ourWhy.desc")}
-        </p>
-      </div>
+      {/* White Side Card (Desktop Only) */}
+<div
+  className={`hidden md:block absolute top-10 ${
+    isRTL
+      ? "right-0 rounded-l-2xl text-right"
+      : "left-0 rounded-r-2xl text-left"
+  } h-4/5 
+     w-full md:w-[500px] lg:w-[550px] xl:w-[700px]   // ← هنا البريك بوينت
+     bg-white dark:bg-gray-800 p-10 shadow-lg z-0 flex flex-col justify-center`}
+>
+  <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+    {t("ourWhy.title")}
+  </h1>
+  <h2 className="mt-2 text-xl font-semibold text-[#EA8316]">
+    {t("ourWhy.subtitle")}
+  </h2>
+  <p className="mt-4 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+    {t("ourWhy.desc")}
+  </p>
+</div>
+
     </section>
   );
 }
