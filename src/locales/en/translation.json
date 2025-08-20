@@ -31,7 +31,7 @@
 
   "ourJourney": {
     "title": "The Story of Our Journey",
-    "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+    "sideImage": "/iSteps-02.jpg",
     "items": [
       {
         "title": "Salla Research & Innovation Center",
@@ -284,7 +284,7 @@
     "journey": {
       "1": {
         "title": "Rasid Journey",
-        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImage": "/iSteps-02.jpg",
         "sideImageAlt": "Rasid journey image",
         "items": [
           {
@@ -333,7 +333,7 @@
       },
       "2": {
         "title": "MAX Journey (Placeholder)",
-        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImage": "/iSteps-02.jpg",
         "sideImageAlt": "MAX journey image",
         "items": [
           { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/KXogo.svg" },
@@ -343,7 +343,7 @@
       },
       "3": {
         "title": "Foreseen Journey (Placeholder)",
-        "sideImage": "https://idealog.co.nz/wp-content/uploads/2022/08/screen_shot_2018-12-06_at_5.09.02_pm.png",
+        "sideImage": "/iSteps-02.jpg",
         "sideImageAlt": "Foreseen journey image",
         "items": [
           { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.svg" },

@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"; 
 
 export default function Banner() {
   const { t, i18n } = useTranslation();
@@ -7,22 +7,21 @@ export default function Banner() {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="relative bg-gradient-to-r from-[#071C2F] to-[#165995] dark:bg-gray-900 px-4 sm:px-10 md:px-16 overflow-hidden"
+      className="relative bg-gradient-to-r from-[#071C2F] to-[#165995] px-4 sm:px-10 md:px-16 overflow-hidden"
     >
       {/* طبقة تغطية شفافة — مهم: pointer-events-none */}
       <div className="absolute inset-0 bg-black/30 dark:bg-black/50 z-0 pointer-events-none" />
 
       {/* المحتوى */}
-      <div className="relative z-10 w-full  mx-auto min-h-[60svh] flex items-center justify-center py-12 sm:py-24 lg:py-32">
+      <div className="relative z-10 w-full mx-auto min-h-[60svh] flex items-center justify-center py-12 sm:py-24 lg:py-32">
         <div className="text-center max-w-7xl px-4">
           <h1 className="text-2xl sm:text-3xl font-bold text-white mb-8">
             {t("banner.heading")}
           </h1>
 
-         <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
-  {t("banner.desc")}
-</p>
-
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed">
+            {t("banner.desc")}
+          </p>
 
           <div className="mt-6 flex justify-center gap-4">
             <a
