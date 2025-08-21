@@ -1,5 +1,5 @@
 import kore from "/KORE.png";
-import scienceHub from "/ScienceHub.png";
+import scienceHub from "/RICIETY.png";
 import spinsight from "/SpinX.png";
 import { useTranslation } from "react-i18next";
 
