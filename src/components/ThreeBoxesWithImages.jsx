@@ -1,6 +1,6 @@
-import kore from "../assets/KORE.png";
-import scienceHub from "../assets/ScienceHub.png";
-import spinsight from "../assets/Spinsight.png";
+import kore from "/KORE.png";
+import scienceHub from "/ScienceHub.png";
+import spinsight from "/SpinX.png";
 import { useTranslation } from "react-i18next";
 
 export default function ThreeBoxesWithImages() {
@@ -11,8 +11,11 @@ export default function ThreeBoxesWithImages() {
 
   return (
     <section
-      className="w-full py-14 px-4 sm:px-10 md:px-16 bg-[#FFF8F1] dark:bg-gray-900 text-center"
+      className="w-full py-14 px-4 sm:px-10 md:px-16  dark:bg-gray-900 text-center"
       dir={isRTL ? "rtl" : "ltr"}
+      style={{
+        background: "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
+      }}
     >
       {/* العنوان والوصف */}
       <div className="max-w-3xl mx-auto mb-12">

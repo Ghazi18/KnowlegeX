@@ -14,8 +14,8 @@ export default function Footer() {
   const isRTL = i18n.language === "ar";
 
   return (
-    <footer className="bg-[#071C2F] text-white" dir={isRTL ? "rtl" : "ltr"}>
-      <div className="w-full mx-auto px-4 sm:px-10 md:px-16">
+    <footer className="" dir={isRTL ? "rtl" : "ltr"}>
+      <div className="w-full mx-auto px-4 sm:px-10 md:px-16 max-w-[2000px] bg-[#071C2F] text-white">
         {/* القسم الأول */}
         {/* <div className="flex flex-col md:flex-row justify-between items-center gap-6 py-8">
           <div className="flex items-center gap-4">

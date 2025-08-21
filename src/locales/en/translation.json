@@ -31,7 +31,7 @@
 
   "ourJourney": {
     "title": "The Story of Our Journey",
-    "sideImage": "/iSteps-02.jpg",
+    "sideImage": "/iSteps-02.png",
     "items": [
       {
         "title": "Salla Research & Innovation Center",
@@ -66,7 +66,7 @@
         "description": "Science-based assessment tool to evaluate founder fit and team readiness for innovation.",
         "date": "",
         "color": "bg-green-600",
-        "logo":"/KXogo.svg"
+        "logo":"/KORE.png"
       },
       {
         "title": "Riciety",
@@ -87,7 +87,7 @@
         "description": "Launched KoFactor, a 4-month pre-accelerator that transforms research and IP into market-ready ventures.",
         "date": "2024",
         "color": "bg-red-600",
-        "logo": "/KXogo.svg"
+        "logo": "/kofactor.png"
       }
     ]
   },
@@ -284,7 +284,7 @@
     "journey": {
       "1": {
         "title": "Rasid Journey",
-        "sideImage": "/iSteps-02.jpg",
+        "sideImage": "/iSteps-02.png",
         "sideImageAlt": "Rasid journey image",
         "items": [
           {
@@ -333,7 +333,7 @@
       },
       "2": {
         "title": "MAX Journey (Placeholder)",
-        "sideImage": "/iSteps-02.jpg",
+        "sideImage": "/iSteps-02.png",
         "sideImageAlt": "MAX journey image",
         "items": [
           { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/KXogo.svg" },
@@ -343,7 +343,7 @@
       },
       "3": {
         "title": "Foreseen Journey (Placeholder)",
-        "sideImage": "/iSteps-02.jpg",
+        "sideImage": "/iSteps-02.png",
         "sideImageAlt": "Foreseen journey image",
         "items": [
           { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.svg" },

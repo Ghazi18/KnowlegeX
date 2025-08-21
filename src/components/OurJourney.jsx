@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import React, { useEffect, useMemo, useRef, useState, useCallback } from "react";
-import journeyImage from "/iSteps-02.jpg";
+import journeyImage from "/iSteps-02.png";
 
 const ric = (cb) => {
   if ("requestIdleCallback" in window) {
@@ -188,7 +188,7 @@ export default function OurJourney({
       >
       {/* عمود الصورة */}
 <div
-  className={`${isArabic ? "lg:order-1" : "lg:order-2"} relative rounded-2xl bg-gray-200 overflow-hidden w-full lg:w-1/2
+  className={`${isArabic ? "lg:order-1" : "lg:order-2"} relative rounded-2xl  overflow-hidden w-full lg:w-1/2
   aspect-square lg:aspect-auto`}
 >
   {/* Placeholder شيمر */}

@@ -63,21 +63,21 @@
         "description": "منصة تحليلية لاكتشاف الفرص السوقية وتقييم قابلية التسويق.",
         "date": "",
         "color": "bg-amber-600",
-        "logo": "/KXogo.svg"
+        "logo": "/SpinX.png"
       },
       {
         "title": "KORE",
         "description": "أداة تقييم علمية لمدى ملاءمة المؤسسين واستعداد الفرق الريادية.",
         "date": "",
         "color": "bg-green-600",
-        "logo": "/KXogo.svg"
+        "logo": "/KORE.png"
       },
       {
         "title": "Riciety",
         "description": "منصة استثمارية شاملة تعزز من تمويل البحث والابتكار.",
         "date": "",
         "color": "bg-rose-600",
-        "logo": "/KXogo.svg"
+        "logo": "/RICIETY.png"
       },
       {
         "title": "أبحاث في الميدان – 2022",
@@ -91,7 +91,7 @@
         "description": "إطلاق برنامج كوفاكتور، مسرّعة تمهيدية لأربعة أشهر لتحويل الأبحاث وبراءات الاختراع إلى مشاريع قابلة للتسويق.",
         "date": "2024",
         "color": "bg-red-600",
-        "logo": "/KXogo.svg"
+        "logo": "/kofactor.png"
       }
     ]
   },
@@ -286,7 +286,7 @@
     "journey": {
       "1": {
         "title": "رحلة راصد",
-        "sideImage": "/iSteps-02.jpg",
+        "sideImage": "/iSteps-02.png",
         "sideImageAlt": "صورة رحلة راصد",
         "items": [
           { "title": "تشكيل فريق مزدوج", "description": "تشكيل فريقين (بحثي وتقني) والبدء بعصف ذهني للمشكلة الأساسية والحلول الممكنة.", "date": "مارس 2025", "color": "bg-blue-600", "logo": "/KXogo.svg" },
@@ -299,7 +299,7 @@
       },
       "2": {
         "title": "رحلة ماكس (تجريبية)",
-        "sideImage": "/iSteps-02.jpg",
+        "sideImage": "/iSteps-02.png",
         "sideImageAlt": "صورة رحلة ماكس",
         "items": [
           { "title": "الاستكشاف", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-purple-600", "logo": "/KXogo.svg" },
@@ -309,7 +309,7 @@
       },
       "3": {
         "title": "رحلة فورسين (تجريبية)",
-        "sideImage": "/iSteps-02.jpg",
+        "sideImage": "/iSteps-02.png",
         "sideImageAlt": "صورة رحلة فورسين",
         "items": [
           { "title": "التأسيس", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-blue-600", "logo": "/KXogo.svg" },

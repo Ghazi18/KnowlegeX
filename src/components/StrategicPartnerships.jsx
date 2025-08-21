@@ -17,8 +17,11 @@ export default function StrategicPartnerships() {
 
   return (
     <section
-      className="py-16 px-4 sm:px-10 md:px-16 bg-[#FFF8F1] dark:bg-gray-900"
+      className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900"
       dir={isRTL ? "rtl" : "ltr"}
+        style={{
+        background: "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
+      }}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-8 sm:mb-12">
         {t("partnerships.title")}
@@ -55,7 +58,7 @@ export default function StrategicPartnerships() {
         .marquee-wrapper {
           --marquee-gap: 1.25rem;       /* المسافة بين الشعارات */
           --logo-h: 2.75rem;            /* ارتفاع الشعارات للموبايل ~44px */
-          --speed: 24s;                 /* سرعة أبطأ على الجوال */
+          --speed: 28s;                 /* سرعة أبطأ على الجوال */
           width: 100%;
           overflow: hidden;
           position: relative;
@@ -66,7 +69,7 @@ export default function StrategicPartnerships() {
           .marquee-wrapper {
             --marquee-gap: 2rem;
             --logo-h: 3.5rem;           /* ~56px */
-            --speed: 24s;
+            --speed: 28s;
           }
         }
         @media (min-width: 1024px) {
