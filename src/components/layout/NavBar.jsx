@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import logo from "/KXogo.svg";
+import logo from "/KXogo.png";
 
 export default function NavBar() {
   const { t, i18n } = useTranslation();
@@ -42,8 +42,8 @@ export default function NavBar() {
             <a className="text-black hover:text-gray-500/75" href="/">{t("navbar.home")}</a>
             <a className="text-black hover:text-gray-500/75" href="#why">{t("navbar.why")}</a>
             <a className="text-black hover:text-gray-500/75" href="#journey">{t("navbar.journey")}</a>
-            <a className="text-black hover:text-gray-500/75" href="#programs">{t("navbar.programs")}</a>
-            <a className="text-black hover:text-gray-500/75" href="#products">{t("navbar.products")}</a>
+            <a className="text-black hover:text-gray-500/75" href="#services">{t("navbar.programs")}</a>
+            {/* <a className="text-black hover:text-gray-500/75" href="#products">{t("navbar.products")}</a> */}
             <a className="text-black hover:text-gray-500/75" href="/Impact">{t("navbar.impact")}</a>
           </nav>
 
@@ -86,7 +86,7 @@ export default function NavBar() {
               onClick={(e) => e.stopPropagation()} // لا يغلق عند الضغط داخل اللوحة
             >
               <div className={`flex items-center mb-4 ${isRTL ? "flex-row-reverse" : "flex-row"} justify-between`}>
-                <img src="/KXogo.svg" alt="Logo" className="h-10" />
+                <img src="/KXogo.png" alt="Logo" className="h-10" />
                 <button
                   onClick={() => setIsMenuOpen(false)}
                   className="text-2xl text-gray-600"

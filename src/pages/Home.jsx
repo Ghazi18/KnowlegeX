@@ -50,10 +50,10 @@ export default function Home() {
       <FadeInWrapper delay={0.8}>
         <ThreeBoxesWithImages />
       </FadeInWrapper>
-      <FadeInWrapper delay={0.9}>
+      {/* <FadeInWrapper delay={0.9}>
         <InvestmentPortfolio />
-      </FadeInWrapper>
-      <FadeInWrapper delay={1.0}>
+      </FadeInWrapper> */}
+      <FadeInWrapper delay={0.9}>
         <StrategicPartnerships />
       </FadeInWrapper>
     </main>

@@ -36,7 +36,7 @@ export default function OurValue() {
           {/* 1st card section */}
           <div className="flex flex-row align-middle sm:flex-col">
             <div className="bg-orange-400 flex flex-col justify-center w-1/2 sm:w-full sm:h-1/2 items-center">
-              <h3 className="text-center font-medium sm:my-12 text-black">
+              <h3 className="text-center font-medium text-lg sm:my-12 text-black">
                 {v0}
               </h3>
             </div>
@@ -45,7 +45,7 @@ export default function OurValue() {
           {/* 2nd card section */}
           <div className="flex flex-row-reverse align-middle sm:flex-col-reverse">
             <div className="bg-gray-800 flex flex-col justify-center w-1/2 sm:w-full sm:h-1/2 items-center">
-              <h3 className="text-center font-medium sm:my-12 text-white">
+              <h3 className="text-center font-medium text-lg sm:my-12 text-white">
                 {v1}
               </h3>
             </div>
@@ -54,7 +54,7 @@ export default function OurValue() {
           {/* 3rd card section */}
           <div className="flex flex-row align-middle sm:flex-col">
             <div className="bg-orange-400 flex flex-col justify-center w-1/2 sm:w-full sm:h-1/2 items-center">
-              <h3 className="text-center font-medium sm:my-12 text-black">
+              <h3 className="text-center font-medium text-lg sm:my-12 text-black">
                 {v2}
               </h3>
             </div>
@@ -63,7 +63,7 @@ export default function OurValue() {
           {/* 4th card section */}
           <div className="flex flex-row-reverse align-middle sm:flex-col-reverse">
             <div className="bg-gray-800 w-1/2 flex flex-col justify-center sm:h-1/2 sm:w-full items-center">
-              <h3 className="text-center font-medium sm:my-12 text-white">
+              <h3 className="text-center font-medium text-lg sm:my-12 text-white">
                 {v3}
               </h3>
             </div>

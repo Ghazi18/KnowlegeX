@@ -14,13 +14,13 @@ export default function Impact() {
       <FadeInWrapper delay={0.1}>
         <Kofactor />
       </FadeInWrapper>
-      <FadeInWrapper delay={0.2}>
+      {/* <FadeInWrapper delay={0.2}>
         <Objectives />
-      </FadeInWrapper>
-      <FadeInWrapper delay={0.3}>
+      </FadeInWrapper> */}
+      {/* <FadeInWrapper delay={0.3}>
         <ProgressCircles />
-      </FadeInWrapper>
-      <FadeInWrapper delay={0.4}>
+      </FadeInWrapper> */}
+      <FadeInWrapper delay={0.2}>
         <ProjectCards />
       </FadeInWrapper>
     

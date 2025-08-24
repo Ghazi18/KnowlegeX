@@ -3,7 +3,7 @@
     "home": "Home",
     "why": "Why KnowledgeX",
     "journey": "Journey",
-    "programs": "Programs",
+    "programs": "Services",
     "products": "Products",
     "join": " KX Academy",
     "impact": "Impact",
@@ -38,28 +38,28 @@
         "description": "The journey began with the founding of Salla Center for Research & Innovation to connect research with real-world applications.",
         "date": "Start",
         "color": "bg-blue-600",
-        "logo": "/KXogo.svg"
+        "logo": "/salla.png"
       },
       {
         "title": "The Spark – 2021",
         "description": "Knowledgex was founded as a spinout to build an innovation-first organization.",
         "date": "2021",
         "color": "bg-indigo-600",
-        "logo": "/KXogo.svg"
+        "logo": "/KXogo.png"
       },
       {
         "title": "The Birth of Knowledgex – 2023",
         "description": "Launched Spinx & KORE",
         "date": "2023",
         "color": "bg-purple-600",
-        "logo": "/KXogo.svg"
+        "logo": "/KXogo.png"
       },
       {
         "title": "Spinx",
         "description": "Analytics platform for identifying market opportunities and commercialization potential.",
         "date": "",
         "color": "bg-amber-600",
-        "logo": "/KXogo.svg"
+        "logo": "/KXogo.png"
       },
       {
         "title": "KORE",
@@ -73,14 +73,14 @@
         "description": "A comprehensive platform that fosters investment in research and innovation.",
         "date": "",
         "color": "bg-rose-600",
-        "logo": "/KXogo.svg"
+        "logo": "/KXogo.png"
       },
       {
         "title": "Research in Action – 2022",
         "description": "Three pioneering research projects launched, planting the seeds of innovation.",
         "date": "2022",
         "color": "bg-teal-600",
-        "logo": "/KXogo.svg"
+        "logo": "/KXogo.png"
       },
       {
         "title": "KoFactor Launch – 2024",
@@ -95,7 +95,7 @@
 
   
   "ourTracks": {
-    "title": "Our Tracks",
+    "title": "Our Services",
     "research.title": "Research Institutions and Universities",
     "research.enablement.title": "Enablement Track",
     "research.enablement.items": [
@@ -201,7 +201,23 @@
         "number": "85+",
         "title": "Advisory Engagements",
         "description": "Organizations guided through innovation strategy and market alignment"
+      },
+       {
+        "number": "85+",
+        "title": "Advisory Engagements",
+        "description": "Organizations guided through innovation strategy and market alignment"
+      },
+       {
+        "number": "85+",
+        "title": "Advisory Engagements",
+        "description": "Organizations guided through innovation strategy and market alignment"
+      },
+       {
+        "number": "85+",
+        "title": "Advisory Engagements",
+        "description": "Organizations guided through innovation strategy and market alignment"
       }
+
     ]
   },
 
@@ -292,42 +308,42 @@
             "description": "Formed a dual team (research & technical); began brainstorming the core problem and possible solutions.",
             "date": "March 2025",
             "color": "bg-blue-600",
-            "logo": "/KXogo.svg"
+            "logo": "/KXogo.png"
           },
           {
             "title": "Joined KoFactor",
             "description": "Joined KoFactor and started requirement extraction, competitor analysis, and user journey mapping.",
             "date": "April 2025",
             "color": "bg-indigo-600",
-            "logo": "/KXogo.svg"
+            "logo": "/KXogo.png"
           },
           {
             "title": "Early UI/UX",
             "description": "Designed early UI/UX based on Saudi platform standards; explored MVP strategies.",
             "date": "May 2025",
             "color": "bg-purple-600",
-            "logo": "/KXogo.svg"
+            "logo": "/KXogo.png"
           },
           {
             "title": "MVP Build",
             "description": "Built the MVP backend using FastAPI and MongoDB; frontend in HTML/CSS/JS.",
             "date": "June 2025",
             "color": "bg-amber-600",
-            "logo": "/KXogo.svg"
+            "logo": "/KXogo.png"
           },
           {
             "title": "User Testing",
             "description": "Conducted user testing, integrated disease heatmap and real-time case tracking; received mentorship feedback.",
             "date": "July 2025",
             "color": "bg-teal-600",
-            "logo": "/KXogo.svg"
+            "logo": "/KXogo.png"
           },
           {
             "title": "Go-to-Market Prep",
             "description": "Preparing for partnerships and refining go-to-market strategy for a national launch.",
             "date": "August 2025",
             "color": "bg-red-600",
-            "logo": "/KXogo.svg"
+            "logo": "/KXogo.png"
           }
         ]
       },
@@ -336,9 +352,9 @@
         "sideImage": "/iSteps-02.png",
         "sideImageAlt": "MAX journey image",
         "items": [
-          { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/KXogo.svg" },
-          { "title": "Prototype", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-amber-600", "logo": "/KXogo.svg" },
-          { "title": "Pilot", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-teal-600", "logo": "/KXogo.svg" }
+          { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/KXogo.png" },
+          { "title": "Prototype", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-amber-600", "logo": "/KXogo.png" },
+          { "title": "Pilot", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-teal-600", "logo": "/KXogo.png" }
         ]
       },
       "3": {
@@ -346,9 +362,29 @@
         "sideImage": "/iSteps-02.png",
         "sideImageAlt": "Foreseen journey image",
         "items": [
-          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.svg" },
-          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/KXogo.svg" },
-          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/KXogo.svg" }
+          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.png" },
+          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/KXogo.png" },
+          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/KXogo.png" }
+        ]
+      },
+      "4": {
+        "title": "Amplifai",
+        "sideImage": "/iSteps-02.png",
+        "sideImageAlt": "Amplifai journey image",
+        "items": [
+          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.png" },
+          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/KXogo.png" },
+          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/KXogo.png" }
+        ]
+      },
+      "5": {
+        "title": "AiDEN",
+        "sideImage": "/iSteps-02.png",
+        "sideImageAlt": "AiDEN journey image",
+        "items": [
+          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.png" },
+          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/KXogo.png" },
+          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/KXogo.png" }
         ]
       }
     }
