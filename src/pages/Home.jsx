@@ -44,9 +44,9 @@ export default function Home() {
       <FadeInWrapper delay={0.6}>
         <OurJourney milestones={milestones} />
       </FadeInWrapper>
-      {/* <FadeInWrapper delay={0.7}>
+      <FadeInWrapper delay={0.7}>
         <OurTracks />
-      </FadeInWrapper> */}
+      </FadeInWrapper>
       <FadeInWrapper delay={0.8}>
         <ThreeBoxesWithImages />
       </FadeInWrapper>
