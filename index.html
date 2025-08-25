@@ -47,17 +47,7 @@
       console.log("Promise:", e && e.reason && (e.reason.message || e.reason));
   </script>
 
-  <!-- (مرة واحدة فقط إذا سبق فعّلت PWA) امسح Service Worker والكاش
-         افتح الصفحة على iPhone 12 مرتين، ثم احذف هذا السكربت نهائياً. -->
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
-      if (window.caches && caches.keys) {
-        caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
-      }
-      console.log("SW & caches cleared");
-    }
-  </script>
+
 </head>
 
 <body>
