@@ -39,7 +39,7 @@ function useInViewport(rootMargin = "200px") {
 
 const TimelineItem = React.memo(function TimelineItem({ item, isArabic, t }) {
   return (
-    <div className="flex relative pt-10 pb-20 sm:items-center w-full mx-auto">
+    <div className="flex relative py-10 sm:py-12 md:py-16 sm:items-center w-full mx-auto">
       {/* عمود مركزي يحتضن الخط */}
       <div className="h-full w-6 absolute inset-5 flex items-center justify-center">
         <div className="h-full w-1 bg-gray-200/40 pointer-events-none"></div>

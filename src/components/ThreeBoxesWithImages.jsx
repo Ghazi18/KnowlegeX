@@ -11,10 +11,11 @@ export default function ThreeBoxesWithImages() {
 
   return (
     <section
-      className="w-full py-14 px-4 sm:px-10 md:px-16  dark:bg-gray-900 text-center"
+      className="w-full py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900 text-center"
       dir={isRTL ? "rtl" : "ltr"}
       style={{
-        background: "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
+        background:
+          "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
       }}
     >
       {/* العنوان والوصف */}

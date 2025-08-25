@@ -22,7 +22,7 @@ export default function OurTracks() {
   return (
     <section
       id="services"
-      className="py-16 px-4 sm:px-10 md:px-16 dark:bg-gray-900 overflow-hidden"
+      className="py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16 dark:bg-gray-900 overflow-hidden"
       dir={isRTL ? "rtl" : "ltr"}
       style={{
         background:

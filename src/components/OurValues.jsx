@@ -31,7 +31,7 @@ export default function OurValue() {
 
   return (
     <section
-      className="w-full px-4 sm:px-10 md:px-16 py-24 dark:bg-gray-900"
+      className="w-full px-4 sm:px-10 md:px-16 py-10 sm:py-12 md:py-16 bg-white dark:bg-gray-900"
       dir={isArabic ? "rtl" : "ltr"}
     >
       <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-gray-900 dark:text-white">
