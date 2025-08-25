@@ -1,7 +1,7 @@
 import Banner from "../components/Banner";
 import FadeInWrapper from "../components/FadeInWrapper";
 import GradientSection from "../components/GradientSection";
-import InvestmentPortfolio from "../components/InvestmentPortfolio";
+// import InvestmentPortfolio from "../components/InvestmentPortfolio";
 import Misson from "../components/Mission";
 import Numbers from "../components/Numbers";
 import OurJourney from "../components/OurJourney";
@@ -44,9 +44,9 @@ export default function Home() {
       <FadeInWrapper delay={0.6}>
         <OurJourney milestones={milestones} />
       </FadeInWrapper>
-      <FadeInWrapper delay={0.7}>
+      {/* <FadeInWrapper delay={0.7}>
         <OurTracks />
-      </FadeInWrapper>
+      </FadeInWrapper> */}
       <FadeInWrapper delay={0.8}>
         <ThreeBoxesWithImages />
       </FadeInWrapper>
