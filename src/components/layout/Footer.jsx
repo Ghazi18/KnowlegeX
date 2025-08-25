@@ -42,11 +42,11 @@ export default function Footer() {
           <img src={logo} alt="Logo" className="h-8" />
           <div className="flex gap-8 text-sm">
             <div className="flex items-center gap-2">
-              <FaEnvelope className="text-lg" />
+              <FaEnvelope className="text-md" />
               <span>knowledgex@gmail.com</span>
             </div>
             <div className="flex items-center gap-2">
-              <FaPhone className="text-lg" />
+              <FaPhone className="text-md" />
               <span dir="ltr">+966 550859798</span>
             </div>
           </div>
