@@ -1,6 +1,11 @@
 import { useTranslation } from "react-i18next";
-import React, { useEffect, useMemo, useRef, useState, useCallback } from "react";
-import journeyImage from "/iSteps-02.png";
+import React, {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  useCallback,
+} from "react";
 
 const ric = (cb) => {
   if ("requestIdleCallback" in window) {
@@ -31,7 +36,6 @@ function useInViewport(rootMargin = "200px") {
 
   return { ref, inView };
 }
-
 
 const TimelineItem = React.memo(function TimelineItem({ item, isArabic, t }) {
   return (
@@ -84,7 +88,11 @@ const TimelineItem = React.memo(function TimelineItem({ item, isArabic, t }) {
         </div>
 
         {/* النصوص */}
-        <div className={`flex-grow ${isArabic ? "sm:pr-6" : "sm:pl-6"} mt-6 sm:mt-0`}>
+        <div
+          className={`flex-grow ${
+            isArabic ? "sm:pr-6" : "sm:pl-6"
+          } mt-6 sm:mt-0`}
+        >
           <h2 className="font-medium title-font text-black mb-1 text-xl">
             {item?.titleKey ? t(item.titleKey) : item?.title}
           </h2>
@@ -97,17 +105,16 @@ const TimelineItem = React.memo(function TimelineItem({ item, isArabic, t }) {
   );
 });
 
-export default function OurJourney({
-  milestones = [],
-  customTitle,
-}) {
+export default function OurJourney({ milestones = [], customTitle }) {
   const { i18n, t } = useTranslation();
   const isArabic = i18n.language === "ar";
   const direction = isArabic ? "rtl" : "ltr";
 
   const journey = t("ourJourney", { returnObjects: true }) || {};
   const items =
-    (Array.isArray(milestones) && milestones.length ? milestones : journey.items) || [];
+    (Array.isArray(milestones) && milestones.length
+      ? milestones
+      : journey.items) || [];
 
   const [allowHeavy, setAllowHeavy] = useState(false);
   const [revealAll, setRevealAll] = useState(false);
@@ -141,44 +148,66 @@ export default function OurJourney({
       ref={sectionRef}
       dir={direction}
       id="journey"
-      className={`body-font mb-10 ${isArabic ? "font-plex-arabic" : ""} relative py-20 px-4 sm:px-10 md:px-16`}
+      className={`body-font mb-10 ${
+        isArabic ? "font-plex-arabic" : ""
+      } relative py-20 px-4 sm:px-10 md:px-16`}
     >
       {/* العنوان */}
       <div className="flex flex-col text-center w-full mb-10">
         <h1 className="sm:text-4xl text-3xl font-bold title-font text-black">
-          {customTitle || journey.title || (isArabic ? "قصة رحلتنا" : "The Story of Our Journey")}
+          {customTitle ||
+            journey.title ||
+            (isArabic ? "قصة رحلتنا" : "The Story of Our Journey")}
         </h1>
       </div>
 
       {/* التايملاين في المنتصف */}
       <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
         {initialItems.map((item, index) => (
-          <TimelineItem key={`initial-${index}`} item={item} isArabic={isArabic} t={t} />
+          <TimelineItem
+            key={`initial-${index}`}
+            item={item}
+            isArabic={isArabic}
+            t={t}
+          />
         ))}
 
-        {allowHeavy && (revealAll ? (
-          restItems.map((item, index) => (
-            <TimelineItem key={`rest-${index}`} item={item} isArabic={isArabic} t={t} />
-          ))
-        ) : (
-          restItems.map((_, i) => (
-            <div key={`ph-${i}`} className="flex relative pt-10 pb-20 w-full mx-auto">
-              <div className="h-full w-6 absolute inset-5 flex items-center justify-center">
-                <div className="h-full w-1 bg-gray-200/40 pointer-events-none"></div>
-              </div>
-              <div className="flex-shrink-0 h-8 w-24 rounded-full mt-10 bg-gray-200 animate-pulse" />
-              <div className={`flex-grow flex items-start flex-col sm:flex-row ${
-                isArabic ? "md:pr-8 pr-6" : "md:pl-8 pl-6"
-              }`}>
-                <div className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-full animate-pulse" />
-                <div className={`flex-grow ${isArabic ? "sm:pr-6" : "sm:pl-6"} mt-6 sm:mt-0`}>
-                  <div className="h-6 w-40 bg-gray-200 rounded mb-3 animate-pulse" />
-                  <div className="h-4 w-64 bg-gray-200 rounded animate-pulse" />
+        {allowHeavy &&
+          (revealAll
+            ? restItems.map((item, index) => (
+                <TimelineItem
+                  key={`rest-${index}`}
+                  item={item}
+                  isArabic={isArabic}
+                  t={t}
+                />
+              ))
+            : restItems.map((_, i) => (
+                <div
+                  key={`ph-${i}`}
+                  className="flex relative pt-10 pb-20 w-full mx-auto"
+                >
+                  <div className="h-full w-6 absolute inset-5 flex items-center justify-center">
+                    <div className="h-full w-1 bg-gray-200/40 pointer-events-none"></div>
+                  </div>
+                  <div className="flex-shrink-0 h-8 w-24 rounded-full mt-10 bg-gray-200 animate-pulse" />
+                  <div
+                    className={`flex-grow flex items-start flex-col sm:flex-row ${
+                      isArabic ? "md:pr-8 pr-6" : "md:pl-8 pl-6"
+                    }`}
+                  >
+                    <div className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-full animate-pulse" />
+                    <div
+                      className={`flex-grow ${
+                        isArabic ? "sm:pr-6" : "sm:pl-6"
+                      } mt-6 sm:mt-0`}
+                    >
+                      <div className="h-6 w-40 bg-gray-200 rounded mb-3 animate-pulse" />
+                      <div className="h-4 w-64 bg-gray-200 rounded animate-pulse" />
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))
-        ))}
+              )))}
       </div>
     </section>
   );

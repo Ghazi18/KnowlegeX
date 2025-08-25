@@ -2,10 +2,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 // نفس الصور
-import Frame2 from "../assets/value1.png";
-import Frame3 from "../assets/Frame3.png";
-import Frame4 from "../assets/value2.png";
-import Frame7 from "../assets/value3.png";
+import Frame2 from "../assets/value1.jpg";
+import Frame3 from "../assets/Frame3.jpg";
+import Frame4 from "../assets/value2.jpg";
 
 export default function OurValue() {
   const { t, i18n } = useTranslation();
@@ -17,9 +16,7 @@ export default function OurValue() {
     v0 = "Originality",
     v1 = "Trust",
     v2 = "Learn",
-    v3 = "Connect",
-    v4 = "Growth",
-    v5 = "Impact",
+    
   ] = Array.isArray(values) ? values : [];
 
   // بيانات المربعات (صورة أو نص)
