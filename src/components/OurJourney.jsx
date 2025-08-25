@@ -2,9 +2,7 @@ import { useTranslation } from "react-i18next";
 import React, {
   useEffect,
   useMemo,
-  useRef,
   useState,
-  useCallback,
 } from "react";
 
 const ric = (cb) => {

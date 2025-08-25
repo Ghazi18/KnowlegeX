@@ -36,7 +36,7 @@
 
   "ourJourney": {
   "title": "قصة رحلتنا",
-  "sideImage": "/iSteps-02.png",
+  "sideImage": "",
   "items": [
     {
       "title": "مركز سلة للأبحاث والابتكار",
@@ -284,7 +284,7 @@
     "journey": {
       "1": {
         "title": "رحلة راصد",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "صورة رحلة راصد",
         "items": [
           { "title": "تشكيل فريق مزدوج", "description": "تشكيل فريقين (بحثي وتقني) والبدء بعصف ذهني للمشكلة الأساسية والحلول الممكنة.", "date": "مارس 2025", "color": "bg-blue-600", "logo": "/KXogo.png" },
@@ -297,7 +297,7 @@
       },
       "2": {
         "title": "رحلة ماكس (تجريبية)",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "صورة رحلة ماكس",
         "items": [
           { "title": "الاستكشاف", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-purple-600", "logo": "/KXogo.png" },
@@ -307,7 +307,7 @@
       },
       "3": {
         "title": "رحلة فورسين (تجريبية)",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "صورة رحلة فورسين",
         "items": [
           { "title": "التأسيس", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-blue-600", "logo": "/KXogo.png" },
@@ -317,7 +317,7 @@
       },
        "4": {
         "title": "بب",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "صورة رحلة فورسين",
         "items": [
           { "title": "التأسيس", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-blue-600", "logo": "/KXogo.png" },
@@ -327,7 +327,7 @@
       },
        "5": {
         "title": "رحلة فورسين (تجريبية)",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "صورة رحلة فورسين",
         "items": [
           { "title": "التأسيس", "description": "نص تجريبي — جاري المراجعة.", "date": "قيد التحديث", "color": "bg-blue-600", "logo": "/KXogo.png" },

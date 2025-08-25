@@ -31,7 +31,7 @@
 
   "ourJourney": {
     "title": "The Story of Our Journey",
-    "sideImage": "/iSteps-02.png",
+    "sideImage": "",
     "items": [
       {
         "title": "Salla Research & Innovation Center",
@@ -289,7 +289,7 @@
     "journey": {
       "1": {
         "title": "Rasid Journey",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "Rasid journey image",
         "items": [
           {
@@ -338,7 +338,7 @@
       },
       "2": {
         "title": "MAX Journey ",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "MAX journey image",
         "items": [
           { "title": "Discovery", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-purple-600", "logo": "/KXogo.png" },
@@ -348,7 +348,7 @@
       },
       "3": {
         "title": "Foreseen Journey ",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "Foreseen journey image",
         "items": [
           { "title": "Idea initiated by Dr. Ahmed & Salman Bett", "description": "", "date": "starting 2022", "color": "bg-blue-600", "logo": "/KXogo.png" },
@@ -363,7 +363,7 @@
       },
       "4": {
         "title": "Amplifai",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "Amplifai journey image",
         "items": [
           { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.png" },
@@ -373,7 +373,7 @@
       },
       "5": {
         "title": "AiDEN",
-        "sideImage": "/iSteps-02.png",
+        "sideImage": "",
         "sideImageAlt": "AiDEN journey image",
         "items": [
           { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.png" },
