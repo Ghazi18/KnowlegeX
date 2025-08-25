@@ -19,25 +19,21 @@ export default function StrategicPartnerships() {
     <section
       className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900"
       dir={isRTL ? "rtl" : "ltr"}
-      style={{
-        background:
-          "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
+        style={{
+        background: "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
       }}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-8 sm:mb-12">
         {t("partnerships.title")}
         {i18n.language !== "ar" && (
           <>
-            :{" "}
-            <span className="text-[#071C2F]">{t("partnerships.subtitle")}</span>
+            : <span className="text-[#071C2F]">{t("partnerships.subtitle")}</span>
           </>
         )}
       </h2>
 
       {/* شريط أخبار يعمل على الجوال والكمبيوتر */}
-      <div
-        className={`marquee-wrapper ${isRTL ? "rtl-marquee" : "ltr-marquee"}`}
-      >
+      <div className={`marquee-wrapper ${isRTL ? "rtl-marquee" : "ltr-marquee"}`}>
         <div className="marquee-track flex items-center">
           {/* نكرر المحتوى مرتين لعمل حلقة مستمرة */}
           {[...Array(2)].map((_, dup) => (
@@ -62,7 +58,7 @@ export default function StrategicPartnerships() {
         .marquee-wrapper {
           --marquee-gap: 1.25rem;       /* المسافة بين الشعارات */
           --logo-h: 2.75rem;            /* ارتفاع الشعارات للموبايل ~44px */
-          --speed: 18;                 /* سرعة أبطأ على الجوال */
+          --speed: 18s;                 /* سرعة أبطأ على الجوال */
           width: 100%;
           overflow: hidden;
           position: relative;
