@@ -17,7 +17,7 @@ export default function StrategicPartnerships() {
 
   return (
     <section
-      className="py-16 px-4 sm:px-10 md:px-16 dark:bg-gray-900"
+      className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900"
       dir={isRTL ? "rtl" : "ltr"}
       style={{
         background:
@@ -34,68 +34,59 @@ export default function StrategicPartnerships() {
         )}
       </h2>
 
-      {/* شريط سريع وسلس خصوصًا على الجوال */}
+      {/* شريط أخبار يعمل على الجوال والكمبيوتر */}
       <div
         className={`marquee-wrapper ${isRTL ? "rtl-marquee" : "ltr-marquee"}`}
       >
         <div className="marquee-track flex items-center">
+          {/* نكرر المحتوى مرتين لعمل حلقة مستمرة */}
           {[...Array(2)].map((_, dup) => (
             <div key={dup} className="marquee-segment flex items-center">
-              {logos.map((logo, idx) => {
-                const eager = dup === 0 && idx < 3; // حمّل أول ثلاث شعارات بسرعة لتفادي التقطيع
-                return (
-                  <div key={`${dup}-${idx}`} className="logo-cell">
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      className="logo-img /* dark:invert */"
-                      decoding="async"
-                      loading={eager ? "eager" : "lazy"}
-                      fetchpriority={eager ? "high" : "low"}
-                    />
-                  </div>
-                );
-              })}
+              {logos.map((logo, idx) => (
+                <div key={`${dup}-${idx}`} className="logo-cell">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="logo-img dark:invert mix-blend-multiply"
+                  />
+                </div>
+              ))}
             </div>
           ))}
         </div>
       </div>
 
+      {/* CSS الخاص بالماركيه — سريع وخفيف ومتكيف مع المقاسات */}
       <style>{`
-        /* افتراضات الجوال */
+        /* متغيرات افتراضية (موبايل) */
         .marquee-wrapper {
-          --marquee-gap: 1rem;
-          --logo-h: 2.5rem;          /* ~40px */
-          --speed: 16s;              /* أسرع على الجوال */
+          --marquee-gap: 1.25rem;       /* المسافة بين الشعارات */
+          --logo-h: 2.75rem;            /* ارتفاع الشعارات للموبايل ~44px */
+          --speed: 18;                 /* سرعة أبطأ على الجوال */
           width: 100%;
           overflow: hidden;
           position: relative;
-
-          /* أداء أفضل بعزل التخطيط والرسم */
-          contain: layout paint size style;
         }
 
+        /* تكبير بسيط على الشاشات الأكبر */
         @media (min-width: 640px) {
           .marquee-wrapper {
-            --marquee-gap: 1.5rem;
-            --logo-h: 3.25rem;       /* ~52px */
-            --speed: 22s;            /* أبطأ قليلًا على التابلت */
+            --marquee-gap: 2rem;
+            --logo-h: 3.5rem;           /* ~56px */
+            --speed: 28s;
           }
         }
         @media (min-width: 1024px) {
           .marquee-wrapper {
-            --marquee-gap: 3rem;
-            --logo-h: 4.5rem;        /* ~72px */
-            --speed: 28s;            /* أبطأ للراحة على الديسكتوب */
+            --marquee-gap: 4rem;
+            --logo-h: 5rem;             /* ~80px */
+            --speed: 28s;               /* أبطأ قليلاً لراحة النظر */
           }
         }
 
         .marquee-track {
           width: max-content;
           gap: var(--marquee-gap);
-
-          /* استخدم GPU + hint للمحرّك */
-          will-change: transform;
           animation: marquee-left var(--speed) linear infinite;
         }
         .rtl-marquee .marquee-track {
@@ -118,21 +109,19 @@ export default function StrategicPartnerships() {
           height: var(--logo-h);
           width: auto;
           object-fit: contain;
-          pointer-events: none;       /* يمنع طبقات تفاعلية غير لازمة */
-          image-rendering: -webkit-optimize-contrast;
         }
 
-        /* حركة مستمرة */
+        /* الحلقة المستمرة: نسحب بالضبط 50% لأننا مكررين المحتوى مرتين */
         @keyframes marquee-left {
-          0%   { transform: translate3d(0,0,0); }
-          100% { transform: translate3d(-50%,0,0); }
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
         }
         @keyframes marquee-right {
-          0%   { transform: translate3d(0,0,0); }
-          100% { transform: translate3d(50%,0,0); }
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(50%); }
         }
 
-        /* تقليل الحركة عند الطلب */
+        /* احترام تفضيل تقليل الحركة */
         @media (prefers-reduced-motion: reduce) {
           .marquee-track { animation: none; }
         }
