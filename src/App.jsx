@@ -12,6 +12,7 @@ import Impact from "./pages/Impact";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProjectPage from "./pages/ProjectPage";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -23,9 +24,8 @@ function App() {
             <Route index element={<Impact />} />
             <Route path="/Impact/:id" element={<ProjectPage />} />
           </Route>
-          
+          <Route path="*" element={<NotFound />} />
 
-          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Page>
     </Router>

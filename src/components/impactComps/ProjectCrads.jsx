@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import pj1 from "../../assets/whatKF.png";
 import pj2 from "../../assets/max.jpg";
 import pj3 from "../../assets/forseen.jpg";
+import aiednP from "/aiednP.png";
+import amplifieP from "/amplifieP.jpg";
+import uvera from "/uvera.png";
+
 
 export default function ProjectCards() {
   const { t, i18n } = useTranslation();
@@ -21,15 +25,36 @@ export default function ProjectCards() {
       id: 2,
       title: t("projects.max.title"),
       description: t("projects.max.description"),
-      link: "/impact/2",
+      url: "#",
       image: pj2,
     },
     {
       id: 3,
       title: t("projects.foreseen.title"),
       description: t("projects.foreseen.description"),
-      link: "/impact/3",
+      link: "/impact/2",
       image: pj3,
+    },
+     {
+      id: 4,
+      title: t("projects.amplifai.title"),
+      description: t("projects.amplifai.description"),
+      url: "https://amplifaihealth.com",
+      image: aiednP,
+    },
+     {
+      id: 5,
+      title: t("projects.aiDEN.title"),
+      description: t("projects.aiDEN.description"),
+      url: "https://aidenauto.com",
+      image: amplifieP,
+    },
+    {
+      id: 6,
+      title: t("projects.uvera.title"),
+      description: t("projects.uvera.description"),
+      url: "https://www.uvera.co/",
+      image: uvera,
     },
   ];
 
@@ -56,7 +81,7 @@ export default function ProjectCards() {
         {projectData.map((project) => (
           <Link
             key={project.id}
-            to={`/impact/${project.id}`}
+             to={project.url || `/impact/${project.id}`}
             className="relative overflow-hidden rounded-lg border border-gray-100 bg-white dark:bg-gray-800 shadow hover:shadow-lg transition min-h-[480px] md:min-h-[500px]"
           >
             <img

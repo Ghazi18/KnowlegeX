@@ -9,6 +9,10 @@ import WorkTeam from "../components/projectPage/WorkTeam";
 import rasidImg from "../assets/whatKF.png";
 import forseen from "../assets/forseen.jpg";
 import max from "../assets/max.jpg";
+import aiednP from "/aiednP.png";
+import amplifieP from "/amplifieP.jpg";
+import uvera from "/aiednP.png";
+
 
 
 import { useEffect } from "react";
@@ -38,16 +42,33 @@ export default function ProjectPage() {
       image: rasidImg,
       title: t(`projects.intro.${id}.title`),
       description: t(`projects.intro.${id}.description`),
+      link: t(`projects.intro.${id}.link`),
     },
     2: {
       image: max,
       title: t(`projects.intro.${id}.title`),
-      description: t(`projects.intro.${id}.description`),
+      link: t(`projects.intro.${id}.link`),
     },
     3: {
       image: forseen,
       title: t(`projects.intro.${id}.title`),
-      description: t(`projects.intro.${id}.description`),
+            description: t(`projects.intro.${id}.description`),
+      link: t(`projects.intro.${id}.link`),
+    },
+    4: {
+      image: aiednP,
+      title: t(`projects.intro.${id}.title`),
+      link: t(`projects.intro.${id}.link`),
+    },
+    5: {
+      image: amplifieP,
+      title: t(`projects.intro.${id}.title`),
+      link: t(`projects.intro.${id}.link`),
+    },
+    6: {
+      image: uvera,
+      title: t(`projects.intro.${id}.title`),
+      link: t(`projects.intro.${id}.link`),
     },
   };
 
@@ -76,9 +97,9 @@ export default function ProjectPage() {
         <FinalOutcome />
       </FadeInWrapper>
 
-      <FadeInWrapper delay={0.2}>
+      {/* <FadeInWrapper delay={0.2}>
         <WorkTeam />
-      </FadeInWrapper>
+      </FadeInWrapper> */}
     </main>
   );
 }

@@ -53,12 +53,13 @@ export default function NavBar() {
               {t("navbar.lang")}
             </button>
 
-            <button
-              onClick={() => setIsModalOpen(true)}
+            <a
               className="hidden sm:block bg-[#EA8316] text-white px-5 py-2.5 text-sm rounded-md"
+              href = "https://knowledgex-sa.msaaq.net/"
+              target="_blank"
             >
               {t("navbar.join")}
-            </button>
+            </a>
 
             {/* Mobile Menu Button */}
             <button
@@ -111,15 +112,14 @@ export default function NavBar() {
                 <hr className="opacity-30" />
               </nav>
 
-              <button
-                onClick={() => {
-                  setIsModalOpen(true);
-                  setIsMenuOpen(false);
-                }}
+              <a
+                             href = "https://knowledgex-sa.msaaq.net/"
+              target="_blank"
+
                 className="mt-auto bg-[#EA8316] hover:bg-orange-400 transition text-white px-5 py-2.5 text-sm rounded-md"
               >
                 {t("navbar.join")}
-              </button>
+              </a>
             </div>
           </div>
         )}

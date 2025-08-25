@@ -1,29 +1,32 @@
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 export default function OurTracks() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
-  const categories = [
-    {
-      key: "research",
-      icon: "🏛️",
-    },
-    {
-      key: "corporate",
-      icon: "🏢",
-    },
-  ];
+  const [openTrack, setOpenTrack] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    // نحدد إذا العرض جوال أو لا
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const categories = [{ key: "research", icon: "🏢" }];
   const trackKeys = ["enablement", "collaboration", "advisory"];
 
   return (
     <section
-    id="services"
-      className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900 overflow-hidden"
+      id="services"
+      className="py-16 px-4 sm:px-10 md:px-16 dark:bg-gray-900 overflow-hidden"
       dir={isRTL ? "rtl" : "ltr"}
-       style={{
-        background: "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
+      style={{
+        background:
+          "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
       }}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
@@ -37,7 +40,7 @@ export default function OurTracks() {
             className="grid grid-cols-1 md:grid-cols-4 items-center gap-8"
           >
             {/* البطاقة الرئيسية */}
-            <div className="bg-[#071C2F] text-white rounded-lg shadow p-6 flex flex-col items-center border-l-4 border-0 border-[#EA8316] justify-center text-center h-48 w-full min-w-[200px] mt-16">
+            <div className="bg-[#071C2F] text-white rounded-lg shadow p-6 flex flex-col items-center border-l-4 border-[#EA8316] justify-center text-center h-48 w-full min-w-[200px] mt-16">
               <div className="text-4xl mb-2">{cat.icon}</div>
               <div className="font-semibold text-center">
                 {t(`ourTracks.${cat.key}.title`)}
@@ -46,7 +49,7 @@ export default function OurTracks() {
 
             {/* المسارات */}
             <div className="md:col-span-3 relative flex flex-col items-center gap-6 w-full">
-              {/* الدوائر العلوية مع الخط المتصل (لأجهزة سطح المكتب) */}
+              {/* الدوائر */}
               <div className="hidden md:flex absolute -top-4 left-0 right-0 items-center justify-between px-4 z-10">
                 {trackKeys.map((_, i) => (
                   <div key={i} className="relative flex-1 flex justify-center">
@@ -59,22 +62,41 @@ export default function OurTracks() {
               </div>
 
               {/* البطاقات */}
-              <div className="flex flex-col md:flex-row justify-between gap-4 md:mt-16 w-full z-10  ">
+              <div className="flex flex-col md:flex-row justify-between gap-4 md:mt-16 w-full z-10">
                 {trackKeys.map((track, i) => {
                   const trackTitle = t(`ourTracks.${cat.key}.${track}.title`);
-                  const items = t(`ourTracks.${cat.key}.${track}.items`, {
-                    returnObjects: true,
+                  const desc = t(`ourTracks.${cat.key}.${track}.desc`, {
+                    defaultValue: "",
                   });
 
                   return (
                     <div
                       key={i}
-                      className="bg-[#EA8316] text-white rounded-lg p-6 flex-1 min-w-[200px] h-48  "
+                      onClick={() =>
+                        isMobile && setOpenTrack({ title: trackTitle, desc })
+                      }
+                      className="bg-[#EA8316] text-white rounded-lg p-6 flex-1 min-w-[200px] h-48 relative overflow-hidden group [perspective:1000px] cursor-pointer"
                     >
-                      <h3 className="font-bold text-lg mb-4 text-center ">
-                        {trackTitle}
-                      </h3>
-                   
+                      {/* على الديسكتوب: flip بالهوفر */}
+                      <div className="hidden md:block relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] md:group-hover:[transform:rotateY(180deg)]">
+                        {/* الوجه الأمامي */}
+                        <div className="absolute inset-0 flex flex-col items-center justify-center [backface-visibility:hidden]">
+                          <h3 className="font-bold text-lg mb-4 text-center">
+                            {trackTitle}
+                          </h3>
+                        </div>
+                        {/* الوجه الخلفي */}
+                        <div className="absolute inset-0 flex items-center justify-center px-4 text-center [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto">
+                          <p className="leading-6 text-sm sm:text-base">{desc}</p>
+                        </div>
+                      </div>
+
+                      {/* على الجوال: فقط العنوان */}
+                      <div className="md:hidden flex items-center justify-center h-full">
+                        <h3 className="font-bold text-lg text-center">
+                          {trackTitle}
+                        </h3>
+                      </div>
                     </div>
                   );
                 })}
@@ -83,6 +105,26 @@ export default function OurTracks() {
           </div>
         ))}
       </div>
+
+      {/* Popup يظهر للجوال فقط */}
+      {openTrack && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 md:hidden">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-lg w-full p-6 relative">
+            <button
+              onClick={() => setOpenTrack(null)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-black dark:hover:text-white"
+            >
+              ✕
+            </button>
+            <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white text-center">
+              {openTrack.title}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 leading-6 text-sm sm:text-base whitespace-pre-line">
+              {openTrack.desc}
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

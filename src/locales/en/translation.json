@@ -36,91 +36,57 @@
       {
         "title": "Salla Research & Innovation Center",
         "description": "The journey began with the founding of Salla Center for Research & Innovation to connect research with real-world applications.",
-        "date": "Start",
+        "date": "2021",
         "color": "bg-blue-600",
         "logo": "/salla.png"
       },
+     
       {
-        "title": "The Spark – 2021",
-        "description": "Knowledgex was founded as a spinout to build an innovation-first organization.",
-        "date": "2021",
-        "color": "bg-indigo-600",
-        "logo": "/KXogo.png"
-      },
-      {
-        "title": "The Birth of Knowledgex – 2023",
+        "title": "Research in Action",
         "description": "Launched Spinx & KORE",
-        "date": "2023",
+        "date": "2022",
         "color": "bg-purple-600",
         "logo": "/KXogo.png"
       },
       {
-        "title": "Spinx",
+        "title": "The Birth of Knowledgex",
         "description": "Analytics platform for identifying market opportunities and commercialization potential.",
-        "date": "",
+        "date": "2023",
         "color": "bg-amber-600",
         "logo": "/KXogo.png"
       },
       {
-        "title": "KORE",
+        "title": "KoFactor Launch",
         "description": "Science-based assessment tool to evaluate founder fit and team readiness for innovation.",
-        "date": "",
+        "date": "2024",
         "color": "bg-green-600",
         "logo":"/KORE.png"
-      },
-      {
-        "title": "Riciety",
-        "description": "A comprehensive platform that fosters investment in research and innovation.",
-        "date": "",
-        "color": "bg-rose-600",
-        "logo": "/KXogo.png"
-      },
-      {
-        "title": "Research in Action – 2022",
-        "description": "Three pioneering research projects launched, planting the seeds of innovation.",
-        "date": "2022",
-        "color": "bg-teal-600",
-        "logo": "/KXogo.png"
-      },
-      {
-        "title": "KoFactor Launch – 2024",
-        "description": "Launched KoFactor, a 4-month pre-accelerator that transforms research and IP into market-ready ventures.",
-        "date": "2024",
-        "color": "bg-red-600",
-        "logo": "/kofactor.png"
       }
+     
     ]
   },
 
 
   
-  "ourTracks": {
-    "title": "Our Services",
-    "research.title": "Research Institutions and Universities",
-    "research.enablement.title": "Enablement Track",
-    "research.enablement.items": [
-      "Institutional Innovation Management, includes:",
-      "Innovation Assessment",
-      "Strategy Building",
-      "Commercialization Model",
-      "Strategy Implementation",
-      "Accelerator Cohort Management",
-      "Innovation Talent Capability Development",
-      "Strategic Partnership Development"
-    ],
-    "research.collaboration.title": "Collaboration Track",
-    "research.collaboration.items": [
-      "KoFactor Program: 4-month pre-accelerator program to commercialize knowledge assets",
-      "Innovation & commercialization Awareness Seminars for faculty",
-      "Open Innovation Hub to engage with industry needs"
-    ],
-    "research.advisory.title": "Advisory Track",
-    "research.advisory.items": [
-      "R&D Strategy Development",
-      "Innovation Policy Alignment",
-      "Commercialization Readiness Advisory",
-      "Market Transition & Scale Pathway Planning"
-    ],
+"ourTracks": {
+  "title": "Our Services",
+  "research": {
+    "title": "Services",
+   "enablement": {
+  "title": "Research Project Management",
+  "desc": "A service that helps organizations align their needs with research by analyzing challenges and guiding projects to deliver practical solutions and future products."
+},
+"collaboration": {
+  "title": "Patent Filing",
+  "desc": "A service that protects research outputs through local and international patents, turning ideas into valuable assets that enable commercialization and investment."
+},
+"advisory": {
+  "title": "DeepTech oriented programs",
+  "desc": "Special programs that help researchers and inventors turn outputs or patents into investment-ready products and startups, driving real-world impact."
+}
+
+  }, 
+    
     "corporate.title": "Corporate",
     "corporate.enablement.title": "Enablement Track",
     "corporate.enablement.items": [
@@ -201,22 +167,8 @@
         "number": "85+",
         "title": "Advisory Engagements",
         "description": "Organizations guided through innovation strategy and market alignment"
-      },
-       {
-        "number": "85+",
-        "title": "Advisory Engagements",
-        "description": "Organizations guided through innovation strategy and market alignment"
-      },
-       {
-        "number": "85+",
-        "title": "Advisory Engagements",
-        "description": "Organizations guided through innovation strategy and market alignment"
-      },
-       {
-        "number": "85+",
-        "title": "Advisory Engagements",
-        "description": "Organizations guided through innovation strategy and market alignment"
       }
+      
 
     ]
   },
@@ -271,30 +223,67 @@
     "readMore": "Read More",
     "rasid": {
       "title": "Rasid",
-      "description": "A health intelligence system that enables real-time tracking of infection and recovery cases across Saudi Arabia using DNA-based data."
+      "description": "A health intelligence system that enables real-time tracking of infection and recovery cases across Saudi Arabia using DNA-based data.",
+      "link": "https://foreseen.sa/"
     },
     "max": {
       "title": "MAX",
-      "description": "A Smart Health High-tech advocacy revolutionizing surgical procedures through advanced visualization technologies."
+      "description": "A Smart Health High-tech advocacy revolutionizing surgical procedures through advanced visualization technologies.",
+      "link": "https://foreseen.sa/"
     },
     "foreseen": {
       "title": "Foreseen",
-      "description": "A Saudi-based technology company specializing in AI-driven solutions for e-commerce merchants."
+      "description": "A Saudi-based technology company specializing in AI-driven solutions for e-commerce merchants.",
+      "link": "https://foreseen.sa/"
+    },
+    "amplifai": {
+      "title": "Amplifai",
+      "description": " AI-powered thermal imaging enables fast, accessible and objective diabetic foot screening, so any care team can act early, with confidence.",
+      "link": "https://amplifaihealth.com"
+    },
+    "aiDEN": {
+      "title": "AiDEN",
+      "description": "The AiDEN platform works with Android Automotive OS, making it compatible across makes, models, and brands. Integrate services like insurance, maintenance, food ordering, parking, and more, all while keeping the vehicle owner in control of their data.",
+      "link": "https://aidenauto.com"
+    },
+    "uvera": {
+      "title": "uvera",
+        "description": "What sets our technology apart is its remarkable efficiency, achieving these shelf life improvements in just 30 seconds, and all without the need for any chemical additives.",
+      "link": "https://www.uvera.co/"
     },
 
     "intro": {
       "1": {
         "title": "Rasid – KoFactor Journey",
-        "description": "Rasid began in March 2025 as a collaboration between..."
+    "description": "Rasid began in March 2025 as a collaboration between a research-driven team with a vision, and a technical team capable of transforming that vision into a working solution. From day one, we focused on understanding the problem deeply: how to track infectious diseases with precision and how to empower early intervention. Through brainstorming, we explored existing solutions, identified their limitations, and defined how Rasid could go beyond. As part of KoFactor, the technical team took the lead in extracting product requirements, analyzing current solutions, and understanding user experience challenges. We learned how to shape an MVP (Minimum Viable Product) that’s compelling to both investors and users. We built early UI/UX prototypes based on real user flows and incorporated Saudi platform design guidelines for consistency and trust. We received mentorship from industry pioneers, refined our direction, and successfully developed the first version of Rasid’s MVP. Despite challenges in data sourcing, system design, and cross-functional coordination, we stayed committed. Today, Rasid is on the verge of building strategic partnerships and preparing for a wide-scale launch. Our ambition remains high—to become the go-to platform for infection tracking and public health support.",
+        "link": "https://foreseen.sa/"
       },
       "2": {
         "title": "MAX – Transforming Surgery",
-        "description": "MAX is an advanced medical visualization solution revolutionizing how surgeries are conducted in hospitals..."
+        "description": "MAX is an advanced medical visualization solution revolutionizing how surgeries are conducted in hospitals...",
+        "link": "https://foreseen.sa/"
       },
       "3": {
         "title": "Foreseen – AI in E-Commerce",
-        "description": "Foreseen builds smart predictive tools to help online merchants optimize inventory, marketing, and growth..."
+        "description": "Foreseen started from an idea first envisioned in 2022 by Dr. Ahmed and Salman Bett — to help e-commerce stores make smarter inventory decisions through demand forecasting. We officially joined CoFactor on January 24, 2025, and that support gave us the clarity and structure we needed to move fast. Just a couple of weeks later, on February 9, we interviewed dozens of merchants and gained deep insights into their real pain points. By March 1, we began developing our prototype. In April, we completed full market research across the MENA region. In May, we started building our core forecasting engine and pipeline. Recently, we finalized our first pitch deck and submitted Foreseen for Salla integration, which is currently under review. Thanks to KoFactor, we moved from scattered ideas to a focused, working product — and we’re just getting started.",
+        "link": "https://foreseen.sa/"
+      },
+       "4": {
+        "title": "Amplifai",
+        "description": "AI-powered thermal imaging enables fast, accessible and objective diabetic foot screening, so any care team can act early, with confidence.",
+        "link": "https://amplifaihealth.com"
+      },
+       "5": {
+        "title": "AiDEN",
+        "description": "The AiDEN platform works with Android Automotive OS, making it compatible across makes, models, and brands. Integrate services like insurance, maintenance, food ordering, parking, and more, all while keeping the vehicle owner in control of their data.",
+        "link": "https://aidenauto.com"
+      },
+      "6": {
+        "title": "uvera",
+        "description": "What sets our technology apart is its remarkable efficiency, achieving these shelf life improvements in just 30 seconds, and all without the need for any chemical additives.",
+        "link": "https://www.uvera.co/"
       }
+      
     },
 
     "journey": {
@@ -348,7 +337,7 @@
         ]
       },
       "2": {
-        "title": "MAX Journey (Placeholder)",
+        "title": "MAX Journey ",
         "sideImage": "/iSteps-02.png",
         "sideImageAlt": "MAX journey image",
         "items": [
@@ -358,13 +347,18 @@
         ]
       },
       "3": {
-        "title": "Foreseen Journey (Placeholder)",
+        "title": "Foreseen Journey ",
         "sideImage": "/iSteps-02.png",
         "sideImageAlt": "Foreseen journey image",
         "items": [
-          { "title": "Founding", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-blue-600", "logo": "/KXogo.png" },
-          { "title": "MVP", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-rose-600", "logo": "/KXogo.png" },
-          { "title": "Scale", "description": "Placeholder — content under review.", "date": "TBD", "color": "bg-green-600", "logo": "/KXogo.png" }
+          { "title": "Idea initiated by Dr. Ahmed & Salman Bett", "description": "", "date": "starting 2022", "color": "bg-blue-600", "logo": "/KXogo.png" },
+          { "title": "Joined KoFactor", "description": "", "date": "Jan 24, 2025 ", "color": "bg-rose-600", "logo": "/KXogo.png" },
+          { "title": "Interviewed e-commerce merchants", "description": "", "date": "Mar 1, 2025 ", "color": "bg-green-600", "logo": "/KXogo.png" },
+          { "title": "Completed MENA market research", "description": "", "date": "April 1, 2025", "color": "bg-green-600", "logo": "/KXogo.png" },
+          { "title": "Built core forecasting pipeline", "description": "", "date": "May 30, 2025", "color": "bg-green-600", "logo": "/KXogo.png" },
+          { "title": "Finalized pitch deck", "description": "", "date": "July 25, 2025", "color": "bg-green-600", "logo": "/KXogo.png" },
+          { "title": "Salla integration under review", "description": "", "date": "July 28, 2025", "color": "bg-green-600", "logo": "/KXogo.png" }
+
         ]
       },
       "4": {
