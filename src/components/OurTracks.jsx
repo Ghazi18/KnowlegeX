@@ -29,7 +29,7 @@ export default function OurTracks() {
           "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
       }}
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center sm:mb-12 mb-6 text-gray-900 dark:text-white">
         {t("ourTracks.title")}
       </h2>
 
@@ -87,7 +87,9 @@ export default function OurTracks() {
                         </div>
                         {/* الوجه الخلفي */}
                         <div className="absolute inset-0 flex items-center justify-center px-4 text-center [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto">
-                          <p className="leading-6 text-sm sm:text-base">{desc}</p>
+                          <p className="leading-6 text-sm sm:text-base">
+                            {desc}
+                          </p>
                         </div>
                       </div>
 
