@@ -1,68 +1,14 @@
 <!doctype html>
-<html lang="ar">
+<html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/kxicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KNOWLEDGEX</title>
-
-    <!-- Polyfill: modulepreload (حل لمشكلة التحميل على Safari الأقدم) -->
-    <script>
-      (function () {
-        const relList = document.createElement("link").relList;
-        if (relList && relList.supports && relList.supports("modulepreload")) return;
-
-        for (const link of document.querySelectorAll('link[rel="modulepreload"]')) load(link);
-        new MutationObserver((list) => {
-          for (const m of list) {
-            if (m.type !== "childList") continue;
-            for (const n of m.addedNodes) {
-              if (n.tagName === "LINK" && n.rel === "modulepreload") load(n);
-            }
-          }
-        }).observe(document, { childList: true, subtree: true });
-
-        function getFetchOpts(link) {
-          const opts = {};
-          if (link.integrity) opts.integrity = link.integrity;
-          if (link.referrerPolicy) opts.referrerPolicy = link.referrerPolicy;
-          if (link.crossOrigin === "use-credentials") opts.credentials = "include";
-          else if (link.crossOrigin === "anonymous") opts.credentials = "omit";
-          else opts.credentials = "same-origin";
-          return opts;
-        }
-        function load(link) {
-          if (link._polyfilled) return;
-          link._polyfilled = true;
-          fetch(link.href, getFetchOpts(link));
-        }
-      })();
-    </script>
-
-    <!-- (اختياري للتشخيص) التقط أي أخطاء JS تظهر على iPhone 12 -->
-    <script>
-      window.onerror = (m) => console.log("JS Error:", m);
-      window.onunhandledrejection = (e) =>
-        console.log("Promise:", e && e.reason && (e.reason.message || e.reason));
-    </script>
-
-    <!-- (مرة واحدة فقط إذا سبق فعّلت PWA) امسح Service Worker والكاش
-         افتح الصفحة على iPhone 12 مرتين، ثم احذف هذا السكربت نهائياً. -->
-    <!--
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
-        if (window.caches && caches.keys) {
-          caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
-        }
-        console.log("SW & caches cleared");
-      }
-    </script>
-    -->
   </head>
   <body>
     <div id="root"></div>
-    <!-- سكربت التطبيق -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
