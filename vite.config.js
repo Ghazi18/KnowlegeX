@@ -9,7 +9,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     legacy({
-      targets: ['chrome >= 64', 'safari >= 12'],
+      targets: ['chrome >= 64', 'safari >= 16'],
       modernPolyfills: ['es.object.from-entries'],
     })
   ]
