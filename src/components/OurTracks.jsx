@@ -22,12 +22,9 @@ export default function OurTracks() {
   return (
     <section
       id="services"
-      className="py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16 dark:bg-gray-900 overflow-hidden"
+      className="py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16 dark:bg-gray-900 overflow-hidden bg-[#FFF8F1"
       dir={isRTL ? "rtl" : "ltr"}
-      style={{
-        background:
-          "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
-      }}
+      
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center sm:mb-12 mb-6 text-gray-900 dark:text-white">
         {t("ourTracks.title")}

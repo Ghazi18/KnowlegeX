@@ -1,13 +1,16 @@
-import { defineConfig } from "vite";
+
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import legacy from '@vitejs/plugin-legacy'
+import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-   build: {
-    target: 'es2019'
-  },
-  plugins: [react(), tailwindcss()],
-});
-
-
+  plugins: [
+    react(),
+    tailwindcss(),
+    legacy({
+      targets: ['chrome >= 64', 'safari >= 12'],
+      modernPolyfills: ['es.object.from-entries'],
+    })
+  ]
+})
