@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import logo from "/KXogo.png";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const { t, i18n } = useTranslation();
@@ -39,12 +40,12 @@ export default function NavBar() {
               ${isRTL ? "flex-row-reverse" : "flex-row"}
             `}
           >
-            <a className="text-black hover:text-gray-500/75" href="/">{t("navbar.home")}</a>
+            <Link className="text-black hover:text-gray-500/75" to="/">{t("navbar.home")}</Link>
             <a className="text-black hover:text-gray-500/75" href="#why">{t("navbar.why")}</a>
             <a className="text-black hover:text-gray-500/75" href="#journey">{t("navbar.journey")}</a>
             <a className="text-black hover:text-gray-500/75" href="#services">{t("navbar.programs")}</a>
-            {/* <a className="text-black hover:text-gray-500/75" href="#products">{t("navbar.products")}</a> */}
-            <a className="text-black hover:text-gray-500/75" href="/Impact">{t("navbar.impact")}</a>
+            {/* <Link className="text-black hover:text-gray-500/75" to="#products">{t("navbar.products")}</Link> */}
+            <Link className="text-black hover:text-gray-500/75" to="/Impact">{t("navbar.impact")}</Link>
           </nav>
 
           {/* Buttons */}
@@ -98,7 +99,7 @@ export default function NavBar() {
               </div>
 
               <nav className={`flex flex-col gap-4 text-base font-medium ${isRTL ? "text-right" : "text-left"}`}>
-                <a href="/" onClick={() => setIsMenuOpen(false)}>{t("navbar.home")}</a>
+                <Link to="/" onClick={() => setIsMenuOpen(false)}>{t("navbar.home")}</Link>
                 <hr className="opacity-30" />
                 <a href="#why" onClick={() => setIsMenuOpen(false)}>{t("navbar.why")}</a>
                 <hr className="opacity-30" />
@@ -108,7 +109,7 @@ export default function NavBar() {
                 <hr className="opacity-30" />
                 <a href="#products" onClick={() => setIsMenuOpen(false)}>{t("navbar.products")}</a>
                 <hr className="opacity-30" />
-                <a href="/Impact" onClick={() => setIsMenuOpen(false)}>{t("navbar.impact")}</a>
+                <Link to="/Impact" onClick={() => setIsMenuOpen(false)}>{t("navbar.impact")}</Link>
                 <hr className="opacity-30" />
               </nav>
 
