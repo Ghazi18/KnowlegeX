@@ -7,20 +7,20 @@ import ProjectCards from "../components/impactComps/ProjectCrads";
 
 export default function Impact() {
   return (
-    <main className="min-h-screen max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
+    <main className="min-h-screen max-w-[2000px] mx-auto  text-gray-900  overflow-x-hidden ">
       <FadeInWrapper>
         <ImpactBanner />
       </FadeInWrapper>
-      <FadeInWrapper delay={0.1}>
+      {/* <FadeInWrapper delay={0.1}>
         <Kofactor />
-      </FadeInWrapper>
+      </FadeInWrapper> */}
       {/* <FadeInWrapper delay={0.2}>
         <Objectives />
       </FadeInWrapper> */}
       {/* <FadeInWrapper delay={0.3}>
         <ProgressCircles />
       </FadeInWrapper> */}
-      <FadeInWrapper delay={0.2}>
+      <FadeInWrapper delay={0.1}>
         <ProjectCards />
       </FadeInWrapper>
     

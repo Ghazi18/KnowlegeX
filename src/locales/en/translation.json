@@ -1,7 +1,7 @@
 {
   "navbar": {
     "home": "Home",
-    "why": "Why KnowledgeX",
+    "why": "Why Knowledgex",
     "journey": "Journey",
     "programs": "Services",
     "products": "Products",
@@ -24,7 +24,7 @@
   },
 
   "ourWhy": {
-    "title": "Our Why",
+    "title": "",
     "subtitle": "From Knowledge to Business",
     "desc": "Our purpose is to bridge the gap between academic excellence and commercial relevance by building innovation ecosystems that empower research institutions, corporates, and emerging ventures to transform knowledge into market-ready solutions."
   },

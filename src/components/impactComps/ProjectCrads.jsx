@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import pj1 from "../../assets/whatKF.png";
 import pj2 from "../../assets/max.jpg";
-import pj3 from "../../assets/forseen.jpg";
-import aiednP from "/aiednP.png";
-import amplifieP from "/amplifieP.jpg";
+import pj3 from "../../assets/forseen.png";
+import amplifieP from "/aiednP.png";
+import aiednP from "/amplifieP.jpg";
 import uvera from "/uvera.png";
 
 
@@ -60,13 +60,13 @@ export default function ProjectCards() {
 
   return (
     <section
-      className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900"
+      className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 "
       dir={isRTL ? "rtl" : "ltr"}
       id="projects"
     >
       {/* العنوان + زر عرض المزيد */}
       <div className="flex justify-between items-center max-w-8xl mx-auto mb-10 flex-wrap gap-4">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-white">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 ">
           {t("projects.title")}
         </h2>
         <a
@@ -83,7 +83,7 @@ export default function ProjectCards() {
           <Link
             key={project.id}
              to={project.url || `/impact/${project.id}`}
-            className="relative overflow-hidden rounded-lg border border-gray-100 bg-white dark:bg-gray-800 shadow hover:shadow-lg transition min-h-[480px] md:min-h-[500px]"
+            className="relative overflow-hidden rounded-lg border border-gray-100 bg-white  shadow hover:shadow-lg transition min-h-[480px] md:min-h-[500px]"
           >
             <img
               alt={project.title}
@@ -94,11 +94,11 @@ export default function ProjectCards() {
 
             {/* محتوى البطاقة + مساحة سفلية للزر */}
             <div className="p-4 sm:p-6 ">
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+              <h3 className="text-lg font-medium text-gray-900 ">
                 {project.title}
               </h3>
 
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-600 dark:text-gray-300">
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-600 d">
                 {project.description}
               </p>
             </div>

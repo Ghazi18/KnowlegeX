@@ -24,11 +24,11 @@ export default function OurTracks() {
   return (
     <section
       id="services"
-      className="py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16 dark:bg-gray-900 overflow-hidden bg-[#FFF8F1"
+      className="py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16  overflow-hidden bg-[#FFF8F1"
       dir={isRTL ? "rtl" : "ltr"}
       
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center sm:mb-12 mb-6 text-gray-900 dark:text-white">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center sm:mb-12 mb-6 text-gray-900 ">
         {t("ourTracks.title")}
       </h2>
 
@@ -110,17 +110,17 @@ export default function OurTracks() {
       {/* Popup يظهر للجوال فقط */}
       {openTrack && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 md:hidden">
-          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-lg w-full p-6 relative">
+          <div className="bg-white  rounded-xl shadow-xl max-w-lg w-full p-6 relative">
             <button
               onClick={() => setOpenTrack(null)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-black dark:hover:text-white"
+              className="absolute top-3 right-3 text-gray-500 hover:text-black "
             >
               ✕
             </button>
-            <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white text-center">
+            <h3 className="text-xl font-bold mb-4 text-gray-900  text-center">
               {openTrack.title}
             </h3>
-            <p className="text-gray-700 dark:text-gray-300 leading-6 text-sm sm:text-base whitespace-pre-line">
+            <p className="text-gray-700 d leading-6 text-sm sm:text-base whitespace-pre-line">
               {openTrack.desc}
             </p>
           </div>

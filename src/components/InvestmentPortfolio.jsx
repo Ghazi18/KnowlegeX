@@ -12,8 +12,8 @@ export default function InvestmentPortfolio() {
      style={{
         background: "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
       }}
-       className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900 overflow-hidden">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white">
+       className="py-16 px-4 sm:px-10 md:px-16   overflow-hidden">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 ">
         {t("InvestmentPortfolio.title")}
         <br />
         <span className="bg-[#071C2F] text-white px-3  rounded-md ml-2 text-xl sm:text-2xl ">

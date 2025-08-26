@@ -38,7 +38,7 @@ export default function OurValue() {
       }}
       dir={isArabic ? "rtl" : "ltr"}
     >
-      <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-gray-900 dark:text-white">
+      <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-gray-900 ">
         {t("ourValues")}
       </h2>
 

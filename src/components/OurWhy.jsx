@@ -19,14 +19,14 @@ export default function OurWhy() {
         {/* Mobile View */}
         <div className="md:hidden flex flex-col items-center gap-6">
           <img src={riyalSvg} alt="Our Why" className="w-64 max-w-full" />
-          <div className="bg-white dark:bg-gray-800 text-center rounded-xl p-6 shadow w-full">
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <div className="bg-white  text-center rounded-xl p-6 shadow w-full">
+            <h1 className="text-2xl font-bold text-gray-900 ">
               {t("ourWhy.title")}
             </h1>
             <h2 className="mt-2 text-xl font-semibold text-[#EA8316]">
               {t("ourWhy.subtitle")}
             </h2>
-            <p className="mt-4 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="mt-4 text-base text-gray-700 d leading-relaxed">
               {t("ourWhy.desc")}
             </p>
           </div>
@@ -58,15 +58,15 @@ export default function OurWhy() {
       : "left-0 rounded-r-2xl text-left"
   } h-4/5 
      w-full md:w-[500px] lg:w-[550px] xl:w-[700px]   // ← هنا البريك بوينت
-     bg-white dark:bg-gray-800 p-10 shadow-lg z-0 flex flex-col justify-center`}
+     bg-white  p-10 shadow-lg z-0 flex flex-col justify-center`}
 >
-  <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+  <h1 className="text-3xl font-bold text-gray-900 ">
     {t("ourWhy.title")}
   </h1>
   <h2 className="mt-2 text-xl font-semibold text-[#EA8316]">
     {t("ourWhy.subtitle")}
   </h2>
-  <p className="mt-4 text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+  <p className="mt-4 text-base text-gray-700 d leading-relaxed">
     {t("ourWhy.desc")}
   </p>
 </div>

@@ -14,12 +14,12 @@ export default function FinalOutcome() {
 
   return (
  <section
-  className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900 overflow-hidden"
+  className="py-16 px-4 sm:px-10 md:px-16   overflow-hidden"
   dir={isRTL ? "rtl" : "ltr"}
 >
   {/* العنوان */}
   <h2
-    className={`text-3xl sm:text-4xl font-bold mb-12 text-gray-800 dark:text-white ${
+    className={`text-3xl sm:text-4xl font-bold mb-12 text-gray-800  ${
       isRTL ? "text-right" : "text-left"
     }`}
   >

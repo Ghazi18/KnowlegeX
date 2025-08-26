@@ -2,12 +2,12 @@ import { useTranslation } from "react-i18next";
 import {
   FaEnvelope,
   FaPhone,
-  FaTwitter,
   FaLinkedin,
   FaInstagram,
 } from "react-icons/fa";
 
 import logo from "../../assets/logof.svg";
+import {  FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   const { t, i18n } = useTranslation();
@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="flex gap-8 text-sm">
             <div className="flex items-center gap-2">
               <FaEnvelope className="text-md" />
-              <span>knowledgex@gmail.com</span>
+              <span>info@knowledgex.sa</span>
             </div>
             <div className="flex items-center gap-2">
               <FaPhone className="text-md" />
@@ -58,15 +58,15 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center py-6 text-sm text-gray-400 gap-4">
           <p>{t("footer.copyright")}</p>
           <div className="flex gap-4 text-white text-lg">
-            <a href="#">
-              <FaTwitter className="hover:text-[#EA8316]" />
+            <a href="https://x.com/knowledgexSA">
+              <FaXTwitter className="hover:text-[#EA8316]" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/knowledgex-sa/?viewAsMember=true">
               <FaLinkedin className="hover:text-[#EA8316]" />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <FaInstagram className="hover:text-[#EA8316]" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

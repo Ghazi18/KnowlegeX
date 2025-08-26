@@ -11,7 +11,7 @@ export default function ThreeBoxesWithImages() {
 
   return (
     <section
-      className="w-full py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900 text-center"
+      className="w-full py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16   text-center"
       dir={isRTL ? "rtl" : "ltr"}
       style={{
         background:
@@ -20,10 +20,10 @@ export default function ThreeBoxesWithImages() {
     >
       {/* العنوان والوصف */}
       <div className="max-w-3xl mx-auto mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900  mb-4">
           {t("focusAreas.title")}
         </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300">
+        <p className="text-lg text-gray-700 d">
           {t("focusAreas.desc")}
         </p>
       </div>

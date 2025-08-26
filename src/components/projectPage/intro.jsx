@@ -12,15 +12,15 @@ export default function Intro({ title, description, image,link }) {
       <div className="absolute top-0 left-0 w-full h-[70%] bg-[#071C2F] z-0" />
 
       <div className="relative z-10 max-w-8xl mx-auto">
-        <div className={`text-white dark:text-gray-800 ${isRTL ? "text-right" : "text-left"}`}>
+        <div className={`text-white :t ${isRTL ? "text-right" : "text-left"}`}>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             {title}
-             <a href={link} target="_blank" className="text-white dark:text-gray-700 text-3xl mx-2 w-full  whitespace-pre-line">
+             <a href={link} target="_blank" className="text-white  text-3xl mx-2 w-full  whitespace-pre-line">
             🧷
           </a>
           </h2>
 
-          <p className="text-white dark:text-gray-700 text-sm sm:text-base leading-relaxed w-full mb-8 whitespace-pre-line">
+          <p className="text-white  text-sm sm:text-base leading-relaxed w-full mb-8 whitespace-pre-line">
             {description}
 
             

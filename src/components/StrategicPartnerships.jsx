@@ -17,14 +17,14 @@ export default function StrategicPartnerships() {
 
   return (
     <section
-      className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900"
+      className="py-16 px-4 sm:px-10 md:px-16  "
       dir={isRTL ? "rtl" : "ltr"}
       style={{
         background:
           "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
       }}
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-8 sm:mb-12">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900  mb-8 sm:mb-12">
         {t("partnerships.title")}
         {i18n.language !== "ar" && (
           <>
@@ -47,7 +47,7 @@ export default function StrategicPartnerships() {
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="logo-img dark:invert mix-blend-multiply"
+                    className="logo-img  mix-blend-multiply"
                   />
                 </div>
               ))}

@@ -34,14 +34,14 @@ export default function ImpactBanner() {
             )}
           </p>
 
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <a
               href="#projects"
               className="inline-block rounded bg-[#EA8316] px-6 py-3 text-sm font-medium text-white shadow-md hover:bg-orange-400 transition"
             >
               {t("impactBanner.cta", "Get Started")}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

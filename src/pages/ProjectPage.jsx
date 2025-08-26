@@ -7,7 +7,7 @@ import FinalOutcome from "../components/projectPage/FinalOutcome";
 import WorkTeam from "../components/projectPage/WorkTeam";
 
 import rasidImg from "../assets/whatKF.png";
-import forseen from "../assets/forseen.jpg";
+import forseen from "../assets/forseen.png";
 import max from "../assets/max.jpg";
 import aiednP from "/aiednP.png";
 import amplifieP from "/amplifieP.jpg";
@@ -76,7 +76,7 @@ export default function ProjectPage() {
   if (!project) return <div className="text-center py-20">المشروع غير موجود</div>;
 
   return (
-    <main className="min-h-screen max-w-[2000px] mx-auto dark:bg-gray-900 text-gray-900 dark:text-white overflow-x-hidden ">
+    <main className="min-h-screen max-w-[2000px] mx-auto  text-gray-900  overflow-x-hidden ">
       <FadeInWrapper>
         <Intro {...project} />
       </FadeInWrapper>

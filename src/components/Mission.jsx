@@ -34,7 +34,7 @@ export default function Mission() {
 
   return (
     <section
-      className="w-full px-4 sm:px-10 md:px-16 py-24 dark:bg-gray-900"
+      className="w-full px-4 sm:px-10 md:px-16 py-24 "
       dir={isRTL ? "rtl" : "ltr"}
       style={{
         background:
@@ -42,7 +42,7 @@ export default function Mission() {
       }}
     >
       {/* العنوان */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-10">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900  mb-10">
         {t("ourMission")}
       </h2>
 
@@ -54,7 +54,7 @@ export default function Mission() {
             className="flex flex-col items-center text-center h-full"
           >
             {/* المربع العلوي (الأيقونة) */}
-            <div className="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-xl bg-[#071C2F] dark:bg-gray-800">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center rounded-xl bg-[#071C2F] ">
               {feature.icon}
             </div>
 
@@ -63,14 +63,14 @@ export default function Mission() {
 
             {/* البطاقة */}
             <div
-              className={`mt-3 w-full max-w-[22rem] bg-white dark:bg-gray-800 rounded-md shadow border-t-4 ${feature.color} p-4 flex flex-col flex-grow`}
+              className={`mt-3 w-full max-w-[22rem] bg-white  rounded-md shadow border-t-4 ${feature.color} p-4 flex flex-col flex-grow`}
             >
               {feature.title && (
-                <h3 className="text-lg font-semibold mb-1 text-gray-800 dark:text-white">
+                <h3 className="text-lg font-semibold mb-1 text-gray-800 ">
                   {feature.title}
                 </h3>
               )}
-              <p className="text-md font-semibold text-gray-600 dark:text-gray-300 whitespace-pre-line flex-grow flex items-center justify-center">
+              <p className="text-md font-semibold text-gray-600  whitespace-pre-line flex-grow flex items-center justify-center">
                 {feature.desc}
               </p>
             </div>

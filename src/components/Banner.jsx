@@ -10,7 +10,7 @@ export default function Banner() {
       className="relative bg-gradient-to-r from-[#071C2F] to-[#165995] px-4 sm:px-10 md:px-16 overflow-hidden"
     >
       {/* طبقة تغطية شفافة — مهم: pointer-events-none */}
-      <div className="absolute inset-0 bg-black/30 dark:bg-black/50 z-0 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/30  z-0 pointer-events-none" />
 
       {/* المحتوى */}
       <div className="relative z-10 w-full mx-auto min-h-[60svh] flex items-center justify-center py-12 sm:py-24 lg:py-32">

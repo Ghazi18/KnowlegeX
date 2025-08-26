@@ -21,7 +21,7 @@ export default function ProgressCircles() {
 
   return (
     <section
-      className="py-16 bg-white dark:bg-gray-900 px-4 sm:px-10 md:px-16 overflow-hidden"
+      className="py-16 bg-white  px-4 sm:px-10 md:px-16 overflow-hidden"
       dir={isRTL ? "rtl" : "ltr"}
     >
       <div className="max-w-8xl mx-auto">
@@ -57,7 +57,7 @@ export default function ProgressCircles() {
 </div>
 
 
-              <span className="text-sm sm:text-base font-medium text-gray-900 dark:text-white w-full leading-snug">
+              <span className="text-sm sm:text-base font-medium text-gray-900  w-full leading-snug">
                 {t(`timeline.${step.key}`)}
               </span>
             </div>

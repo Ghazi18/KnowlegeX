@@ -1,4 +1,5 @@
 
+
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import legacy from '@vitejs/plugin-legacy'
@@ -9,7 +10,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
     legacy({
-      targets: ['chrome >= 64', 'safari >= 16'],
+      targets: ['chrome >= 64', 'safari >= 12'],
       modernPolyfills: ['es.object.from-entries'],
     })
   ]

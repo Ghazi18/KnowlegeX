@@ -44,10 +44,10 @@ export default function WorkTeam() {
   return (
     <section
       dir={isRTL ? "rtl" : "ltr"}
-      className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900"
+      className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 "
     >
       <h2
-        className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-gray-800 dark:text-white ${
+        className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-8 md:mb-10 text-gray-800  ${
           isRTL ? "text-right" : "text-left"
         }`}
       >
@@ -59,7 +59,7 @@ export default function WorkTeam() {
           <div key={index} className="px-2 sm:px-3 h-full">
             <div
               className={`
-                bg-white dark:bg-gray-800 rounded-lg shadow-md
+                bg-white  rounded-lg shadow-md
                 p-5 sm:p-6
                 flex flex-col items-center
                 h-[280px] sm:h-[300px] md:h-[340px] lg:h-[360px]  /* ارتفاع موحّد عبر المقاسات */
@@ -67,7 +67,7 @@ export default function WorkTeam() {
             >
               <FaUserCircle className="text-5xl sm:text-6xl text-gray-400 mb-3 sm:mb-4 shrink-0" />
 
-              <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white text-center">
+              <h3 className="text-base sm:text-lg font-bold text-gray-900  text-center">
                 {member.name}
               </h3>
 
@@ -78,7 +78,7 @@ export default function WorkTeam() {
               {/* الوصف: محاذاة حسب اللغة + قصّ السطور */}
               <p
                 className={`
-                  text-xs sm:text-sm text-gray-600 dark:text-gray-300 mt-3
+                  text-xs sm:text-sm text-gray-600 d mt-3
                   ${isRTL ? "text-right" : "text-left"}
                   line-clamp-4 md:line-clamp-5
                 `}
