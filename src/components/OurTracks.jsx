@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { FaBookOpenReader } from "react-icons/fa6";
+
 
 export default function OurTracks() {
   const { t, i18n } = useTranslation();
@@ -16,7 +18,7 @@ export default function OurTracks() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const categories = [{ key: "research", icon: "🏢" }];
+  const categories = [{ key: "research", icon: <FaBookOpenReader /> }];
   const trackKeys = ["enablement", "collaboration", "advisory"];
 
   return (
@@ -39,7 +41,7 @@ export default function OurTracks() {
             {/* البطاقة الرئيسية */}
             <div className="bg-[#071C2F] text-white rounded-lg shadow p-6 flex flex-col items-center border-l-4 border-[#EA8316] justify-center text-center h-48 w-full min-w-[200px] mt-16">
               <div className="text-4xl mb-2">{cat.icon}</div>
-              <div className="font-semibold text-center">
+              <div className="font-semibold text-lg text-center">
                 {t(`ourTracks.${cat.key}.title`)}
               </div>
             </div>
@@ -72,7 +74,7 @@ export default function OurTracks() {
                       onClick={() =>
                         isMobile && setOpenTrack({ title: trackTitle, desc })
                       }
-                      className="bg-[#EA8316] text-white rounded-lg p-6 flex-1 min-w-[200px] h-48 relative overflow-hidden group [perspective:1000px] cursor-pointer"
+                      className="bg-[#EA8316] text-white rounded-lg p-6 flex-1 min-w-[200px] h-48 relative overflow-hidden group [perspective:1000px] "
                     >
                       {/* على الديسكتوب: flip بالهوفر */}
                       <div className="hidden md:block relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d] md:group-hover:[transform:rotateY(180deg)]">

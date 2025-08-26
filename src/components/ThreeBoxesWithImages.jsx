@@ -7,7 +7,7 @@ export default function ThreeBoxesWithImages() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
 
-  const images = [kore, spinsight, scienceHub];
+  const images = [kore, scienceHub, spinsight];
 
   return (
     <section
