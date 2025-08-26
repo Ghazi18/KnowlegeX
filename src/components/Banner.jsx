@@ -23,14 +23,14 @@ export default function Banner() {
             {t("banner.desc")}
           </p>
 
-          <div className="mt-6 flex justify-center gap-4">
+          {/* <div className="mt-6 flex justify-center gap-4">
             <a
               href="#"
               className="inline-block rounded border border-[#EA8316] bg-[#EA8316] px-6 py-3 font-medium text-white hover:bg-orange-400 transition"
             >
               {t("banner.cta")}
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
