@@ -38,19 +38,6 @@
     "globals": "^16.2.0",
     "tailwindcss": "^4.1.11",
     "vite": "5.2.10"
-  },
-  "browserslist": {
-    "production": [
-      "defaults",
-      "iOS >= 10",
-      "Android >= 5",
-      "not IE 11"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
+  
 }
-
