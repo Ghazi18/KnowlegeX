@@ -8,6 +8,9 @@ export default function Numbers() {
     <section
       className="text-gray-600 body-font px-4 sm:px-10 md:px-16"
       dir={i18n.language === "ar" ? "rtl" : "ltr"}
+      style={{
+        background: "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
+      }}
     >
       <div className="py-20 mx-auto w-full">
         {/* العنوان في المنتصف */}

@@ -36,6 +36,10 @@ export default function Mission() {
     <section
       className="w-full px-4 sm:px-10 md:px-16 py-24 dark:bg-gray-900"
       dir={isRTL ? "rtl" : "ltr"}
+      style={{
+        background:
+          "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
+      }}
     >
       {/* العنوان */}
       <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-10">

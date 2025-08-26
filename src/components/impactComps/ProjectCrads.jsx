@@ -62,6 +62,7 @@ export default function ProjectCards() {
     <section
       className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900"
       dir={isRTL ? "rtl" : "ltr"}
+      id="projects"
     >
       {/* العنوان + زر عرض المزيد */}
       <div className="flex justify-between items-center max-w-8xl mx-auto mb-10 flex-wrap gap-4">

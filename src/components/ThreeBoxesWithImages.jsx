@@ -15,7 +15,7 @@ export default function ThreeBoxesWithImages() {
       dir={isRTL ? "rtl" : "ltr"}
       style={{
         background:
-          "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
+          "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
       }}
     >
       {/* العنوان والوصف */}

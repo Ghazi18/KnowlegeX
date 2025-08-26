@@ -18,9 +18,7 @@ export default function Home() {
 
   return (
 <main className="min-h-[100svh] max-w-[2000px] mx-auto text-gray-900 overflow-x-hidden"
-      style={{
-        background: "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)"
-      }}
+      
 >
       <FadeInWrapper>
         <Banner />

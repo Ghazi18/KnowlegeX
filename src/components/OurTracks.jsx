@@ -26,7 +26,7 @@ export default function OurTracks() {
       dir={isRTL ? "rtl" : "ltr"}
       style={{
         background:
-          "linear-gradient(to bottom, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
+          "linear-gradient(to top, #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
       }}
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-center sm:mb-12 mb-6 text-gray-900 dark:text-white">

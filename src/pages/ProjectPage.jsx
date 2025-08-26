@@ -93,9 +93,9 @@ export default function ProjectPage() {
         </FadeInWrapper>
       )}
 
-      <FadeInWrapper delay={0.2}>
+      {/* <FadeInWrapper delay={0.2}>
         <FinalOutcome />
-      </FadeInWrapper>
+      </FadeInWrapper> */}
 
       {/* <FadeInWrapper delay={0.2}>
         <WorkTeam />

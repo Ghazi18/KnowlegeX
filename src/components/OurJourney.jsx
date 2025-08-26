@@ -149,6 +149,10 @@ export default function OurJourney({ milestones = [], customTitle }) {
       className={`body-font mb-10 ${
         isArabic ? "font-plex-arabic" : ""
       } relative py-20 px-4 sm:px-10 md:px-16`}
+      style={{
+        background:
+          "linear-gradient(to bottom , #FFF8F1 0%, white 30%, #FFF8F1 60%, white 100%)",
+      }}
     >
       {/* العنوان */}
       <div className="flex flex-col text-center w-full mb-10">

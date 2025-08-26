@@ -14,7 +14,7 @@ export default function FinalOutcome() {
 
   return (
  <section
-  className="py-16 px-4 sm:px-10 md:px-16 bg-gray-50 dark:bg-gray-900 overflow-hidden"
+  className="py-16 px-4 sm:px-10 md:px-16  dark:bg-gray-900 overflow-hidden"
   dir={isRTL ? "rtl" : "ltr"}
 >
   {/* العنوان */}
