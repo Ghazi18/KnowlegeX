@@ -24,7 +24,7 @@ export default function OurTracks() {
   return (
     <section
       id="services"
-      className="py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16  overflow-hidden bg-[#FFF8F1"
+      className="py-10 sm:py-12 md:py-16 px-4 sm:px-10 md:px-16  overflow-hidden bg-[#FFF8F1]"
       dir={isRTL ? "rtl" : "ltr"}
       
     >
@@ -120,7 +120,7 @@ export default function OurTracks() {
             <h3 className="text-xl font-bold mb-4 text-gray-900  text-center">
               {openTrack.title}
             </h3>
-            <p className="text-gray-700 d leading-6 text-sm sm:text-base whitespace-pre-line">
+            <p className="text-gray-700 leading-6 text-sm sm:text-base whitespace-pre-line">
               {openTrack.desc}
             </p>
           </div>

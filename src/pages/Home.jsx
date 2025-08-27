@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const { t } = useTranslation();
-  const milestones = t("ourJourney.items", { returnObjects: true });
+const milestones = t("ourJourney.items", { returnObjects: true, defaultValue: [] });
 
   return (
 <main className="min-h-[100svh] max-w-[2000px] mx-auto text-gray-900 overflow-x-hidden bg-[#FFF8F1]"
@@ -40,7 +40,7 @@ export default function Home() {
         <Numbers />
       </FadeInWrapper>
       <FadeInWrapper delay={0.6}>
-        <OurJourney milestones={milestones} />
+        <OurJourney milestones={Array.isArray(milestones) ? milestones : []} />
       </FadeInWrapper>
       <FadeInWrapper delay={0.7}>
         <OurTracks />
