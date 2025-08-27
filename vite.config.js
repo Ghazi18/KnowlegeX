@@ -1,32 +1,31 @@
 
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import legacy from '@vitejs/plugin-legacy'
 import tailwindcss from "@tailwindcss/vite";
-
+import react from "@vitejs/plugin-react";
+import legacy from '@vitejs/plugin-legacy'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(),
+     tailwindcss(),
     legacy({
-      // يدعم سفاري القديم و iOS 12+
-      targets: ['defaults', 'ios >= 12', 'safari >= 12'],
-      // بعض المشاريع تحتاجه لـ async/await
+      targets: [
+        'defaults',
+        'not IE 11',
+        'Android >= 5',
+        'iOS >= 10',
+      ],
+      // دعم async/await و generators في الأجهزة القديمة
       additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
-      // بوليفلز حديثة شائعة تنقص سفاري 14/15
-      modernPolyfills: [
-        'es.promise.any',
-        'es.object.from-entries',
-        'es.array.at'
-      ]
-    })
+      // إدراج بوليفلز حداثية عند الحاجة
+      modernPolyfills: true,
+    }),
   ],
   build: {
-    // خفّض الهدف ليتوافق مع سفاري
-    target: ['es2019', 'safari14'],
-    cssTarget: 'safari14',
-    // مهم لمتصفحات لا تدعم modulepreload بالكامل
-    polyfillModulePreload: true
-  }
-})
+    // اكسر الميزات الحديثة جداً لتناسب متصفحات قديمة نسبيًا
+    target: ['es2017', 'edge88', 'firefox78', 'chrome87', 'safari13'],
+    // تحويلات CSS لتوافق Safari/iOS أقدم
+    cssTarget: ['chrome61', 'safari11'],
+    sourcemap: false,
+  },
+});

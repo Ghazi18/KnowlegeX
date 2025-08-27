@@ -3,11 +3,8 @@ import { FaArrowRight, FaArrowLeft, FaArrowDown } from "react-icons/fa";
 import img1 from "../../assets/outcome.png";
 
 export default function FinalOutcome() {
-   const { t, i18n, ready } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
-  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
-  if (!ready) return null;
 
   const boxes = [
     { title: t("finalOutcome.step1", "Ideation"), image: img1 },

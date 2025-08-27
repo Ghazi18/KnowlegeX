@@ -2,11 +2,8 @@ import { useTranslation } from "react-i18next";
 import riyalSvg from "../assets/riyal.svg";
 
 export default function OurWhy() {
-   const { t, i18n, ready } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
-  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
-  if (!ready) return null;
 
   return (
     <section

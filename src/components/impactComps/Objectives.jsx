@@ -7,11 +7,8 @@ import ob4 from "../../assets/objectives/circle-arrow-shrink-02.svg";
 import ob5 from "../../assets/objectives/start-up-01.svg";
 
 export default function Objectives() {
-   const { t, i18n, ready } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
-  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
-  if (!ready) return null;
 
   const objectives = [
     { label: "Downloads", icon: ob1 },

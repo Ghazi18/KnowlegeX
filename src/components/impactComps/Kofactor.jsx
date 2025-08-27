@@ -2,11 +2,8 @@ import { useTranslation } from "react-i18next";
 import kfPng from "../../assets/whatKF.png";
 
 export default function Kofactor() {
-   const { t, i18n, ready } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
-  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
-  if (!ready) return null;
 
   return (
     <section

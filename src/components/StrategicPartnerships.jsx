@@ -4,11 +4,8 @@ import sultanUni from "../assets/sultanUni.svg";
 import indusrty from "../assets/indusrty.svg";
 
 export default function StrategicPartnerships() {
-   const { t, i18n, ready } = useTranslation();
+  const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
-
-  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
-  if (!ready) return null;
 
   const logos = [
     { src: kingFaisalUni, alt: "King Faisal University" },
