@@ -2,8 +2,11 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 export default function GradientSection() {
-  const { t, i18n } = useTranslation();
+   const { t, i18n, ready } = useTranslation();
   const isRTL = i18n.language === "ar";
+
+  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
+  if (!ready) return null;
 
   const desc = t("gradientSection.desc");
   const words = typeof desc === "string" ? desc.split(" ") : [];

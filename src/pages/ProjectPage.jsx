@@ -1,7 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import FadeInWrapper from "../components/FadeInWrapper";
 import Intro from "../components/projectPage/intro";
 import OurJourney from "../components/OurJourney";
+import FinalOutcome from "../components/projectPage/FinalOutcome";
+import WorkTeam from "../components/projectPage/WorkTeam";
 
 import rasidImg from "../assets/whatKF.png";
 import forseen from "../assets/forseen.png";
@@ -74,16 +77,20 @@ export default function ProjectPage() {
 
   return (
     <main className="min-h-screen max-w-[2000px] mx-auto  text-gray-900  overflow-x-hidden ">
+      <FadeInWrapper>
         <Intro {...project} />
+      </FadeInWrapper>
 
       {/* عرض OurJourney فقط لو فيه بيانات Journey للمشروع */}
       {milestones.length > 0 && (
+        <FadeInWrapper delay={0.1}>
           <OurJourney
             milestones={milestones}
             customTitle={customTitle}
             sideImage={sideImage}
             sideImageAlt={sideImageAlt}
           />
+        </FadeInWrapper>
       )}
 
       {/* <FadeInWrapper delay={0.2}>

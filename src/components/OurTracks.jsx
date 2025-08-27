@@ -4,8 +4,11 @@ import { FaBookOpenReader } from "react-icons/fa6";
 
 
 export default function OurTracks() {
-  const { t, i18n } = useTranslation();
+   const { t, i18n, ready } = useTranslation();
   const isRTL = i18n.language === "ar";
+
+  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
+  if (!ready) return null;
 
   const [openTrack, setOpenTrack] = useState(null);
   const [isMobile, setIsMobile] = useState(false);

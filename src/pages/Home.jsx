@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import FadeInWrapper from "../components/FadeInWrapper";
 import GradientSection from "../components/GradientSection";
 // import InvestmentPortfolio from "../components/InvestmentPortfolio";
 import Misson from "../components/Mission";
@@ -13,24 +14,46 @@ import { useTranslation } from "react-i18next";
 
 export default function Home() {
   const { t } = useTranslation();
-  const milestones = t("ourJourney.items", {
-    returnObjects: true,
-    defaultValue: [],
-  });
+  const milestones = t("ourJourney.items", { returnObjects: true });
 
   return (
-    <main className="min-h-screen max-w-[2000px] mx-auto text-gray-900 overflow-x-hidden bg-[#FFF8F1]">
-      <Banner />
-      <Misson />
-      <OurValue />
-      <OurWhy />
-      <GradientSection />
-      <Numbers />
-      <OurJourney milestones={Array.isArray(milestones) ? milestones : []} />
-      <OurTracks />
-      <ThreeBoxesWithImages />
-      {/* <InvestmentPortfolio /> */}
-      <StrategicPartnerships />
+<main className="min-h-[100svh] max-w-[2000px] mx-auto text-gray-900 overflow-x-hidden bg-[#FFF8F1]"
+     
+>
+      <FadeInWrapper>
+        <Banner />
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.1}>
+        <Misson />
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.2}>
+        <OurValue />
+      </FadeInWrapper>
+      
+      <FadeInWrapper delay={0.3}>
+        <OurWhy />
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.4}>
+        <GradientSection />
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.5}>
+        <Numbers />
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.6}>
+        <OurJourney milestones={milestones} />
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.7}>
+        <OurTracks />
+      </FadeInWrapper>
+      <FadeInWrapper delay={0.8}>
+        <ThreeBoxesWithImages />
+      </FadeInWrapper>
+      {/* <FadeInWrapper delay={0.9}>
+        <InvestmentPortfolio />
+      </FadeInWrapper> */}
+      <FadeInWrapper delay={0.9}>
+        <StrategicPartnerships />
+      </FadeInWrapper>
     </main>
   );
 }

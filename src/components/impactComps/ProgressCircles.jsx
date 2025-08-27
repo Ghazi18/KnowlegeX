@@ -8,8 +8,11 @@ import showcase from "../../assets/objectives/canvas.svg";
 
 
 export default function ProgressCircles() {
-  const { t, i18n } = useTranslation();
+   const { t, i18n, ready } = useTranslation();
   const isRTL = i18n.language === "ar";
+
+  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
+  if (!ready) return null;
 
   const steps = [
     { key: "step1", image: startup },

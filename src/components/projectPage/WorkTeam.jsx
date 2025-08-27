@@ -3,8 +3,11 @@ import { FaUserCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export default function WorkTeam() {
-  const { t, i18n } = useTranslation();
+   const { t, i18n, ready } = useTranslation();
   const isRTL = i18n.language === "ar";
+
+  // بدون سكيلتون: لا نرندر أي شيء لين تجهز الترجمة
+  if (!ready) return null;
 
   const teamMembers = [
     { name: "John Doe",    position: "Lead Developer",   description: "Responsible for leading the frontend and backend teams Responsible for leading the frontend and backend teams." },
