@@ -73,7 +73,7 @@ export default function ProjectPage() {
   };
 
   const project = projects[id];
-  if (!project) return <div className="text-center py-20">المشروع غير موجود.</div>;
+  if (!project) return <div className="text-center py-20">المشروع غير موجود..</div>;
 
   return (
     <main className="min-h-screen max-w-[2000px] mx-auto  text-gray-900  overflow-x-hidden ">
