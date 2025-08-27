@@ -2,9 +2,9 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  useLocation,
 } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+// ⚠️ أزلنا: import { AnimatePresence, motion } from "framer-motion";
 
 import Page from "./components/layout/Page";
 import Home from "./pages/Home";
@@ -20,26 +20,13 @@ function AppInner() {
 
   return (
     <Page>
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={location.pathname}
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -12 }}
-          transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <Routes location={location}>
-            <Route index path="/" element={<Home />} />
-
-            <Route path="/Impact">
-              <Route index element={<Impact />} />
-              <Route path="/Impact/:id" element={<ProjectPage />} />
-            </Route>
-
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </motion.div>
-      </AnimatePresence>
+      {/* الأنيميشن معطّل: نعرض الراوتس مباشرة */}
+      <Routes location={location}>
+        <Route path="/" element={<Home />} />
+        <Route path="/impact" element={<Impact />} />
+        <Route path="/impact/:id" element={<ProjectPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Page>
   );
 }
