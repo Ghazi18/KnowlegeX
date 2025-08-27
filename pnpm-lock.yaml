@@ -29,6 +29,9 @@ importers:
       i18next-browser-languagedetector:
         specifier: ^8.2.0
         version: 8.2.0
+      intersection-observer:
+        specifier: ^0.12.2
+        version: 0.12.2
       react:
         specifier: ^19.1.0
         version: 19.1.1
@@ -50,6 +53,9 @@ importers:
       react-slick:
         specifier: ^0.30.3
         version: 0.30.3(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+      resize-observer-polyfill:
+        specifier: ^1.5.1
+        version: 1.5.1
       slick-carousel:
         specifier: ^1.8.1
         version: 1.8.1(jquery@3.7.1)
@@ -1821,6 +1827,9 @@ packages:
   imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
     engines: {node: '>=0.8.19'}
+
+  intersection-observer@0.12.2:
+    resolution: {integrity: sha512-7m1vEcPCxXYI8HqnL8CKI6siDyD+eIWSwgB3DZA+ZTogxk9I4CDnj4wilt9x/+/QbHI4YG5YZNmC6458/e9Ktg==}
 
   is-core-module@2.16.1:
     resolution: {integrity: sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==}
@@ -4421,6 +4430,8 @@ snapshots:
       resolve-from: 4.0.0
 
   imurmurhash@0.1.4: {}
+
+  intersection-observer@0.12.2: {}
 
   is-core-module@2.16.1:
     dependencies:
