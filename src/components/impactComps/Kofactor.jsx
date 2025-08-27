@@ -29,14 +29,14 @@ export default function Kofactor() {
         <div className="mx-auto max-w-7xl flex flex-col justify-between h-full sm:text-start text-center">
           {/* العنوان */}
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
-            {t("kofactor.title", "Build with the KoFactor Edge")}
+            {t("kofactor.title", "Build with the Ko-Factor Edge")}
           </h2>
 
           {/* النص الأوسط */}
           <p className="text-gray-600 text-sm sm:text-2xl md:mt-4 leading-relaxed my-6 flex-grow">
             {t(
               "kofactor.description",
-              "KoFactor empowers innovators through tailored programs, hands-on mentorship, and access to cutting-edge tools. Join a new era of innovation-driven growth."
+              "Ko-Factor empowers innovators through tailored programs, hands-on mentorship, and access to cutting-edge tools. Join a new era of innovation-driven growth."
             )}
           </p>
 

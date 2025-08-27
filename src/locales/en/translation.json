@@ -56,7 +56,7 @@
         "logo": "/KXogo.png"
       },
       {
-        "title": "KoFactor Launch",
+        "title": "Ko-Factor Launch",
         "description": "",
         "date": "2024",
         "color": "bg-green-600",
@@ -182,11 +182,18 @@
    "impactBanner": {
     "title": "Our Portfolio",
     "description": "A hands-on program turning scientific ideas into market-ready solutions.",
-    "cta": "Explore the Program"
+    "cta": "Explore the Program",
+    "stats": {
+      "investments": " total investments by Knowledge X",
+      "trl": "Technology Readiness Level growth in average",
+      "brl": " Business Readiness Level growth in average"
+    }
   },
 
+   
+
    "kofactor": {
-    "title": "What is KoFactor?",
+    "title": "What is Ko-Factor?",
     "description": "An innovation enablement program that transforms research and scientific ideas into practical, market-ready solutions. It provides a structured journey helping participants develop early-stage concepts into commercially viable products, supported by expert mentors and hands-on workshops. The program focuses on fostering entrepreneurial thinking among researchers and innovators. It offers a collaborative environment connecting academia and industry. It serves as a platform to test and accelerate scientific ideas into scalable and sustainable business models.",
     "cta": "Explore the Program"
   },
@@ -219,7 +226,7 @@
 },
 
   "projects": {
-    "title": "KoFactor Projects",
+    "title": "Ko-Factor Projects",
     "readMore": "Read More",
     "rasid": {
       "title": "Rasid",
@@ -254,8 +261,8 @@
 
     "intro": {
       "1": {
-        "title": "Rasid – KoFactor Journey",
-    "description": "Rasid began in March 2025 as a collaboration between a research-driven team with a vision, and a technical team capable of transforming that vision into a working solution. From day one, we focused on understanding the problem deeply: how to track infectious diseases with precision and how to empower early intervention. Through brainstorming, we explored existing solutions, identified their limitations, and defined how Rasid could go beyond. As part of KoFactor, the technical team took the lead in extracting product requirements, analyzing current solutions, and understanding user experience challenges. We learned how to shape an MVP (Minimum Viable Product) that’s compelling to both investors and users. We built early UI/UX prototypes based on real user flows and incorporated Saudi platform design guidelines for consistency and trust. We received mentorship from industry pioneers, refined our direction, and successfully developed the first version of Rasid’s MVP. Despite challenges in data sourcing, system design, and cross-functional coordination, we stayed committed. Today, Rasid is on the verge of building strategic partnerships and preparing for a wide-scale launch. Our ambition remains high—to become the go-to platform for infection tracking and public health support.",
+        "title": "Rasid – Ko-Factor Journey",
+    "description": "Rasid began in March 2025 as a collaboration between a research-driven team with a vision, and a technical team capable of transforming that vision into a working solution. From day one, we focused on understanding the problem deeply: how to track infectious diseases with precision and how to empower early intervention. Through brainstorming, we explored existing solutions, identified their limitations, and defined how Rasid could go beyond. As part of Ko-Factor, the technical team took the lead in extracting product requirements, analyzing current solutions, and understanding user experience challenges. We learned how to shape an MVP (Minimum Viable Product) that’s compelling to both investors and users. We built early UI/UX prototypes based on real user flows and incorporated Saudi platform design guidelines for consistency and trust. We received mentorship from industry pioneers, refined our direction, and successfully developed the first version of Rasid’s MVP. Despite challenges in data sourcing, system design, and cross-functional coordination, we stayed committed. Today, Rasid is on the verge of building strategic partnerships and preparing for a wide-scale launch. Our ambition remains high—to become the go-to platform for infection tracking and public health support.",
         "link": "https://foreseen.sa/"
       },
       "2": {
@@ -265,7 +272,7 @@
       },
       "3": {
         "title": "Foreseen – AI in E-Commerce",
-        "description": "Foreseen started from an idea first envisioned in 2022 by Dr. Ahmed and Salman Bett — to help e-commerce stores make smarter inventory decisions through demand forecasting. We officially joined CoFactor on January 24, 2025, and that support gave us the clarity and structure we needed to move fast. Just a couple of weeks later, on February 9, we interviewed dozens of merchants and gained deep insights into their real pain points. By March 1, we began developing our prototype. In April, we completed full market research across the MENA region. In May, we started building our core forecasting engine and pipeline. Recently, we finalized our first pitch deck and submitted Foreseen for Salla integration, which is currently under review. Thanks to KoFactor, we moved from scattered ideas to a focused, working product — and we’re just getting started.",
+        "description": "Foreseen started from an idea first envisioned in 2022 by Dr. Ahmed and Salman Bett — to help e-commerce stores make smarter inventory decisions through demand forecasting. We officially joined CoFactor on January 24, 2025, and that support gave us the clarity and structure we needed to move fast. Just a couple of weeks later, on February 9, we interviewed dozens of merchants and gained deep insights into their real pain points. By March 1, we began developing our prototype. In April, we completed full market research across the MENA region. In May, we started building our core forecasting engine and pipeline. Recently, we finalized our first pitch deck and submitted Foreseen for Salla integration, which is currently under review. Thanks to Ko-Factor, we moved from scattered ideas to a focused, working product — and we’re just getting started.",
         "link": "https://foreseen.sa/"
       },
        "4": {
@@ -300,8 +307,8 @@
             "logo": "/KXogo.png"
           },
           {
-            "title": "Joined KoFactor",
-            "description": "Joined KoFactor and started requirement extraction, competitor analysis, and user journey mapping.",
+            "title": "Joined Ko-Factor",
+            "description": "Joined Ko-Factor and started requirement extraction, competitor analysis, and user journey mapping.",
             "date": "April 2025",
             "color": "bg-indigo-600",
             "logo": "/KXogo.png"
@@ -352,7 +359,7 @@
         "sideImageAlt": "Foreseen journey image",
         "items": [
           { "title": "Idea initiated by Dr. Ahmed & Salman Bett", "description": "", "date": "starting 2022", "color": "bg-blue-600", "logo": "/KXogo.png" },
-          { "title": "Joined KoFactor", "description": "", "date": "Jan 24, 2025 ", "color": "bg-rose-600", "logo": "/KXogo.png" },
+          { "title": "Joined Ko-Factor", "description": "", "date": "Jan 24, 2025 ", "color": "bg-rose-600", "logo": "/KXogo.png" },
           { "title": "Interviewed e-commerce merchants", "description": "", "date": "Mar 1, 2025 ", "color": "bg-green-600", "logo": "/KXogo.png" },
           { "title": "Completed MENA market research", "description": "", "date": "April 1, 2025", "color": "bg-green-600", "logo": "/KXogo.png" },
           { "title": "Built core forecasting pipeline", "description": "", "date": "May 30, 2025", "color": "bg-green-600", "logo": "/KXogo.png" },
